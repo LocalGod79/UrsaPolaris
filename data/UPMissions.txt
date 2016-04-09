@@ -849,7 +849,7 @@ mission "OS18H"
 		conversation
 			`The Syndicate Spaceport is eerily quiet when you step out of your ship.  A contingent of men in sharp business attire march across the landing platform to the <ship> and greet you with a smile and a clipboard nearly bursting with documents for you to sign.`
 			`	"Follow me, please."`
-			`You follow the group of businessmen to what appears to be a coffee shop where you all are seated.  It feels like the process takes an eternity as they awkwardly watches you read and sign page after page of bureaucratic nonsense.  When you're finally done you're not sure it's still the same day as when you started.  One of the associates takes the documents from you and scans them over before looking back up to you with a smile.`
+			`You follow the group of businessmen to what appears to be a coffee shop where you all are seated.  It feels like the process takes an eternity as they awkwardly watch you read and sign page after page of bureaucratic nonsense.  When you're finally done you're not sure it's still the same day as when you started.  One of the associates takes the documents from you and scans them over before looking back up to you with a smile.`
 			`	"Thank you, <first> <last>.  We have taken the liberty of having your ship loaded while you were signing the documents.  We are very pleased to take part in your exciting new enterprise.  Good luck!"`
 			`	As they say this with a smirk, you suspect that you may have just supplied the bounty that they've put on your fleet.`
 				accept
@@ -951,7 +951,7 @@ mission "OS18A"
 			`	"Welcome to Lovelace Labs, Captain <last>.  My name is Lieutenant Espinosa, and I'll be escorting you to the executive meeting room.  Please follow me to through our executive office wing.  You can fill out those docking forms on the way."`
 			`She leads you through a fairly minimalistic office structure to an elevator.  The light on the side turns green as you and the lieutenant approach, and it's just a short ride up the very smooth operating elevator to the executive offices.  You walk through a quiet, carpeted office towards a set of heavy, mahogany double doors.  Lieutenant Espinosa opens the door and waves you inside.`
 			`The executive meeting room is nice, but simple.  Just a large mahogany table surrounded by leather chairs, white walls, and a standard vid-presentation display built into the wall behind the middle-aged man sitting at the head of the table.  He's wearing a very stylish vest and tie combo with a tailored shirt, and has a polite smile on his face.  He waves you to a chair next to him.`
-			`	"So glad you could make it Captain <last>, please have a seat.  I'll get right to it.  When your partner contact us about this deal, we agreed to it somewhat reluctantly because while this is a lucrative deal, we're nervous about sending large shipments of fissionable materials and armaments into.. less secure regions of space."`
+			`	"So glad you could make it Captain <last>, please have a seat.  I'll get right to it.  When your partner contacted us about this deal, we agreed to it somewhat reluctantly because while this is a lucrative deal, we're nervous about sending large shipments of fissionable materials and armaments into.. less secure regions of space."`
 			`He attempts to adjust his tie as well as his grimace before he continues.`
 			`	"And being a new startup, you're somewhat of an unknown factor. We have no assurances that you won't sell our goods to pirates or simply 'lose' these commodities during transport.  And we're not going to send a fleet of ships across space to escort them.  So unless you have a fleet of your own to escort the shipment, I don't see how we could possibly make this work."`
 			choice
@@ -962,7 +962,7 @@ mission "OS18A"
 				`Interrupt him`
 			`	"Ursa Polaris is equipped with state of the art security systems and we perform thorough background checks on each and every customer who enters the station.  My partners and I wouldn't bring the most powerful technologies in the galaxy to one place and then just give it out to anyone who asked.  We're not the Syndicate."`
 			`The man gets up from his seat and smiles broadly to you as he reaches across and offers you a firm handshake.`
-			`	"Well in that case, it's a pleasure to be in business with Ursa Polaris, Captain.  We'll get that stock loaded onto your fleet within a few hours and you'll be on your way.  Congratulations on your new enterprise!"`
+			`	"Well, in that case, it's a pleasure to be in business with Ursa Polaris, Captain.  We'll get that stock loaded onto your fleet within a few hours and you'll be on your way.  Congratulations on your new enterprise!"`
 			`A few hours later you're back aboard the <ship> and ready to head back to Ursa Polaris.`
 				accept
 	on complete
@@ -997,7 +997,7 @@ mission "OS18V"
 			`As soon as you land, a small group of serious looking men in security uniforms greet you and lead you through the facility.  The corridors and ceilings seem almost claustrophobically close together and the minimalist, monochrome decor is a little unsettling.  Eventually you reach a large set of double doors leading into a spacious office.  You're very surprised to see the familiar face of a Pug sitting behind the desk.  He's wearing what looks like a burlap cloak and has some sort of silver markings across his face and a huge grin.`
 			choice
 				`	"Deep Sky is run by the Pug?"`
-			`He just blinks at you once before blurting out`
+			`He just blinks at you once before blurting out,`
 			`	"Oh shit, sorry!"`
 			`He quickly pulls off his rubber pointed eartips and sets them down on the desk.`
 			`	"I was at the big Galactic Star-Battle convention with my nephew.  He's really into that stuff."`
