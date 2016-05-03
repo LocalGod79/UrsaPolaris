@@ -220,15 +220,15 @@ mission "OS4"
 		ship "Mule (UP)" "Honest Abe"
 	on offer
 		conversation
-			`	James is his seemingly usual happy self, sitting at the bar with a shiny bottle of Prag'ga wine and a fine piece of glassware.  You greet him, he stands up and offers you a drink which you graciously accept.  The bartender arrives with another glass eerily quickly after being signalled by James.  "Well, we have a crack group of engineers already working aboard Honest Abe.  I helped them remove all the fancy stuff that I'd been collecting back in the day.  Mostly stuff that was mothballed because the business folk didn't want invest in making them more viable, but there was some other stuff in there, too.  It's all aboard Honest Abe now, either being reverse engineered, improved, or loaded up for use.  The Marius was a sweet ship, though…To her!"  You meet his toast.  "Honest Abe is a good ship, and better serves our purposes…" he continues "which I imagine you're beginning to question, since we've talked about opening a top-tier outfitters, and spent a fair bit apparently recruiting weapons engineers.  That's only partly true; we've simultaneously recruited the talent required to assemble an asteroid outpost."`
+			`	James is his seemingly usual happy self, sitting at the bar with a shiny bottle of Prag'ga wine and a fine piece of glassware.  You greet him; he stands up and offers you a drink which you graciously accept.  The bartender arrives with another glass eerily quickly after being signalled by James.  "Well, we have a crack group of engineers already working aboard Honest Abe.  I helped them take some stuff off of my own ship, mostly stuff that was mothballed because the business folk didn't want to invest in making them more viable, but there was some other stuff in there, too.  It's all aboard Honest Abe now, either being reverse engineered, improved, or loaded up for use.  The Marius was a sweet ship, though… To her!"  You meet his toast.  "Honest Abe is a good ship, and better serves our purposes," he continues, "which I imagine you're beginning to question, since we've talked about opening a top-tier outfitter, and only begun spening on recruiting weapons engineers.  That's only partly true; we've simultaneously recruited the talent required to assemble an asteroid outpost."`
 			choice
 				`"Go on…"`
 				`"You *are* crazy!  If this were viable, it'd already have been done.  This project is going to cost BILLIONS!  I'm out."`
 					decline
-			`	James continues, "after you and Honest Abe get the specialized mining and construction equipment from <planet>, we'll head to Wei, where we'll set up Honest Abe near the equator on Hope to simultaneously continue to serve as our research and development lab as well as become our project management headquarters.  As you may have guessed, we are planning to agglomerate some asteroids in Wei, and then mine and build them into a space station with the equipment you're about to retrieve from our contact.  We'll eventually receive Republic subsidy to monitor Hope, which will help offset the tariffs we'll incur when the outfitter is up and running.  Honest Abe will continue to serve as a mobile R&D laboratory.  For an R&D lab, nothing says safety and secrecy like mobility."`
+			`	James continues, "After you and Honest Abe get the specialized mining and construction equipment from <planet>, we'll head to Wei, where we'll set her up near the equator on Hope to serve as both our R&D and our project management center, at least for now. As you may have guessed, we are planning to agglomerate some asteroids in the empty systems around Wei, and then mine and build them into a space station with the equipment you're about to retrieve from our contact.  We'll eventually receive Republic subsidy to monitor Hope, which will help offset the tariffs we'll incur when the outfitter is up and running.  Honest Abe will continue to serve as the R&D laboratory, but after a more secure management building is set up on Hope, she'll do it up there," he says, pointing up at the endless-looking sky. "For an R&D lab, nothing says safety and secrecy like mobility."`
 			choice
 				`	"I'm all in!  You can tell me more as we go."`
-			`	"Good thinking; I expected this project to take years and hundreds of millions of credits.  Let's get going.`
+			`	"Good choice; I expected this project to take years and hundreds of millions of credits.  Let's get going.`
 				accept
 	on decline
 		set "UPWithoutPlayer"
@@ -242,14 +242,14 @@ mission "OS4"
 			`<npc> touches down shortly after you step off the <ship>, and workers begin loading containers onto her.`
 	on visit
 		dialog
-			`You have reached <planet>, but you either; left James in the <npc> behind or; don't have the <payment> to buy the necessary equipment.`
+			`You have reached <planet>, but you either: left James in the <npc> behind, or don't have the <payment> to buy the necessary equipment.`
 
 
 
 mission "OS5"
 	landing
 	name "Asteroid Survey"
-	description "Survey all systems within a few jumps of Wei for suitable asteroids, then rendez-vous with the Honest Abe on Hope"
+	description "Survey all systems within a few jumps of Wei for suitable asteroids, then rendezvous with the Honest Abe on Hope"
 	passengers 1
 	source Glory
 	destination Hope
@@ -268,7 +268,7 @@ mission "OS5"
 		has "OS4: done"
 	on offer
 		conversation
-			`	"James is walking toward your ship with a duffel.  "Get those engines fired up kid, we've got work to do!"`
+			`	"James is walking toward your ship with a duffel bag.  "Get those engines fired up, kid, we've got work to do!"`
 			choice
 				`	"Tell me more on the way to the bridge!"`
 					goto os5b
@@ -278,27 +278,27 @@ mission "OS5"
 			`	"Go sell your cargo, I'll find a cabin.  We've got to survey a lot of systems for suitable asteroids, so there's no investment beyond your crew salaries this time around.  You'll even be able to make a bit of coin, if you plan it out."`
 				goto os5a
 			label os5b
-			`	"I love your enthusiasm, kid." says James as his smile gets improbably wider.`
+			`	"I love your enthusiasm, kid." says James as his smile gets impossibly wider.`
 			label os5a
-			`	"We just need to jump into and out of each of the systems I've marked on your map, then rendez-vous with the Honest Abe on Hope where sensor data analysis will begin.  While the sensor data is being analyzed, we'll need to make another investment."`
+			`	"We just need to jump through and scan each of the systems I've marked on your map, then rendezvous with the Honest Abe on Hope where sensor data analysis will begin.  While the data is being analyzed, we'll need to make another investment."`
 				accept
 	on complete
 		conversation
-			`	You locate the Honest Abe on Hope which, while on approach you're surprised to discover on the edge of an impromptu spaceport - really little more than a glacial sheet with several ships parked in proximity to each other.  From the bridge, you see merchants exchanging goods, even one ship that's broadcasting an invitation to socialize in its cargo hold, which they're calling "Fontes Aeternam".`
-			`	As you deftly park the <ship> near to the Honest Abe, James contacts her and begins transmitting your sensor data on an encrypted channel.  By the time you have shut the engines down, James turns to you and says "Malcolm is saying that from the preliminary data, we'll need to equip six asteroids in six systems to jump here.  Some of them are further away than we'd really like to jump an asteroid, but we're hopeful that further analysis will find closer ones.  I'm going to see if that bar has anything decent to drink - check it out when you've got 5 million to burn."`
+			`	You locate the Honest Abe on Hope, which, while on approach, you're surprised to discover on the edge of an impromptu spaceport - really little more than a glacial sheet with several ships parked in proximity to each other.  From the bridge, you see merchants exchanging goods, even one ship that's broadcasting an invitation to socialize in its cargo hold, which they're calling "Fontes Aeternam".`
+			`	As you deftly park the <ship> near the Honest Abe, James begins transmitting your sensor data on an encrypted channel.  By the time you have shut the engines down, James turns to you and says "Malcolm is saying that from the preliminary data, we'll need to equip six asteroids in six systems to jump here.  Some of them are further away than we'd really like to jump an asteroid, but we're hopeful that further analysis will find closer ones.  I'm going to see if that bar has anything decent to drink - check it out when you've got 5 million to burn."`
 
 
 
 mission "OS6"
 	name "Purchase asteroid-hauling Shuttles"
-	description "Visit <destination> in Seginus to acquire ships needed to move asteroids by trans-system jumping."
+	description "Visit <destination> in Seginus to acquire ships needed to move asteroids by cross-system jumping."
 	source Hope
 	destination Clark
 	to offer
 		has "OS5: done"
 	on offer
 		conversation
-			`	You find James easily enough in Fontes Aeternam, as there are not many patrons.  "About time you got here!  I was about to send you a message to meet me on the Honest Abe.  Actually, let's walk and talk - there's nothing worth drinking here and a freezing cold cargo hold isn't where I want to spend any more of my retirement."  As you walk, he tells you that sensor log analysis is progressing, and that the next step is to buy some shuttles which will be modified to attach to and transport the appropriate asteroids to Wei.  He explains that the purchase has already been arranged on Clark a couple jumps away, and that the shuttles should already be at least partially modified for the task ahead of them.`
+			`	You find James easily enough in Fontes Aeternam, as there are not many patrons.  "About time you got here!  I was about to send you a message to meet me on the Honest Abe.  Actually, let's walk and talk - there's nothing worth drinking here and a freezing cold cargo hold isn't where I want to spend any more of my 'retirement.'"  As you walk, he tells you that sensor log analysis is progressing, and that the next step is to buy some shuttles which will be modified to attach to and transport the appropriate asteroids to Wei.  He explains that the purchase has already been arranged on Clark a couple jumps away, and that the shuttles should already be at least partially modified for the task ahead of them.`
 			choice
 				`	"Sounds easy - show up with 5 mil, and get a small fleet of shuttles - then what?"`
 				`	"I'm kinda busy right now, we'll talk later"`
@@ -317,7 +317,7 @@ mission "OS6"
 mission "OS7"
 	landing
 	name "Escort asteroid-hauling Shuttles"
-	description "Escort your recently purchased ships to Hope where they'll be loaded with mission cargo and dispatched to their respective asteroids."
+	description "Escort your modified Shuttles to Hope where they'll be loaded with mission cargo and dispatched to their respective asteroids."
 	source Clark
 	destination Hope
 	to offer
@@ -325,7 +325,7 @@ mission "OS7"
 	npc accompany save
 		personality escort
 		government "Merchant"
-		ship "Shuttle" "Gallileo"
+		ship "Shuttle" "Galileo"
 		ship "Shuttle" "Discovery"
 		ship "Shuttle" "Columbia"
 		ship "Shuttle" "Challenger"
@@ -373,21 +373,21 @@ mission "OS8"
 		has "OS7: done"
 	on offer
 		conversation
-			`	You exit the <ship> dressed in thermal gear and proceed to the Honest Abe, where you are apparently expected, as the outer airlock door is open, and closes the moment you step into it.  There isn't much snow in the airlock, and you suspect it was opened as the <ship> touched down.  The inner door opens, where you see James who invites you in, saying "Let's walk and talk.  I'll show you around our limited partnership's temporary headquarters."  You begin stripping your gear and find a hook in an EVA suit locker near the airlock.  The ship is humming with noises you're not used to hearing from a starship, and people dressed from lab coats to casual crew walking about with apparent purpose.  James speaks "Four of the shuttles have already been loaded up with their mission cargo and taken off to rendez-vous with their designated asteroids.  The remaining two are nearly ready to move some cargo into position once those four arrive with their charges, at which point they'll return here for their own asteroid attachment gear.  By the time we get back from our next run, there should be something in orbit."  You turn a corner and stop at a cargo bay door.`
-			`	"Behind this door, we have everything we need for an assembly line to produce an outfit that is ready to roll out the moment our station becomes habitable"  James says.  He motions to continue down the hall, and as you pass the next door, he says "That holds a lab where four more prototypes are being worked on - last step before field testing" as you pass the third door, he says "and that one holds some still mothballed outfits that are going to require more time to reverse engineer or make effective enough to carry our brand name.."`
+			`	You exit the <ship> dressed in thermal gear and proceed to the Honest Abe, where you are apparently expected, as the outer airlock door is open, and closes the moment you step into it.  There isn't much snow in the airlock, and you suspect it was opened as the <ship> touched down.  The inner door opens, and James says, "Let's walk and talk.  I'll show you around our limited partnership's temporary headquarters."  You begin stripping your gear and find a hook in an EVA suit locker near the airlock.  The ship is humming with noises you're not used to hearing from a starship, and people dressed in lab coats to casual crew walking about with apparent purpose.  James speaks: "Four of the shuttles have already been loaded up with their mission cargo and taken off to rendezvous with their designated asteroids.  The remaining two are nearly ready to move some cargo into position once those four arrive with their charges, at which point they'll return here for their own asteroid attachment gear.  By the time we get back from our next run, there should be something in orbit."  You turn a corner and stop at a cargo bay door.`
+			`	"Behind this door, we have everything we need for an assembly line to produce an outfit that is ready to roll out the moment our station becomes habitable."  James says.  He motions to continue down the hall, and as you pass the next door, he says, "That holds a lab where four more prototypes are being worked on - last step before field testing," as you pass a third door, he says, "and that one holds some still mothballed outfits that are going to require more time to reverse engineer or touch up before they get to carry our brand name."`
 			`You raise an eyebrow.`
 			choice
 				`"Does my investment count for anything in the name selection process?"`
 				`"Whatever you guys decide on is fine with me - I just want a good rate on the latest toys."`
 					goto os8a
-			`	"Nope.  The Eisbar cousins nailed that down in their contract when the venture started.  I assure you that you'd have gladly paid the sum that it would have cost us for it to have been otherwise.  Plus, the value of the pride they'll take in their work for us - with their name on the company - cannot be measured."`
+			`	"Nope.  The Eisbar cousins nailed that down in their contract when the venture started.  I assure you that you would not have paid the sum that it would have cost us for it to have been otherwise.  Plus, the value of the pride they'll take in their work for us - with their name on the company - cannot be measured."`
 			label os8a
-			`	"So, welcome to Ursa Polaris Ltd.  We've got a product ready to roll, and the preparations for an outlet which should be ready in a few months."`
-			`	James continues "I've contacted an old friend of mine on Rust, and he's expecting us.  I believe you've met him.  Let's go try to sweet talk our friend Barmy out of his contract with Kraz Cybernetics."`
+			`	"So, welcome to Ursa Polaris Ltd.  We've already got a product ready to roll, and the preparations for an outlet which should be ready in a few months."`
+			`	He continues: "I've contacted an old friend of mine on Rust, and he's expecting us.  I believe you've met him.  Let's go try to sweet talk our friend Barmy out of his contract with Kraz Cybernetics."`
 				accept
 	on complete
 		dialog
-			`	James is out' the airlock moments after your skids hit the pad…`
+			`	James is out the airlock moments after your skids hit the pad…`
 
 
 
@@ -397,14 +397,14 @@ mission "OS9"
 	name "Return to Hope"
 	description "Return to Hope"
 	passengers 1
-	blocked "You require a bunk for James in order to continue"
+	blocked "You require a bunk for James in order to continue."
 	source Rust
 	destination Hope
 	to offer
 		has "OS8: done"
 	on offer
 		conversation
-			`	A couple of hours later, James returns to the ship.  "Well, Barmy Edward didn't want to join us full time, but his contract with K.C. doesn't forbid him from taking consulting jobs, so we'll probably work with him at some point in the future."  He continues "You'll probably notice a couple of asteroids attached and already in orbit around Hope when we get back - a couple more should arrive shortly after.  The last two shuttles have just been dispatched for their asteroids."`
+			`	A couple of hours later, James returns to the <ship>.  "Well, Barmy Edward didn't want to join us full time, but his contract with K.C. doesn't forbid him from taking consulting jobs, so we'll probably work with him at some point in the future."  He continues: "You'll notice a couple of asteroids attached and already in orbit around Hope when we get back - a couple more should arrive shortly after.  The last two shuttles have just been dispatched for their asteroids."`
 				accept
 	on accept
 		event "Agglomerate1"
@@ -418,7 +418,7 @@ mission "OS9"
 mission "OS10C"
 	landing
 	name "Investigate Challenger's disappearance"
-	description "Visit Vindemiatrix and find out what's holding the Challenger up, render assistance as required, and escort them back to <destination>"
+	description "Visit Vindemiatrix and find out what's holding the Challenger up, render assistance as required, and escort them back to <destination>."
 	source Hope
 	destination Hope
 	waypoint Vindemiatrix
@@ -437,7 +437,7 @@ mission "OS10C"
 		has "OS9: done"
 	on offer
 		conversation
-			`	As he leaves, James says "They went to the Vindemiatrix and Aldhibain systems.  Find them and get them back here.  They've got enough hyperdrive fuel to make your life miserable, so land here after escorting each one into this system to save yourself some aggravation.  Also, get 20 million credits together - we got a deal on stack core components, and the time for you to invest is nigh."`
+			`	As he leaves, James says "They went to the Vindemiatrix and Aldhibain systems.  Find them and get them back here.  They've got little enough maximum fuel to make your life miserable, so land here after escorting each one into this system to save yourself some aggravation.  Also, get 20 million credits together - we got a deal on stack core components, and the time for you to invest is nigh... again."`
 				accept
 	on visit
 		dialog "You have reached <planet>, but the Challenger is still out there! Better go back and make sure it gets here safely."
@@ -510,7 +510,7 @@ mission "OS10Eb"
 
 mission "OS12"
 	name "Acquire Power Systems"
-	description "Visit <destination> to procure power systems components."
+	description "Visit <destination> to procure power system components."
 	source Hope
 	destination Zug
 	to offer
@@ -520,16 +520,16 @@ mission "OS12"
 		event "Agglomerate3"
 		conversation
 			`	On approach, you receive a message from James.`
-			`	"Great work!  The last two extra-star-system asteroids have been attached to the growing mass in orbit, and our first docking bay is completed.  One more asteroid, fortunately already in the system, to attach and we'll start getting some more expensive gear onto ol' Polar Bear."`
+			`	"Great work!  The last two extra-star-system asteroids have been attached to the growing mass in orbit, and our first docking bay is completed.  One more asteroid, fortunately already in the system, to attach and we'll start getting some more expensive gear onto the new 'Polar Bear.'"`
 			`	"Meet me aboard the Honest Abe."`
-			`	You hope that you don't have to make these trips with thermal gear across this glacier too many more times as you trudge through the wind and crunching ice towards the Honest Abe.  Again, the airlock appears to have recently been opened in anticipation of your arrival.  You go through the routine of security check on boarding, and after stripping your thermal gear, you are directed to James' cabin where you find him using a portable terminal in a comfortable chair with a glass of Prag'ga wine on a table next to his.  The cabin is spare, but appears comfortable.  "There you are!" he says, rising.  He directs you to a wheeled chair near a desk and continues.`
-			`	"Station construction is going more or less as planned - equipment is being moved into position and it won't be long before we need some serious power to get the station up and running, and accelerate construction.  Fortunately, Delta V is close by and has recently developed a serious power plant - and I happen to know a couple of the people who were in the finance aspect of that project.  I contacted them, told them about our station, and they agreed to subsidize our purchase of components needed to build several of their new reactor cores.  As a bonus, they talked some of their contacts at Southbound into throwing in some ships to carry the components back here, and even painted them in Ursa Polaris colours!`
+			`	You hope that you don't have to make these icy trips across this glacier too many more times as you trudge through the wind and crunching ice towards the Honest Abe.  Again, the airlock appears to have recently been opened in anticipation of your arrival.  You go through the routine of security check on boarding, and after stripping your thermal gear, you are directed to James' cabin where you find him using a portable terminal in a comfortable chair with a glass of Prag'ga wine on a table next to him.  The cabin is spare, but appears comfortable.  "There you are!" he says, rising.  He directs you to a wheeled chair near a desk where he continues.`
+			`	"Station construction is going more or less as planned - equipment is being moved into position and it won't be long before we need some serious power to get the station up and running, and accelerate construction.  Fortunately, Delta V is close by and has recently developed a serious power plant, which I recall you helped - and I happen to know a couple of the people who were in the finance aspect of that project.  I contacted them, told them about our station, and they agreed to subsidize our purchase of components needed to build several of their new reactor cores.  As a bonus, they talked some of their contacts at Southbound into throwing in some ships to carry the components back here, and even painted them in Ursa Polaris colours!`
 			`	"Go to <destination> and pay the twenty mil', and escort our first supply convoy ships laden with power systems back to Ursa Polaris Station.  We're going to get Honest Abe into orbit - the next time we speak in person, it will be aboard the new station."`
 				accept
 	on complete
 		payment -20000000
 	on visit
-		dialog `You require <payment> to pay for Ursa Polaris Station's power systems.  Return when you have it.`
+		dialog `You require <payment> to pay for the Polar Bear's power systems.  Return when you have it.`
 
 
 mission "AbeInOrb"
@@ -561,21 +561,21 @@ mission "Goodbye, Fontes"
 mission "OS13"
 	landing
 	name "Return to Ursa Polaris Station"
-	description "Return to Ursa Polaris Station with its Power systems"
+	description "Return to Ursa Polaris Station with its new power systems."
 	source Zug
 	destination "Ursa Polaris Station"
 	to offer
 		has "OS12: done"
 	on offer
 		conversation
-			`	The <payment> withdrawl takes place after authorization, and you're directed to a landing pad next to a row of a half dozen waiting Argosys that are loaded with your purchase.`
+			`	The <payment> withdrawal takes place after authorization, and you're directed to a landing pad next to a row of a half dozen waiting Argosys loaded with your purchase.`
 			` The captains all signal their readiness for departure, when the Port Authority sends out a broadcast to departing vessels: Pirate marauders entering the system - be careful!`
 				accept
 	on complete
 		event "Agglomerate4"
 		event "Agglomerate5" 44
 		conversation
-			`	You "dock" with the space station, and crews in pressure suits begin unloading the Argosys one-by-one (as there aren't enough docking facilities to do more, yet).  There's already quite a bit of equipment, as well as activity, in the station's cargo bay, and you can see that while there doesn't appear to be a lot of progress externally, that the station within the asteroids is taking shape.  While docked, you feel some disconcerting jolts of the station, and you overhear cheers over the radio.  The final asteroid has finally been attached, and the power systems you've just delivered should be incorporated in a month or two.  James has left instructions "You should try to get as many credits together as you can in the meantime - I'll send a message to you when there's an update."`
+			`	You "dock" with the space station, and crews in pressure suits begin unloading the Argosys one-by-one (as there aren't enough docking facilities to do more, yet).  There's already quite a bit of equipment, as well as activity, in the station's cargo bay, and you can see that while there doesn't appear to be a lot of progress externally, that the station within the asteroids is taking shape.  While docked, you feel some disconcerting jolts, and you hear cheers over the radio.  The final asteroid has finally been attached, and the power systems you've just delivered should be incorporated and running the station in a month or two.  James has left instructions, bearing the message: "You should try to get as many credits together as you can for now, (like you always should be, this baby is expensive) - I'll send a message to you when there's an update."`
 	npc accompany save
 		personality escort timid
 		government "Ursa Polaris"
@@ -601,27 +601,28 @@ mission "OS13"
 mission "OS14W"
 	landing
 	name "Buy Equipment on <destination>"
-	description "Go to <destination> and pay for equipment needed on Ursa Polaris Station"
+	description "Go to <destination> and pay for equipment needed on Ursa Polaris Station."
 	destination Wayfarer
 	to offer
 		has "event: Agglomerate5"
 		has "OS13: done"
 	on offer
 		conversation
-			`	You receive a message from James "I managed to get the ramscoops, cooling systems, and some defensive systems loaded at just two destinations.  Visit Wayfarer and Follower with 75M each, and escort the freighters back to Ursa Polaris Station"`
+			`	You receive a message from James yet again, saying, "I managed to get the ramscoops, cooling systems, and some defensive systems loaded at just two destinations.  Visit Wayfarer and Follower with 75 mil' each, and escort the freighters carrying our systems back to Polar Bear."`
 				accept
 	on complete
 		dialog
-			`You receive landing pad co-ordinates to your loaded freighter escorts.`
+			`You send the landing pad coordinates to your loaded freighter escorts.`
 		payment -75000000
 	on visit
 		dialog `You require <payment> to pay for Ursa Polaris Station's operating systems.  Return when you have it.`
 
+#Are the mission descriptions full stop-less?
 
 
 mission "OS14F"
 	name "Buy Equipment on <destination>"
-	description "Go to <destination> and pay for equipment needed on Ursa Polaris Station"
+	description "Go to <destination> and pay for equipment needed on Ursa Polaris Station."
 	landing
 	destination Follower
 	to offer
@@ -629,7 +630,7 @@ mission "OS14F"
 		has "OS13: done"
 	on complete
 		dialog
-			`You receive landing pad co-ordinates next to your loaded freighter escorts.`
+			`You receive landing pad coordinates next to your loaded freighter escorts.`
 		payment -75000000
 	on visit
 		dialog `You require <payment> to pay for Ursa Polaris Station's operating systems.  Return when you have it.`
@@ -645,7 +646,7 @@ mission "OS15W"
 		has "OS14W: done"
 	on offer
 		conversation
-			`You wait patiently for the light freighters to be loaded with your merchandise.  The spaceport is bustling with engineers, mechanics, and workers all rushing from one place to the next performing maintenance on Tarazed's latest experimental ships and technology.  When the Argosies are loaded up, you head back to the <ship> and prepare to escort them back to <destination>.`
+			`You wait patiently for the light freighters to be loaded with your new systems.  The spaceport is bustling with engineers, mechanics, and workers all rushing from one place to the next performing maintenance on Tarazed's latest experimental ships and technology.  When the Argosys are loaded up, you head back to the <ship> and prepare to escort them back to <destination>.`
 				accept
 	npc
 		personality disables waiting
@@ -677,7 +678,7 @@ mission "OS15F"
 		has "OS14F: done"
 	on offer
 		conversation
-			`You wait patiently for the retrofitted ships to be loaded with your merchandise.  The spaceport is bustling with engineers, mechanics, and workers all rushing from one place to the next performing maintenance on ships throughout on various landing pads.  When the Argosies are loaded up, you head back to the <ship> and prepare to escort them back to <destination>.`
+			`You wait patiently for the retrofitted ships to be loaded with your new systems.  The spaceport is bustling with engineers, mechanics, and workers all rushing from one place to the next performing maintenance on ships throughout on various landing pads.  When the Argosys are loaded up, you head back to the <ship> and prepare to escort them back to <destination>.`
 				accept
 	npc
 		personality disables waiting
@@ -695,7 +696,7 @@ mission "OS15F"
 	on visit
 		dialog "You have reached <planet>, but you left some of your fleet behind! Better depart and wait for them to arrive in this star system."
 
-#
+
 mission "OS16"
 	landing
 	name "Defend Ursa Polaris Station"
@@ -706,7 +707,7 @@ mission "OS16"
 		has "OS15W: done"
 	on offer
 		conversation
-			`	You dock along with the second convoy.  There is another dock available since the last time you participated in a supply run, but a couple of freighters still wait in orbit to dock.  There are more workers in the station, all still wearing open helmeted EVA suits.  There are also human-sized robots crawling on the walls and ceiling, apparently scanning and reinforcing the main structure.  James approaches your airlock as you're stepping off, and just as he's about to speak, alarms on your ship sound.  You tap the comm panel nearby, and discover that pirates have entered the system.  You yell to James "Pirates!" and he breaks into a surprisingly spry run.  Apparently you can't bring hundreds of millions of credits worth of equipment into an uninhabited system and not expect plunder attempts…`
+			`	You dock along with the second convoy.  There is another dock available since the last time you escorted a supply run, but a couple of freighters still wait in orbit to dock.  There are more workers in the station, all still wearing open-helmeted EVA suits.  There are also human-sized robots crawling on the walls and ceiling, apparently scanning and reinforcing the main structure.  James approaches your airlock as you step off, and just as he's about to speak, alarms on your ship sound.  You tap the comms panel nearby, and discover that pirates have entered the system.  You yell out, "Pirates!" and he breaks into a surprisingly spry run.  Apparently you can't bring hundreds of millions of credits worth of equipment into an uninhabited system and not expect plunder attempts…`
 				launch
 	npc save
 		personality escort timid
@@ -759,14 +760,15 @@ mission "OS16"
 	on complete
 		event "Ursa Polaris Complete" 60
 		conversation
-			`	James is smiling wider than usual, as you dock.  "That was fun, and fortunately that last shipment contained the weapons that will make the station safe from that kind of attack in the future.  In all honesty, I'm only a little surprised this didn't happen sooner."  You begin to see that James has taken great care in planning this station's construction.  "Give us a couple months - and keep building as much capital as possible - the next time you hear from me, the station will be fully operational, and we'll need to start getting some stock from some key suppliers."`
+			`	James is smiling wider than usual, as you dock.  "That was fun, and fortunately that last shipment contained the weapons that will make this place safe from that kind of attack in the future.  In all honesty, I'm only a little surprised this didn't happen sooner."  You begin to see that James has taken great care in planning this station's construction.  "Give us a couple months - and keep building as much capital as possible - the next time you hear from me, the Polar Bear will be fully operational, and we'll need to start getting some stock from our key suppliers."`
 
 
 #twoishish month break
+#This ain't no "ish"
 mission "OS17H"
 	landing
 	name "Stock from <destination>"
-	description "Visit <destination> with 75M credits to acquire stock for Ursa Polaris Station"
+	description "Visit <destination> with 75M credits to acquire stock for Ursa Polaris Station."
 	destination Hephaestus
 	to offer
 		has "event: Ursa Polaris Complete"
@@ -775,7 +777,7 @@ mission "OS17H"
 		dialog
 			`	Upon landing, you receive a transmission from James:`
 		conversation
-			`	"Ursa Polaris Station is fully operational.  We require stock from the Syndicate, Lovelace Labs, Deep Sky, Delta V and Kraz Cybernetics.  Fortunately you only need to make four stops, spending 75M credits at each one (300M total) to set up our initial supply contracts.  There will be ships waiting for you at Hephaestus, Ada, Wayfarer and Valhalla that will help to escort you back.  You'll also need 500 cargo space to carry some startup stock at each stop, as the ships will mostly be additions to our defence and R&D&D (Research & Development, Defense) fleet.  We've already got the Mass Driver and Inertia Buffered Slugs manufacturing set up, and you can pick some up when you get here."`
+			`	"Ursa Polaris Station is fully operational.  We require stock from Syndicated Systems, Lovelace Labs, Deep Sky, Delta V Corporation, and Kraz Cybernetics.  Fortunately you only need to make four stops, spending 75M credits at each one, so 300 million total, to set up our initial supply contracts.  There will be ships waiting for you at Hephaestus, Ada, Wayfarer and Valhalla that will help to escort you back.  You'll also need 500 tons of cargo space to carry some startup stock at each stop, as the ships will mostly be additions to our defence and R&D&D (Research & Development & Defense) fleet.  We've already got the Mass Driver and Inertia Buffered Slug, new heavy railguns by Ursa itself that I'm sure you'll love, manufacturing set up, and you can pick some up when you get here."`
 				accept
 	on complete
 		payment -75000000
@@ -786,7 +788,7 @@ mission "OS17H"
 mission "OS17A"
 	landing
 	name "Buy stock at <destination>"
-	description "Visit <destination> with 75M credits to acquire stock for Ursa Polaris Station"
+	description "Visit <destination> with 75M credits to acquire stock for Ursa Polaris Station."
 	destination Ada
 	to offer
 		has "event: Ursa Polaris Complete"
@@ -800,7 +802,7 @@ mission "OS17A"
 mission "OS17V"
 	landing
 	name "Buy stock at <destination>"
-	description "Visit <destination> with 75M credits to acquire stock for Ursa Polaris Station"
+	description "Visit <destination> with 75M credits to acquire stock for Ursa Polaris Station."
 	destination Valhalla
 	to offer
 		has "event: Ursa Polaris Complete"
@@ -814,7 +816,7 @@ mission "OS17V"
 mission "OS17W"
 	landing
 	name "Buy stock at <destination>"
-	description "Visit <destination> with 75M credits to acquire stock for Ursa Polaris Station"
+	description "Visit <destination> with 75M credits to acquire stock for Ursa Polaris Station."
 	destination Wayfarer
 	to offer
 		has "event: Ursa Polaris Complete"
@@ -829,10 +831,10 @@ mission "OS18H"
 	landing
 	source Hephaestus
 	name "Escort to Ursa Polaris Station (Syndicate)"
-	description "Transport stock & escort new ships to <destination>"
+	description "Transport stock & escort new ships to <destination>."
 	destination "Ursa Polaris Station"
 	cargo "Outfitter Stock" 500
-	blocked "You require 500 cargo space free to bring stock back to Ursa Polaris Station."
+	blocked "You require 500 tons of cargo space free to bring the necassary stock back to Ursa Polaris Station."
 	npc
 		personality disables waiting
 		government " Pirate "
@@ -847,15 +849,16 @@ mission "OS18H"
 		has "OS17H: done"
 	on offer
 		conversation
-			`The Syndicate Spaceport is eerily quiet when you step out of your ship.  A contingent of men in sharp business attire march across the landing platform to the <ship> and greet you with a smile and a clipboard nearly bursting with documents for you to sign.`
+			`The Syndicate spaceport is eerily quiet when you step out of your ship.  A contingent of men in sharp business attire march across the landing platform to the <ship> and greet you with a smile and a clipboard nearly bursting with documents for you to sign.`
 			`	"Follow me, please."`
-			`You follow the group of businessmen to what appears to be a coffee shop where you all are seated.  It feels like the process takes an eternity as they awkwardly watches you read and sign page after page of bureaucratic nonsense.  When you're finally done you're not sure it's still the same day as when you started.  One of the associates takes the documents from you and scans them over before looking back up to you with a smile.`
+			`You follow the group of businessmen to what appears to be a coffee shop where you all are seated.  It feels like the process takes an eternity as they awkwardly watch you read, or more accurately, glaze over because you don't know what any of it means, and sign page after page of bureaucratic nonsense.  When you're finally done you're not even sure it's still the same day as when you started.  One of the associates takes the documents from you and scans them over before looking back up to you with a smile.`
 			`	"Thank you, <first> <last>.  We have taken the liberty of having your ship loaded while you were signing the documents.  We are very pleased to take part in your exciting new enterprise.  Good luck!"`
 			`	As they say this with a smirk, you suspect that you may have just supplied the bounty that they've put on your fleet.`
 				accept
 	on complete
 		dialog
 			`The cargo is unloaded from your fleet with remarkable efficiency.  The outfitter should have Syndicate outfits available in a couple of days.`
+				
 		event "UPS Syndicate Outfits" 2
 	on visit
 		dialog
@@ -870,28 +873,28 @@ mission "OS18Hb"
 		has "event: syndicate tech available"
 	on offer
 		event "UPStock Ionic Afterburner available"
-#
+#"manifest of" huh
 mission "OS19H"
 	source "Ursa Polaris Station"
 	destination Hippocrates
 	passengers 1
 	name "Retrieve Ariel's Notes"
-	description "Take Ariel to <planet> to retrieve notes on the Ionic Afterburner"
+	description "Take Ariel to <planet> to retrieve notes on the Ionic Afterburner."
 	to offer
 		has "event: UPS Syndicate Outfits"
 		not "event: syndicate tech available"
 		not "UPCheat"
 	on offer
 		conversation
-			`	Ariel Eisbar contacts you "I noticed the Ionic Afterburners were not manifest of Syndicate outfits to be shipped to Ursa Polaris Station.  If you take me to my apartment on Hippocrates, I can retrieve all the data from the work we did on that one - the lead engineer would have been lost without me!  When we get back, we can start building them ourselves."`
+			`	Ariel Eisbar contacts you when you arrive. "I noticed the Ionic Afterburners were not among the Syndicate outfits to be shipped to Ursa Polaris Station.  If you take me to my apartment on Hippocrates, I can retrieve all the data from the work we did on that - the lead engineer would have been lost without me!  When we get back, we can start building them ourselves."`
 			choice
 				`	Let's go!`
 					accept
-				`	Can't right now - perhaps later`
+				`	Can't right now - perhaps later.`
 					defer
 	on complete
 		dialog
-			`	Ms. Eisbar departs from the <ship> shortly after landing "I'll be back soon" she says.`
+			`	Ms. Eisbar departs from the <ship> shortly after landing "I'll be back soon," she says.`
 #
 mission "OS20H"
 	landing
@@ -899,16 +902,16 @@ mission "OS20H"
 	destination "Ursa Polaris Station"
 	passengers 1
 	name "Return to <planet>"
-	description "Return Ariel to <planet> with data on the Ionic Afterburner"
+	description "Return Ariel to <planet> with data on the Ionic Afterburner."
 	to offer
 		has "OS19H: done"
 	on offer
 		dialog
-			`	Ariel returns half an hour later.  "Let's get back to Ursa Polaris Station and get an assembly line built!"`
+			`	Ariel returns half an hour later.  "Let's get back to Polar Bear and get this prepared for mass assembly!"`
 	on complete
 		event "UPStock Ionic Afterburner available" 21
 		dialog
-			`	"We'll have the Ionic Afterburner for sale in a few weeks."`
+			`	"The Ionic Afterburner will be available to you, <first> <last>, in just a few short weeks."`
 	npc
 		personality disables waiting
 		government " Pirate "
@@ -916,14 +919,14 @@ mission "OS20H"
 		fleet "Large Core Pirates"
 		fleet "Large Core Pirates"
 
-#
+#Forgive me if I screw up or add something you don't want, but I added a choice
 mission "OS18A"
 	landing
 	name "Escort to Ursa Polaris Station (Lovelace)"
-	description "Transport stock and escort cargo ships from <origin> to <destination>"
+	description "Transport stock and escort cargo ships from <origin> to <destination>."
 	destination "Ursa Polaris Station"
 	cargo "Outfitter Stock" 500
-	blocked "You require 500 cargo space free to bring stock back to Ursa Polaris Station."
+	blocked "You require 500 tons of cargo space free to bring stock back to Ursa Polaris Station."
 
 	npc accompany save
 		personality escort timid
@@ -947,28 +950,35 @@ mission "OS18A"
 		has "OS17A: done"
 	on offer
 		conversation
-			`You're greeted to a truly remarkable sight as you step off of the <ship>.  The spaceport is bustling with people in military uniforms, all moving with purpose and efficiency from dock to dock unloading cargo and organizing stock.  You see an officer in a neat uniform march up the deck with a tablet in her hand and a warm smile on her face.  As she approaches you can see that her uniform, and the uniforms of the rest of the workers almost look like Republic Navy uniforms, except that they're a lighter shade and where you would normally see decorations or medals is just a simple, plastic name tag.  Her's reads "Lt. Espinosa".  She presents you with the tablet.`
-			`	"Welcome to Lovelace Labs, Captain <last>.  My name is Lieutenant Espinosa, and I'll be escorting you to the executive meeting room.  Please follow me to through our executive office wing.  You can fill out those docking forms on the way."`
-			`She leads you through a fairly minimalistic office structure to an elevator.  The light on the side turns green as you and the lieutenant approach, and it's just a short ride up the very smooth operating elevator to the executive offices.  You walk through a quiet, carpeted office towards a set of heavy, mahogany double doors.  Lieutenant Espinosa opens the door and waves you inside.`
-			`The executive meeting room is nice, but simple.  Just a large mahogany table surrounded by leather chairs, white walls, and a standard vid-presentation display built into the wall behind the middle-aged man sitting at the head of the table.  He's wearing a very stylish vest and tie combo with a tailored shirt, and has a polite smile on his face.  He waves you to a chair next to him.`
-			`	"So glad you could make it Captain <last>, please have a seat.  I'll get right to it.  When your partner contact us about this deal, we agreed to it somewhat reluctantly because while this is a lucrative deal, we're nervous about sending large shipments of fissionable materials and armaments into.. less secure regions of space."`
+			`You're greeted to a truly remarkable sight as you step off of the <ship>.  The spaceport is bustling with people in military uniforms, all moving with purpose and efficiency from dock to dock unloading cargo and organizing stock.  You see an officer in a neat uniform march up the deck with a tablet in her hand and a warm smile on her face.  As she approaches you can see that her uniform, and the uniforms of the rest of the workers look almost exactly like Republic Navy uniforms, except that they're a lighter shade and where you would normally see decorations or medals is just a simple, plastic name tag.  Her's reads "Lt. Espinosa".  She presents you with the tablet.`
+			`	"Welcome to Lovelace Labs, Captain <last>.  My name is Lieutenant Espinosa, and I'll be escorting you to the executive meeting room.  Please follow me through to our executive office wing.  You can fill out those docking forms on the way."`
+			`She leads you through a fairly minimalistic (unless spartan-ness is standard professional procedure) office structure to an elevator.  The light on the side turns green as you approach, and it's just a short ride up the very smooth operating elevator to the executive offices.  You walk through a quiet, carpeted office towards a set of heavy mahogany double doors.  Lieutenant Espinosa opens the door and waves you inside.`
+			`The executive meeting room is nice, but simple.  Just a large mahogany table surrounded by leather chairs, white walls, and a standard holo-presentation display built into the wall behind a middle-aged man sitting at the head of the table.  He wears a very stylish vest and tie combo with a tailored shirt, fully equiped with a polite smile on his face.  He waves you to a chair next to him.`
+			`	"So glad you could make it, Captain <last>, please have a seat.  I'll get right to it.  When your partner, Mr. James J. Jameson, contacted us about this deal, we agreed to it somewhat reluctantly because despite being very possibly an extremely lucrative deal, we're nervous about sending large shipments of fissionable materials and armaments into... less secure regions of space."`
 			`He attempts to adjust his tie as well as his grimace before he continues.`
 			`	"And being a new startup, you're somewhat of an unknown factor. We have no assurances that you won't sell our goods to pirates or simply 'lose' these commodities during transport.  And we're not going to send a fleet of ships across space to escort them.  So unless you have a fleet of your own to escort the shipment, I don't see how we could possibly make this work."`
 			choice
 				`	"They're landed at the spaceport as we speak."`
+				`	"How is the one who stopped an advanced alien race from taking over us and cutting all our hyperspace links 'unassured?'"`
+					goto os17a
+			label os17a
+			`Well, you were allied with a considerable fleet not of your own at the time, and while I don't doubt your tactical skills, there simply isn't enough po-`
+			choice
+				`	"Look outside."`
 			`He blinks at you and quickly looks down at the mobile device on his desk.  He taps a couple things and starts to scroll through some information when suddenly his eyes widen.`
 			`	"I see, well still there's the matter of..."`
 			choice
-				`Interrupt him`
-			`	"Ursa Polaris is equipped with state of the art security systems and we perform thorough background checks on each and every customer who enters the station.  My partners and I wouldn't bring the most powerful technologies in the galaxy to one place and then just give it out to anyone who asked.  We're not the Syndicate."`
-			`The man gets up from his seat and smiles broadly to you as he reaches across and offers you a firm handshake.`
+				`(Interrupt him)`
+			`	"Ursa Polaris is equipped with state-of-the-art security systems, and performs thorough background checks on each and every customer who enters the station.  My partners and I wouldn't bring the most powerful technologies in the galaxy to one place and then just give it out to anyone who asked.  We're not the Syndicate."`
+			`The man seems surprised at how seemingly prepared you were to handle that. You yourself are surprised, but maybe entrepreneuring would be a fine choice for your retirement as well... He quickly returns to the pleasant and proffesional look from earier and gets up from his seat. He smiles broadly to you, offering you a firm handshake.`
+			#He offered you a seat right next to him
 			`	"Well in that case, it's a pleasure to be in business with Ursa Polaris, Captain.  We'll get that stock loaded onto your fleet within a few hours and you'll be on your way.  Congratulations on your new enterprise!"`
 			`A few hours later you're back aboard the <ship> and ready to head back to Ursa Polaris.`
 				accept
 	on complete
 		event "UPS Lovelace Outfits" 2
 		dialog
-			`The cargo is unloaded from your fleet with remarkable efficiency.  The outfitter should start selling Lovelace outfits in a couple of days.`
+			`The cargo is unloaded from your fleet with remarkable efficiency.  The station should start selling Lovelace outfits in a couple of days.`
 	on visit
 		dialog
 			`You have left some of the fleet behind!  You need to depart and wait for them to arrive in the system.`
@@ -979,7 +989,7 @@ mission "OS18V"
 	description "Transport stock and escort new ships from <origin> to <destination>"
 	destination "Ursa Polaris Station"
 	cargo "Outfitter Stock" 500
-	blocked "You require 500 cargo space free to bring stock back to Ursa Polaris Station."
+	blocked "You require 500 tons of cargo space free to bring stock back to Ursa Polaris Station."
 	npc
 		personality disables waiting
 		government " Pirate "
@@ -994,21 +1004,28 @@ mission "OS18V"
 		has "OS17V: done"
 	on offer
 		conversation
-			`As soon as you land, a small group of serious looking men in security uniforms greet you and lead you through the facility.  The corridors and ceilings seem almost claustrophobically close together and the minimalist, monochrome decor is a little unsettling.  Eventually you reach a large set of double doors leading into a spacious office.  You're very surprised to see the familiar face of a Pug sitting behind the desk.  He's wearing what looks like a burlap cloak and has some sort of silver markings across his face and a huge grin.`
+			`As soon as you land, a small group of serious looking men in security uniforms greet you and lead you through the facility.  The corridors and ceilings seem almost claustrophobically close together and the spartan, monochrome decor is a little unsettling.  Eventually you reach a large set of double doors leading into a spacious office.  You're very surprised to see the familiar face of a Pug sitting behind the desk.  He's wearing what looks like a burlap cloak and has some sort of silver markings across his face and a huge grin.`
 			choice
 				`	"Deep Sky is run by the Pug?"`
-			`He just blinks at you once before blurting out`
+				`	Whatwhatwhat`
+				`	Lol dafuq`
+				`	Seriously, what?`
+				`	(Yodel)`
+				`AHHH! THE ALIENS ARE HERE! THEY'VE TAKEN OVER! RUUUUUU-`
+				`(Wheel around and sprint out the door)`
+			`He just blinks at you once before blurting out:`
 			`	"Oh shit, sorry!"`
 			`He quickly pulls off his rubber pointed eartips and sets them down on the desk.`
 			`	"I was at the big Galactic Star-Battle convention with my nephew.  He's really into that stuff."`
 			`There's a pause during which his demeanor grows a bit more somber.  When he speaks again it's with a much more direct tone.`
-			`	"Now in all seriousness, Deep Sky is very protective of our proprietary technologies.  Particularly concerning our Atomic engines.  While we're very pleased to be making this deal with you and expanding our market, we've never allowed another distributer to sell our products.  We take a great deal of pride in our work here, and we take great efforts to provide a quality experience for our buyers from the moment they step through our doors.  With that in mind..."`
+			`	"Now in all seriousness, Deep Sky is very protective of our proprietary technologies.  Particularly concerning our Atomic Engines.  While we're very pleased to be making this deal with you and expanding our market, we've never allowed another distributer to sell our products.  We take a great deal of pride in our work here, and we take great efforts to provide a quality experience for our buyers from the moment they step through our doors.  With that in mind..."`
 			`He taps on his desk once, and you hear your PDA 'ding' in your pocket.`
-			`	"Here is a copy of our counter-offer to your proposal.  Your numbers are very agreeable.  The only amendments pertain to a mandatory training of your sales staff to be conducted at Ursa Polaris by Deep Sky technicions which will take place within two weeks of your Grand Opening.  Deep Sky will bill you the standard hourly fee for each technicion, plus transit expenses.  Additionally, Deep Sky will perform a bi-annual inspection of your storage and installation facilities, as well as your sales floor.  If you find these terms satisfactory, just submit your electronic signature at the bottom and we'll be all set."`
+			`	"Here is a copy of our counter-offer to your proposal.  Your numbers are very agreeable.  The only amendments pertain to a mandatory training of your sales staff to be conducted at Ursa Polaris by Deep Sky technicions which will take place within two weeks of your grand opening.  Deep Sky will bill you the standard hourly fee for each technician, plus transit expenses.  Additionally, Deep Sky will perform a bi-annual inspection of your storage and installation facilities, as well as your sales floor.  If you find these terms satisfactory, just submit your electronic signature at the bottom and we'll be all set."`
+			#Yet you can sell nukes and cloaking devices?
 			choice
-				`	Accept`
+				`	(Accept)`
 					goto yespointy
-				`	Refuse`
+				`	(Refuse)`
 					goto nopointy
 			label yespointy
 			`You press your thumb against the bio-scanner on your PDA and it chimes in confirmation, which is mimicked by the desk in front of you.  The oddly dressed man gets up from behind his desk and walks over to you, shaking your hand firmly.`
@@ -1053,22 +1070,22 @@ mission "OS19V"
 	destination Nifel
 	passengers 1
 	name "Advanced Deep Tech"
-	description "Take Malcolm to <planet> to retrieve advanced Deep Sky outfits"
+	description "Take Malcolm to <planet> to retrieve advanced Deep Sky outfits."
 	to offer
 		has "event: UPS Deep Sky Outfits"
 		not "event: deep sky tech available"
 		has "OS13: done"
 	on offer
 		conversation
-			`	Malcolm Eisbar contacts you "I noticed that your manifests of outfits from the Deep didn't include Electron Beam weapons, Typhoon Torpedoes, or launchers.  If you take me to my contact on Nifel, they'll furnish me with plans and exemplars so we can begin production.  We'll need 110 tons of cargo space when we get there.`
+			`	Malcolm Eisbar contacts you "I noticed that your manifests of outfits from the Deep didn't include Electron Beam weapons, Typhoon Torpedoes, or their launchers.  If you take me to my contact on Nifel, they'll furnish me with plans and exemplars so we can begin production.  We'll need 110 tons of cargo space when we get there.`
 			choice
 				`	Let's go!`
 					accept
-				`	Can't right now - perhaps later`
+				`	Can't right now - perhaps later.`
 					defer
 	on complete
 		dialog
-			`	Mr. Eisbar departs from the <ship> shortly after landing "I'll be back soon," he says "accept any cargo that is offered for lading."`
+			`	Mr. Eisbar departs from the <ship> shortly after landing. "I'll be back soon," he says. "Accept any cargo that is offered for landing."`
 
 mission "OS20V"
 	landing
@@ -1076,18 +1093,18 @@ mission "OS20V"
 	destination "Ursa Polaris Station"
 	passengers 1
 	cargo "Advanced Deep Sky Outfits" 110
-	blocked "You require space for <cargo>"
+	blocked "You require 110 tons of space for <cargo>."
 	name "Return to <planet>"
 	description "Return Malcolm to <planet> with advanced Deep Sky outfits and data."
 	to offer
 		has "OS19V: done"
 	on offer
 		dialog
-			`	Half an hour after you land, some crates are loaded into your hold, and fifteen minutes later, Malcolm returns.  "Everything's aboard?  Good, let's return to Ursa Polaris Station and get some assembly lines put together!"`
+			`	Half an hour after you land, some crates are loaded into your hold, and fifteen minutes later, Malcolm returns.  "Everything's aboard?  Good, let's return to The Bear and get some assembly lines put together!"`
 	on complete
 		event "UPStock Deep Sky available" 21
 		dialog
-			`	"We'll have some new Deep Sky outfits for sale in a few weeks."`
+			`	"We'll be realeasing the more advanced Deep Sky technology very soon."`
 	npc
 		personality disables waiting
 		government " Pirate "
@@ -1095,14 +1112,14 @@ mission "OS20V"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
 
-#
+#what's the origin and source?
 mission "OS18W"
 	landing
 	name "Escort to Ursa Polaris Station (K&DV)"
-	description "Transport stock and escort new ships from <origin> to <destination>"
+	description "Transport stock and escort new ships from <origin> to <destination>."
 	destination "Ursa Polaris Station"
 	cargo "Outfitter Stock" 500
-	blocked "You require 500 cargo space free to bring stock back to Ursa Polaris Station."
+	blocked "You require 500 tons of cargo space free to bring stock back to Ursa Polaris Station."
 	npc
 		personality disables waiting
 		government " Pirate "
@@ -1120,18 +1137,22 @@ mission "OS18W"
 		has "OS17W: done"
 	on offer
 		conversation
-			`You set down on Wayfarer expecting to be greeted by its eccentric entrepreneurial CEO, but instead just find a mechanic wearing a pair of dark goggles and a greasy pair of overalls.  He waits for you to reach the bottom of your boarding ramp before thrusting an oil-covered open hand towards you.`
-			`	"Hey, welcome Captain <last>!  Sorry the boss isn't here to greet you himself, he had some other business to attend to.  I'm Suzaki."`
+			`You set down on Wayfarer expecting to be greeted by its eccentric entrepreneurial CEO, but instead just find a (different) mechanic wearing a pair of dark goggles and a greasy pair of overalls.  He waits for you to reach the bottom of your boarding ramp before thrusting an oil-covered open hand towards you.`
+			`	"Hey, welcome, Captain <last>!  Sorry the boss isn't here to greet you himself, he had some other business to attend to.  I'm Suzaki."`
 			choice
 				`Shake his hand`
 					goto oilyhand
 				`Don't shake his hand`
 					goto cleanhand
+				`"I'm not touching that, with all due repect."`
+					goto rudeishhand
 			label oilyhand
 			`You shake take the outstretched hand and immediately regret the decision as your hand is covered with a thick black greasy substance.  You grimace a little internally, but then smile back at the mechanic.  Whatever it takes to make a deal, right?`
 			label cleanhand
 			`You think about shaking his hand but just smile awkwardly and wave, instead.  The mechanic immediately responds with a chuckle, wiping his hand off on his already thoroughly stained overalls.`
 				`	"Sorry, I forget sometimes."`
+			label rudeishhand
+			`"Hm? Oh yeah, I always forget. We're kind of all no-life engineers here who would starve to death because they forgot to bring their sandwich and didn't want to leave their new product. Sorry."`
 			`He smiles, "Please, come with me."`
 			`You follow him through the now somewhat familiar hangars at Wayfarer to a small little office.  The mechanic takes a sturdy looking, oversized tablet out of the desk and sets it in front of you.`
 			`	"Okay, just sign at the bottom there and we'll get you all loaded up!"`
@@ -1140,11 +1161,11 @@ mission "OS18W"
 			`Suzaki shrugs a bit and nods to you.`
 			`	"Yeah.  The boss already authorized the sale, and you're Captain freaking <last>.  What did you expect, a background check?"`
 			choice
-				`Sign`
+				`(Sign)`
 			label tarazeddeal
 				`	"What about all of the stock from Kraz and Delta V?"`
-			`	"Already here.  We just renewed our contracts with both Kraz and Delta V last quarter, so we're fully loaded."`
-			`You press your thumb against the bioscanner and it chimes in confirmation.  The mechanic smiles broadly and takes the pad back from you.`
+			`	"Already here.  We just renewed our contracts with both of 'em last quarter, so we're fully loaded."`
+			`You press your thumb against the bioscanner and it dings in confirmation.  The mechanic smiles broadly and takes the pad back from you.`
 			`	"Great!  We'll get you loaded up right away."`
 			`He smirks a bit, before adding in a coy tone, "So Captain, would you like to see what we've been working on lately?"`
 			`You spend the rest of the day being toured around the restricted portions of Tarazed where you can see them working on hull designs unlike any you've seen in human space.  At the end of it you're left feeling excited both about the opening of your own space station but also about what will come out of Tarazed in the future.  Presently though, you need to focus on getting your new goods back to Ursa Polaris.`
@@ -1192,7 +1213,7 @@ mission "OS19W"
 	destination Wayfarer
 	passengers 1
 	name "Advanced South Tech"
-	description "Take James to <planet> to establish a supply contract for advanced outfits"
+	description "Take James to <planet> to establish a supply contract for advanced southwestern outfits."
 	to offer
 		has "event: UPS Kraz and Delta V Outfits"
 		has "OS13: done"
@@ -1203,15 +1224,15 @@ mission "OS19W"
 
 	on offer
 		conversation
-			`	James contacts you as you land "You seem to be a few outfits short.  If you take me back to Wayfarer, I can negotiate with some friends to get those newer outfits onto our future shipments."`
+			`	James contacts you as you land. "You seem to be a few outfits short.  If you take me back to Wayfarer, I can negotiate with some friends to get those newer outfits onto our future shipments."`
 			choice
 				`	Let's go!`
 					accept
-				`	Can't right now - perhaps later`
+				`	Can't right now - perhaps later.`
 					defer
 	on complete
 		dialog
-			`	James departs from the <ship> shortly after landing "I'll be back soon" he says.`
+			`	James departs from the <ship> shortly after landing. "I'll be back soon," he says.`
 
 mission "OS20W"
 	landing
@@ -1224,18 +1245,18 @@ mission "OS20W"
 		has "OS19W: done"
 	on offer
 		dialog
-			`	James returns some hours later.  "Let's return to Ursa Polaris Station and make some shelf space!"`
+			`	James returns some hours later.  "Let's get back to The Bear and make some shelf space!"`
 	on complete
 		event "UPStock Flamethrower available" 14
 		event "UPStock Plasma Turret available" 14
 		event "UPStock Stack Core available" 14
 		dialog
-			`	"We'll have some new Kraz outfits for sale in a couple of weeks."`
+			`	"We'll have some new Kraz  and Delta V outfits available in a couple of weeks."`
 #
 mission "OS19"
 	landing
 	name "Delivery to Rust"
-	description "Travel to <destination> to deliver Ursa Polaris' latest gun to Barmy Edward"
+	description "Travel to <destination> to deliver Ursa Polaris' latest gun to Barmy Edward."
 	destination Rust
 	cargo "Prototype Weapons" 64
 	blocked "You require space for <cargo>"
@@ -1248,8 +1269,8 @@ mission "OS19"
 	on offer
 		conversation
 			`	James saunters up to the ship wearing his trademark smile and casual clothing.  "There you are - the only one who could shave so much time off my original projections.  The outfitter is nearly completely stocked, and we'll be ready to open for business in a week or two."`
-			`	Otherwise, you see people scurrying about preparing Grand Opening celebrations, and you can see advertisements for the station's celebrations and services on vid monitors tuned into galactic channels.`
-			`	James continues "When you're ready, we've got some blueprints and a prototype that is not quite working right.  Take it to Barmy Edward at Kraz Cybernetics, and see if he'll take a look at it for us.  You just need to drop it off - he'll get back to us when he's done.  When you get back from Rust and your last stock run, we should be open for business."`
+			`	Elsewhere, you see people scurrying about preparing Grand Opening celebrations, and you can see advertisements for the station's celebrations and services on holo-monitors tuned into galactic channels.`
+			`	James continues "When you're ready, we've got some blueprints and a prototype that is not quite working right.  Take it to Barmy Edward at Kraz Cybernetics, and see if he'll take a look at it for us.  You just need to drop it off - he'll get back to us when he's done.  By the time you get back from Rust, also your last stock run, we should finally be open for business!"`
 			choice
 				`I'm on it!`
 					accept
@@ -1287,7 +1308,7 @@ mission "OS19"
 mission "OS20"
 	landing
 	name "Attend Grand Opening"
-	description "Travel to <destination> to attend the outfitter's Grand Opening"
+	description "Attend the Grand Opening of Ursa Polaris Station."
 	destination "Ursa Polaris Station"
 	to offer
 		has "event: UPStock Flamethrower available"
@@ -1303,8 +1324,8 @@ mission "OS20"
 		clear "OS20: offered"
 	on complete
 		conversation
-			`	As you step off the <ship> you see people everywhere and it appears that the outfitter dry docks are operating at capacity.  During construction, you couldn't have imagined so many people on board as you tour the completed station.  You find James grinning like a fool at a table next to the "Gallileo" in the atrium bar.  He waves you over."`
-			`	"Isn't it grand?!  We're in business, and we're starting to make some money - you'll start receiving a daily salary starting today!  It's not a lot, but it should turn around in a couple of months, as we roll out more of our own products.  Our friend Barmy over at Kraz thinks he might have our Rapid Fire Plasma weapon figured out, but he wants some more time with it to see if he can't massage it a little more.  You'll probably find me here if you're looking to help get more outfits onto the market - the Eisbar cousins swing by periodically to update me on our Research and Development progress.  In addition to the R.F.P. weapon, we've got a crew replacement solution almost ready to roll out.  There's another gun, and we're also working on some power and hyperdrive systems, but they're a ways off.  Our next move is to get some more supply convoys making regular trips to our top suppliers.  I'm in the process of negotiating new contracts with those suppliers."`
+			`	As you step off the <ship>, you see people and ships everywhere, and it appears that the outfitter dry docks are operating at capacity.  During construction, you couldn't have imagined so many people on board as you tour the completed station.  You find James grinning like a fool at a table next to the "Galileo" in the atrium bar.  He waves you over."`
+			`	"Isn't it grand?!  We're in business, and we're starting to make some money - you'll start receiving a daily salary starting today!  It's not a lot, but it should turn around in a couple of months, as we roll out more of our own products.  Our friend Barmy over at Kraz thinks he might have our Rapid Fire Plasma weapon figured out, but he wants some more time with it to see if he can't massage it a little more.  You'll probably find me here if you're looking to help get more outfits onto the market - the Eisbar cousins swing by periodically to update me on our Research and Development progress.  In addition to the R.F.P., we've got a crew replacement solution almost ready to roll out.  There's another gun, and we're also working on some power and hyperdrive systems, but they're a ways off.  Our next move is to get some more supply convoys making regular trips to our top suppliers.  I'm in the process of negotiating new contracts with those suppliers."`
 			`	"You'll find me at the bar any time there's work you can do for the business - keep checking in."`
 #
 mission "UPSalary"
@@ -1333,7 +1354,7 @@ mission "OS20Nc"
 	on offer
 		event "UPStock Nukes available"
 	on complete
-		dialog `Ursa Polaris Station now stocks Nuclear Warheads for its employees.  Pick yours up today!`
+		dialog `Ursa Polaris Station now stocks Nuclear Warheads for its employees.  Pick yours up today! (And don't tell anyone...)`
 
 #
 mission "OS21N"
@@ -1347,12 +1368,14 @@ mission "OS21N"
 		random < 10
 	on offer
 		conversation
-			`	James is sitting at his usual table, his nose pointed at a mobile terminal.  He doesn't notice you until you're pulling the chair out opposite him.  "Yes, sit" he says.`
-			`	"We've got a new assembly line." he begins "We're just short nuclear material - Uranium, to be exact.  I've solidified a contract with suppliers on <destination>.  Travel there, pay for the shipment, and escort the freighters back here."`
+			`	James is sitting at his usual table, his nose pointed at a mobile terminal.  He doesn't notice you until you're pulling the chair out opposite him.  "Yes, sit," he says.`
+			`	"We've got a new assembly line," he begins "We're just short of some nuclear material - Uranium, to be exact.  I've solidified a contract with suppliers on <destination>.  Travel there, pay for the shipment, and escort its freighters back here."`
 			choice
-				`	On my way!`
+				`	"On my way!"`
 					accept
-				`	I don't think we should stock that weapon here.`
+				`"Um... What for?"`
+			`"Nukes, of course!" Destruction! EXPLOSIONS!!!"`
+				`	"I REALLY don't think we should stock those here. Especially with the snoopy Deep."`
 					decline
 	on complete
 		payment -100000000
@@ -1363,7 +1386,7 @@ mission "OS21N"
 mission "OS22N"
 	landing
 	destination "Ursa Polaris Station"
-	name "Nukes too!"
+	name "Nukes, Two!"
 	description "Bring that nuclear material back to Ursa Polaris"
 	to offer
 		has "OS21N: done"
@@ -1374,7 +1397,7 @@ mission "OS22N"
 	on complete
 		event "UPStock Nukes available" 30
 		conversation
-			`	James meets you at your airlock, "Great work - I hope you didn't have too much trouble with pirates.  We'll start selling the warheads to Ursa Polaris staff in a month or so.`
+			`	James meets you at your airlock. "Great work - I hope you didn't have too much trouble with pirates.  We'll start selling the warheads to Ursa Polaris staff in a month or so.`
 	npc
 		personality disables waiting
 		government " Pirate "
@@ -1396,7 +1419,7 @@ mission "OS22N"
 #
 mission "OS21"
 	name "Buy Hai Outfits"
-	description "Travel to <destination> to buy 600 tons of alien outfits"
+	description "Travel to <destination> to buy 600 tons of alien outfits."
 	destination "Hai-home"
 	source "Ursa Polaris Station"
 	clearance
@@ -1404,9 +1427,9 @@ mission "OS21"
 		has "OS20: done"
 	on offer
 		conversation
-			`	You find James at a table next to the "Gallileo".  As you approach, he says "The bar says they'll be getting a few of cases of '09 Bounty Prag'ga soon - I can hardly wait - vintage of a lifetime it's said."`
-			`	He continues "I know I said we needed to establish new contracts and more convoys with our suppliers, and I'm negotiating via hyperspace…" he trails off…`
-			`	He snaps back, "I can't believe I forgot the Hai!  They've got wondrous technology that we can study, and even sell on a limited basis until we get a supply convoy or two running.  Go to <destination> and pick up some stock - shouldn't cost more than 500M credits.  You'll need 600 tons of cargo space to bring the initial stock back."`
+			`	You find James at a table next to the "Galileo".  As you approach, he says, "The bar says they'll be getting a few of cases of '09 Bounty Prag'ga soon - I can hardly wait - 'Vintage of a lifetime,' it's said."`
+			`	He continues. "I know I said we needed to establish new contracts and more convoys with our suppliers, and I'm negotiating via hyperspace…" he trails off.`
+			`	He snaps back, "I can't believe I forgot the Hai!  They've got wondrous technology that we can study, and even sell on a limited basis until we get a supply convoy or two running.  Go to <destination> and pick up some stock - shouldn't cost more than 500 million credits.  You'll need 600 tons of cargo space to bring the initial stock back."`
 				accept
 	on complete
 		payment -500000000
@@ -1430,7 +1453,7 @@ mission "OS22"
 		clear "OS22: offered"
 	on accept
 		conversation
-			`	You open an account with the Outfitter on Hai-home, and arrange for 600 tons of outfits to be loaded for immediate departure.  You inform the Outfitter that more ships from Ursa Polaris will return for more outfits in exchange for the balance of the account.` 
+			`	You open an account with the outfitter on Hai-home, and arrange for 600 tons of outfits to be loaded for immediate departure.  You inform the outfitter that more ships from Ursa Polaris will return for more outfits in exchange for the balance of the account.` 
 	on complete
 		dialog
 			`The station crew begin unloading the alien outfits the moment you dock.  The outfitter should begin selling them in a couple of days.`
@@ -1456,10 +1479,10 @@ mission "OS22"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
 		system Volax
-#
+#You need to specify who's talking here
 mission "OS23"
-	name "RFP Weapon Testing"
-	description "Disable the <npc> in Ildaria and report back to <planet>"
+	name "RFP Weapons Testing"
+	description "Disable the <npc> in Ildaria and report back to <planet>."
 	source "Ursa Polaris Station"
 	destination "Ursa Polaris Station"
 	waypoint Ildaria
@@ -1474,7 +1497,7 @@ mission "OS23"
 
 	on offer
 		conversation
-			`	Barmy just sent the message - the <npc> is equipped with a couple RFP weapons and is waiting to take you on in Ildaria.  I'd say leave most or all of your combat fleet behind so you can give some feedback on it's performance.  <npc>'s a Corvette, so you should have no problem disabling it if you're flying a Heavy Warship.  Please don't destroy it - it's one of ours, we just sent it to Rust to get the prototypes fitted."`
+			`	Barmy just sent the message - "The <npc> is equipped with a couple RFP weapons and is waiting to take you on in Ildaria.  I'd say leave most or all of your combat fleet behind so you can give some feedback on it's performance.  <npc>'s a Corvette, so you should have no problem disabling it if you're flying a Heavy Warship-class.  Please don't destroy it - it's one of ours, we just sent it to Rust to get the prototypes fitted. Also because there are innocent people piloting it."`
 				accept
 	
 	npc save disable
@@ -1486,7 +1509,7 @@ mission "OS23"
 	on complete
 		event "sarc: available" 21
 		conversation
-			`	"Well, what did you think?"`
+			`	Walking back into the factory building, Subaki sees you and asks, "Well, what did you think?"`
 			choice
 				`Meh.  I won't be able to really assess it until I get my hands on it.`
 				`My ship's systems were pushed when the the barrage laid into me, but they couldn't keep it up, and I made short work of the <npc> after that.  All the same, I'd like some of those guns for my ships.`
@@ -1507,7 +1530,7 @@ mission "OS23b"
 #
 mission "OS24"
 	name "H.I.P. Cannon Testing"
-	description "Disable the <npc> in Alnasl and report back to <planet>"
+	description "Disable the <npc> in Alnasl and report back to <planet>."
 	source "Ursa Polaris Station"
 	destination "Ursa Polaris Station"
 	waypoint Alnasl
@@ -1516,9 +1539,9 @@ mission "OS24"
 		has "OS22: done"
 	on offer
 		conversation
-			`	You find James at his usual table next to the "Gallileo" with his trademark smile.`
-			`	As you sit down with him, he says "I presume you've seen the Systems Automation and Robotic Crew outfit is available.  If you haven't, check it out.  In other news, we finally got Barmy Edward's notes on the Rapid Fire Plasma Weapon, it was worth the wait - he managed to reduce the energy load by 10% and heat load by almost 20!  In any case, the assembly line is almost up and running - we should start selling it within a couple of weeks."`
-			`	"On to more current matters.  We've got a nearly production ready prototype on the <npc> in Alnasl - head over there and see if you can disable her, then report back here."`
+			`	You find James at his usual table next to the "Galileo" with his trademark smile.`
+			`	As you sit down with him, he says, "I presume you've seen the Systems Automation and Robotic Crew outfit is available.  If you haven't, check it out.  In other news, we finally got Barmy Edward's notes on the Rapid Fire Plasma Weapon, it was worth the wait - he managed to reduce the energy load by 10% and heat load by almost 20!  In any case, the assembly line is almost up and running - we should start selling it within a couple of weeks."`
+			`	"On to more current matters.  We've got a nearly production-ready prototype on the <npc> in Alnasl - head over there and see if you can disable her, then report back here."`
 			`	"I'd say take a fleet with you, but have them hold position away from your test battle until you need them."`
 				accept
 	
@@ -1533,11 +1556,11 @@ mission "OS24"
 		conversation
 			`	"Well, what did you think?"`
 			choice
-				`Same as before;  I won't be able to really assess it until I get my hands on it.`
+				`I won't be able to really assess it until I get my hands on it.`
 				`The <npc> wasn't carrying enough of the weapon to really challenge me in the <ship>, but I can see how a Heavy Warship could really benefit from carrying a few of that gun.`
 				`You guys have made another weapon I'll be glad to equip as soon as it's available.`
 			`	"It'll be a month or so until we get production rolling.  You can get your hands on them then."`
-#
+#What if you did assess it?
 mission "OS25b"
 	landing
 	name "Wander"
@@ -1579,11 +1602,11 @@ mission "OS25"
 
 	on offer
 		conversation
-			`	James is oddly at your airlock as you step off the <ship>.  "I happened to be in docking operations when you entered the system," he says, "thought I'd save you the trip to the Gallileo."`
+			`	James is oddly at your airlock as you step off the <ship>.  "I happened to be in docking operations when you entered the system," he says, "thought I'd save you the trip to the Galileo."`
 			`	"I heard a rumour that you were up north - waaay north.  Something with the Hai embassy?"`
 			choice
 
-				`	"Yeah, I helped to establish some diplomatic relations with another species - the rough translation of their name is 'Wanderers'"` 
+				`	"Yeah, I helped to establish some diplomatic relations with another species - the rough translation of their name is 'Wanderers.'"` 
 					goto os25a
 				`	"I don't know what you're talking about."`
 			`	"Really <first>?  My information network is wider than Navy Intelligence.  I know you were up north, even escorting a Hai ambassador, I infer, to meet a new species, since you didn't go back to Earth.  You're sure you're not going to help prepare humanity to defend peace with the best that's available?"`
@@ -1593,7 +1616,7 @@ mission "OS25"
 				`	"Really.  I'm confident that they don't want their outfits in human hands."`
 					decline
 			label os25a
-			`	James ponders a moment before responding, "We should get our hands on some of their technology for study.  600 tons of outfits ought to do - maybe set up an account with them, 250M should be enough to start."`
+			`	James ponders a moment before responding, "We should get our hands on some of their technology for study.  600 tons of outfits ought to do - maybe set up an account with them, 250M should be enough to start. You know, assuming they take them..."`
 				accept
 	on decline
 		set "upwanderer"
@@ -1603,7 +1626,7 @@ mission "OS25"
 		payment -250000000
 	on visit
 		dialog `You require <payment> to pay for Ursa Polaris Station's operating stock.  Return when you have it.`
-#
+#James is one passive-aggressive mother******
 mission "OS26"
 	landing
 	name "Return to <destination>"
@@ -1619,11 +1642,13 @@ mission "OS26"
 			`	Initially the Wanderers hesitate to sell large quantities of their outfits to you, fearing the destruction that would be wrought if they ended up in the wrong hands.  You assure them that like the Hai, your own species has a habit of becoming fractured, and that their outfits would be used only by the forces of peace, or should your species come under great threat from elsewhere.  You briefly explain the history of the Alphas, and that because the threat of them remains, humanity cannot risk the time it would take to retrieve Wanderer outfits in a time of need.`
 			`	Satisfied with your overture of peace and security, you negotiate with the Wanderers, and settle on a variety of outfits to fill your hold with fifty million credits worth of outfits, and open an account with a 200M balance.  You inform them that ships from Ursa Polaris will begin making trips to build a stockpile of outfits near the centre of human space.`
 				accept
+	#How? I want to add another mission chain where you give jump drives. You need to deliver maybe five, as James already snatched some, and then sales would begin. There will be an invisible mission where a dozen or so freighters, with jump drives, are always seen making trips to aliens after sales begin. They will have "npc save," so losing one fails the mission, and triggers another one that requires you to get another drive, and is infinitely repeatable. Until you do so though, slaes will postpone after a week.
+	#Oh well after this wall of text I read the next mission
 	on complete
 		conversation
 			`	The station crew begin unloading the alien outfits the moment you dock.`
 			`	James approaches your dock as your alien cargo is being unloaded.  "That's great that you've got some stuff for our engineers to dismantle, but we're going to need jump drives, and LOTS of cash to get escorts for the trip through the hostile segments of space on the way, if we hope to equip our fleet."`
-			`	"Meet me at the Gallileo with 100 million more credits, so that we can set up a convoy through Pirate or Hai space."`
+			`	"Meet me at the 'Galileo' with 100 million more credits, so that we can set up a convoy through Pirate or Hai space."`
 #
 mission "OS27"
 	name "Acquire Jump Drives"
@@ -1634,7 +1659,7 @@ mission "OS27"
 		has "OS26: done"
 	on offer
 		conversation
-			`	James continues "I'm thinking the pirates are easier to avoid than those Unfettered Hai trackers, so we'll probably send our supply convoys that way.  All the same, we need Jump Drives to get some freighters to and from Wanderer space.  I think three ought to do it.  Bring them back in your cargo hold."`
+			`	James continues "I'm thinking the pirates are easier to avoid than those Unfettered's Trackers, so we'll probably send our supply convoys that way.  All the same, we need Jump Drives to get some freighters to and from Wanderer space.  I think three ought to do it.  Bring them back in your cargo hold."`
 				accept
 	on complete
 		payment -100000000
@@ -1643,14 +1668,14 @@ mission "OS27"
 		set "upwanderer"
 		conversation
 			`	You find James at his usual table, and as usual, he waves you over to join him.  Since the station opening, the ritual has become as expected as his smile.`
-			`	"Well, now the people that need to know the way, we can have a few freighters jump from their escorts in Hatysa into Wanderer space, pick up stock, and return to their escorts before coming back to civilization where, certain people are paid to make sure we're not looked at too closely, and those goods can join our supply network through Ada."`
+			`	"Well, now that the people who need to know the way do, we can have a few freighters jump from their escorts in Hatysa into Wanderer space, pick up stock, and return to their escorts before coming back to civilization, where certain people are paid to make sure we're not looked at too closely, and those goods can join our supply network through Ada."`
 			`	"I assure you that we'll need all of that cash to finish building the escort fleet up, and probably more to keep the feds from looking too closely.  At least for the moment, these outfits aren't going to be publicly available, but you'll be able to upgrade your ships in a couple of weeks, and Ursa Polaris ships will employ them more.  The White Sun Reactor was of particular interest to Malcolm, and he's leading a team on a renewed project."`
 	on visit
 		dialog `You require 3 Jump Drives and 100M credits to continue the Wanderer outfit stocking missions.  Return when you meet these conditions.`
 #
 mission "OS28"
 	name "Ion Beam Testing"
-	description "Meet the Polyarnyy Medved in Alnasl to test Ursa Polaris' latest weapon."
+	description "Meet the 'Polyarnyy Medved' in Alnasl to test Ursa Polaris' latest weapon."
 	source "Ursa Polaris Station"
 	destination "Ursa Polaris Station"
 	waypoint Alnasl
@@ -1666,7 +1691,7 @@ mission "OS28"
 			`	Your usual meeting ritual occurs without change, and James begins, "Our engineers have been working hard, learning all they can about Hai outfits and applying what they're learning to stuff that we know.  They've come up with a new beam weapon that does less damage than a Beam Laser, but is apparently extremely efficient at disabling power systems."`
 			`	He continues, "Personally, I usually like my beams on turrets, but ours only has one beam on the swivel - Ariel said something about the proximity of the two beams causing a Heisenberg feedback blowout of the whole turret assembly."`
 			`	"I'd say take a fleet with you, but have them hold position away from your test battle until you need them."`
-			`	"The normal procedure, please - don't blow anything up, and don't steal the ship"`
+			`	"The normal procedure, please - don't blow anything up, and don't steal the ship."`
 				accept
 	on complete
 		event "ionbeam available" 30
@@ -1674,7 +1699,7 @@ mission "OS28"
 			`	James smiles, as the same old question pops out, "Well, what did you think?"`
 			choice
 				`It's a good thing I had my fleet with me - I couldn't fight around it.  Not a lot of damage, though.`
-				`The <npc> seemed to struggle with the power requirements of however many, and the ionization effect barely dented my beasty power systems, but a large ship with a few turrets could really keep smaller ships from doing a lot of damage to them.`
+				`The <npc> seemed to struggle with the power requirements of the many beams, and the ionization effect barely dented my beasty power systems, but a large ship with a few turrets could really keep smaller ships from doing a lot of damage to them.`
 				`You guys have made another weapon I'll be glad to equip as soon as it's available.`
 			`	"It'll be a month or so until we get production rolling.  You can get your hands on them then."`
 
@@ -1684,7 +1709,7 @@ mission "OS28"
 		system Alnasl
 		ship "Corvette (IB)" "Polyarnyy Medved"
 
-#
+#No response to feedback? Again?
 mission "OS29"
 	landing
 	name "Investigate missing ships"
@@ -1701,8 +1726,8 @@ mission "OS29"
 				has "event: hip: available"
 	on offer
 		conversation
-			`	As you maneouvered the <ship> into docking position, you saw a bright flash reflected off ships in the vicinity.  Whatever it was, happened on the other side of the station, wasn't a normal pirate ship exploding.`
-			`	You race to docking operations, where you're stopped at the door and told James is apprised of the situation, and waiting for you at the Gallileo.`
+			`	As you maneuvered the <ship> into docking position, you saw a bright flash reflecting off ships in the vicinity.  Whatever it was happened on the other side of the station, and it wasn't a normal pirate ship exploding.`
+			`	You race to docking operations, where you're stopped at the door and told James is apprised of the situation, and waiting for you at the 'Galileo.'`
 			`	When you discover James at his usual table, and he is not wearing his usual smile but a worried scowl, you know something bad has happened.  Malcolm is sitting with him.`
 			`	"A couple of our ships were testing a new jump drive to Holeb, but have not reported back."`
 			`	"Can you visit the system and find out what happened?"`
@@ -1718,20 +1743,20 @@ mission "OS29"
 
 	on complete
 		conversation
-			`	After you dock, you rush to the docking gantry for the Albino Bruin, where the three crew are debarking while a work crew is boarding.  You walk with the crew back to the Gallileo to meet with James.`
-			`	Albino Bruin's crew indicates that there was a flash of light and a powerful explosion as they were initiating their jump in Wei.  When they arrived in Holeb, they were disabled, their radio and half of their other systems were fried, and the White Kodiak was not visible.`
+			`	After you dock, you rush to the docking gantry for the Albino Bruin, where the three crew are disembarking while a work crew is boarding.  You walk with the crew back to the 'Galileo' to meet with James.`
+			`	Albino Bruin's crew indicates that there was a flash of light and a powerful explosion as they were initiating their jump in Wei.  When they arrived in Holeb, they were disabled, their radio and half of their other systems were fried, and the 'White Kodiak' was not visible.`
 			`	James thanks the Albino Bruin crew, and instructs them to get to medical for a once-over.`
 			`	Malcolm, who has been pale and silent until now, speaks up, "I'd like to see what sensor data our crew can retrieve from the Albino Bruin, but it sounds like we may not be able to get the Polar Core to make unlinked hyperspace jumps."`
 			choice
 				`	"Polar Core?"`
 			`	Malcolm seems almost surprised you hand't heard about it.  "We've managed to create and contain some dark matter.  Artificial gravity systems and our Inertial Dampers were key components, but the last piece of the puzzle came in the White Sun Reactor."`
-			`	He continues, "It's enormous" he boasts, "We have to land most ships we're putting one into on Hope to move all the other outfits around so that there's room for it.`
+			`	"It's enormous," he boasts. "We have to land most ships we're putting one into on Hope to move all the other outfits around so that there's room for it.`
 			`	Besides getting it to generate lots of power and even store some of it while generating next to no heat, we've managed to get it to do a few other tricks.  For starters, we got it to move the ship - not much, but a little nudge, and it doesn't take up engine capacity.  Then we got it to act like a navigational deflector, increasing the ship's maximum speed.  We even got it to make hyperspace jumps with a little speed along links, but you've seen the effects of our latest attempt to make it jump without a link.`
 			choice
 				`	"Sounds amazing - when can I get my hands on one?"`
-			`	Malcolm quirks his eyebrow, "There are risks.  The containment field must be harmonized to the ship's defensive shields, which adds some strength to them but," he pauses to look at James "the containment field is dependent on harmonic resonance from the the ship's defensive shields, and when they fail, the dark matter containment field becomes highly unstable, and the hull begins experiencing catastrophic stresses.  It happens extremely quickly - we lost a Mule in less than two seconds, when a pirate Leviathan jumped in on an early shipboard test.  I think I would have liked to have seen the look on that pirate's face when the hull collapsed faster than he could take his finger off the heavy laser firing button."`
+			`	Malcolm quirks his eyebrow, "There are risks.  The dark matter containment field must be harmonized to the ship's defensive shields, which adds some strength to them but," he pauses to look at James, "when they fail, the field becomes highly unstable, and the hull begins experiencing catastrophic stresses.  It happens extremely quickly - we lost a Mule in less than two seconds, when a pirate Leviathan jumped in on an early shipboard test.  I think I would have liked to have seen the look on that pirate captain's face when the hull collapsed faster than he could order off of the firing button. We couldn't, though, because we blew him into the next dimension."`
 			`	James points out, "If we don't locate the White Kodiak, it makes 29 souls lost on this project, Malcolm.  I'm glad it's finished."  Malcolm winces a little.  You suspect he wanted to tinker with the Polar Core some more to see what else he could get it to do.  "On the flip side of the coin," James continues, "if a boarding mission goes south, and you are outnumbered, you could always take cover around it on the defense - attackers aren't likely to take risks with firearms or explosives when you tell them what will happen if the core breaches."`
-			`	Malcolm snickers a little "I guess when you have nothing left to lose, it's an option.  Still want one, Captain <last>?`
+			`	Malcolm snickers a little. "I guess when you have nothing left to lose, it's an option.  Still want one, Captain <last>?`
 			choice
 				`	"I'd at least like to check one out."`
 				`	"Yes.  Now."`
@@ -1742,9 +1767,9 @@ mission "OS30"
 	source "Ursa Polaris Station"
 	destination "Ursa Polaris Station"
 	name "Look for the White Kodiak"
-	description "Escort the <npc> to see if there's anything left of the White Kodiak in Mirzam"
-	passengers "E.V.A. Salvage Crew Members" 6
-	blocked "You require space for <passengers>"
+	description "Escort the <npc> to see if there's anything left of the White Kodiak in Mirzam."
+	passengers 6
+	blocked "You require space for the EVA Salvage and Rescue Crew."
 	waypoint Mirzam
 	to offer
 		has "OS29: done"
@@ -1753,7 +1778,7 @@ mission "OS30"
 		conversation
 			`	James says, "I'd like for you to escort the <npc> to see if there's anything left of the White Kodiak in Mirzam, and take all the sensor data you can."`
 			`	Malcolm speaks up again, "I don't think you'll find anything, but we've never created a wormhole before, so I'm hopeful.  I'm going to see if there's any data from the Albino Bruin," he stands up, shakes your hand and leaves.`
-			`	"I'll let the EVA salvage crew over in the employee lounge know to board the <ship> - they know where to look for any records of what happened.  Board the White Kodiak, if there's anything left of it, then return here with any survivors, your sensor logs, and anything the EVA crew manages to salvage."`
+			`	"I'll let the EVA crew over in the employee lounge know to board the <ship> - they know where to look for any records of what happened.  Board the White Kodiak, if there's anything left of it, then return here with any survivors, your sensor logs, and anything they manages to salvage."`
 			`	James says, "I'll probably be in docking operations when you get back - I'll see you when you step out of the airlock."`
 				accept
 	npc assist
@@ -1775,9 +1800,9 @@ mission "OS30"
 	on complete
 		conversation
 			`	The lone surviving crew of the White Kodiak perishes before you even made it to the wormhole en-route to <planet>.`
-			`	James' smile shrinks as your airlock opens and he sees your slumped shoulders and only the salvage crew behind you.  The salvage crew brief him on their recovery efforts before proceeding to the lab with the data recorders for analysis.  James calls after them "I need a full report from each of you by midnight!" before turning to you.`
-			`	"I should have stopped Malcolm's tinkering with that micro-singularity earlier, but he'd made so much progress, and he -is- a partner..." he trails off.  "Let's go spill a drink for the crew of the White Kodiak."`
-			`	The two of you head to The Gallileo and James tells you the names, and a little bit about each of the crew that were lost during the development of the Polar Core while the two of you consume, and spill, more than the required share.`
+			`	James' smile shrinks as your airlock opens and he sees your slumped shoulders and only the salvage crew behind you.  The salvage crew brief him on their recovery efforts before proceeding to the lab with the data recorders for analysis.  "I need a full report from each of you by midnight!" he calls before turning to you.`
+			`	"I should have stopped Malcolm's tinkering with that micro-singularity earlier, but he'd made so much progress, and he IS a partner..." he trails off.  "Let's go spill a drink for the crew of the White Kodiak."`
+			`	The two of you head to The 'Galileo' and James tells you the names, and a little bit about each of the crew that were lost during the development of the Polar Core while the two of you consume, and spill, more than the required share.`
 
 
 #
@@ -1807,7 +1832,7 @@ mission "OSC2"
 	source "Ursa Polaris Station"
 	destination Hephaestus
 	passengers 1
-	name "Bid in a blind auction"
+	name "Bid in a Blind Auction"
 	description "Transport James to <destination> to meet his old friend by <date>."
 	deadline 8
 	to offer
@@ -1817,14 +1842,15 @@ mission "OSC2"
 		conversation
 			`	You find James at his usual table next to his old ship.  As you approach, he speaks.`
 			`	"An old friend has come back from the dead, so to speak. She was like you in a lot of ways.  She went exploring beyond human space - I'm not really familiar with all the details of how - and one day she stopped coming back to send me messages.  For a while, I just assumed that she was way out there, beyond contact, but as years passed, then decades, I came to believe that she met an unfortunate end."`
-			`	He sounds shaken, "Apparently, not so.  She's back.  On Hephaestus, at the moment"`
+			`	He sounds shaken, "Apparently, not so.  She's back.  On Hephaestus, at the moment."`
 			`	"I need you to take me to Hephaestus.  She's holding a blind black market auction for something she's brought back.  I need to see her."`
 			`	"She sent an invitation to Ursa Polaris, and every other smaller corporation and a few private collectors - her sense of humour sees fit to hold it on the headquarters planet of the only outfit manufacturing corporation she made a point of not inviting.  No doubt she knows that I'm a major shareholder here at Ursa Polaris, which is why I'm worried."`
 			`	"Whatever she's brought back is good, and has the potential to eventually make whoever gets their hands on it bigger than the Syndicate.  We need to make sure we get it."`
 			`	"She could have contacted me first." he mutters angrily.  He turns back to you, "I'm anxious to see her, hear her adventures, catch up - it's been so long, I hope I have time left to hear them all!" he laughs a little.`
-			`	"It's Fifty Mil' to walk through the door - are you ready?"`
+			`	"It's fifty mil' to walk through the door - are you ready?"`
 			choice
-				`	"As ready as I'll ever be"`
+				`	"As ready as I'll ever be."`
+				`	Dude, I'm rich, and you've been leeching for forever. I don't even care at this point.
 				`	"I'll get us through the door so you can talk to her - no promises beyond that."`
 				`	"I can't afford another billion dollar plus expense, right now.  Maybe you can take the Trudeau?"`
 					decline
@@ -1834,18 +1860,18 @@ mission "OSC2"
 		payment 50000000
 	on complete
 		conversation
-			`	Upon arriving at Hephaestus, you locate the rendez-vous, and are escorted with James to a transport vehicle.  You follow James in, and after a short while, stop in front of an art gallery where the transport door opens.  James leads, and motions for you to follow, walking straight up to the gallery doorway.`
+			`	Upon arriving at Hephaestus, you locate the rendezvous, and are escorted with James to a transport vehicle.  You follow James in, and after a short while, stop in front of an art gallery where the transport door opens.  James leads, and motions for you to follow, walking straight up to the gallery doorway.`
 			`	Once inside, you are quickly met by a woman, apparently in her 30s, and James' jaw drops as a smile as wide as you're used to seeing on him widens across her face.`
 			`	She rushes to him, throwing her arms around him, exclaiming "Jimmy!"  James is turning pale, as you quickly look around for a chair.  You don't find one before he collapses, and supported by the woman, falls gently but quickly to sitting on the floor.`
-			`	A couple of gallery staff quickly lift James, and after instructions "Take good care of him" from the woman, they help him to his feet and through a nearby door.`
-			`	The woman turns to you, smiles and extends her hand, "Smaranda, pleased to meet you."`
-			`	"<first>, and likewise" you respond, and grasp her hand.`
+			`	A couple of gallery staff quickly lift James, and after instructions "Take good care of him," from the woman, they help him to his feet and through a nearby door.`
+			`	The woman turns to you, smiles, and extends her hand, "Smaranda, pleased to meet you."`
+			`	"<first>, and likewise," you respond, and grasp her hand.`
 
 mission "OSC3"
 	landing
 	source Hephaestus
 	destination Crossroads
-	name "Gather with finalists"
+	name "Gather With Finalists"
 	passengers 1
 	deadline 3
 	description "Arrive safely with top five bidders, who are gathering on <planet> for second bidding by <date>."
@@ -1856,7 +1882,7 @@ mission "OSC3"
 		conversation
 			`	"What's Ursa Polaris' bid on it?" she asks.`
 			`	"Bid on what?" you ask.`
-			`	An amused smile creeps across her face, "That" she points across an apparently empty gallery.`
+			`	An amused smile creeps across her face, "That." She points across an apparently empty gallery.`
 			`	You begin to walk slowly across the room when, as you approach the middle of it, you notice your lead hand disappear, as though you had put it behind a curtain.  You step back (and your hand reappears), initially out of surprise and shock, then of steady realization.  You return to her side.`
 			`	She continues, "The unit is sold as is, and with an alien data module which contains schematics, albeit in their data format - which I'll assist the winning bidder to interface with modern human technology.  Your bid?"`
 			choice
@@ -1875,16 +1901,16 @@ mission "OSC3"
 			`	Smaranda smiles sweetly and says, "Thank you, thumbprint here," extending a device.  You comply, and the wire transfer wheels begin to turn.  She turns and walks through the door which James was taken.`
 			`	James emerges a short time later, smiling and chatting with Smaranda on his arm.`
 			label os3z
-			`	She politely escorts the two of you to the exit, gives James a peck on the cheek, smiles and says "I expect to have all the secondary bids in a couple of days.  I have contracted a reliable secure courier to deliver the goods to the headquarters of the winning bidder."  She turns to James, "I'd like to visit the station you built when this business is done, if that's alright."`
-			`	James nods, exclaiming "Of course!  See you soon!" and the two of you head back to the ship.`
+			`	She politely escorts the two of you to the exit, gives James a peck on the cheek, smiles, and says "I expect to have all the secondary bids in a couple of days.  I have contracted a reliable and secure courier to deliver the goods to the headquarters of the winning bidder."  She turns to James, "I'd like to visit the station you built when this business is done, if that's alright."`
+			`	James nods, exclaiming, "Of course!  See you soon!" and the two of you head back to the ship.`
 			`	James explains; "Our next stop is Lodestone; we've only a few days to meet the secondary bid deadline."`
 				accept
 	on decline
 		conversation
 			`	She smiles sweetly and says, "Fair enough.  I'd better check on James.  It was nice to meet you!"  She turns and walks through the door which James was taken.`
 			`	James emerges a short time later.  "Let's go.  She told me about your choice to not bid, who the current highest current bidder, and who was left.  I have a pretty good idea of who's going to win it, but she told me she'd let me know for sure once all the bids were in and delivery was made.  Maybe we can offer our assistance, and get our hands in the pie that way."`
-			`	Smaranda emerges a moment later.  She politely escorts the two of you to the exit, gives James a peck on the cheek, smiles and says "I expect to have all the secondary bids in a couple of days.  I have contracted a reliable secure courier to deliver the goods to the headquarters of the winning bidder."  She turns to James, "I'd like to visit the station you built when this business is done, if that's alright."`
-			`	James nods, exclaiming "Of course!  See you soon!" and the two of you head back to the ship.`
+			`	Smaranda emerges a moment later.  She politely escorts the two of you to the exit, gives James a peck on the cheek, smiles, and says "I expect to have all the secondary bids in a couple of days.  I have contracted a reliable secure courier to deliver the goods to the headquarters of the winning bidder."  She turns to James, "I'd like to visit the station you built when this business is done, if that's alright."`
+			`	James nods, exclaiming, "Of course!  See you soon!" and the two of you head back to the ship.`
 		set "upcloak foot in the door"
 		clear "active bidder"
 	on accept
@@ -1897,8 +1923,8 @@ mission "OSC3"
 		personality uninterested staying waiting
 		government " Republic "
 		ship "Scout" "AdVenture"
-		dialog `Stone cold, James turns to you from an observation seat on the bridge, "Let's go to <planet>."`
-
+		dialog `Stone cold, James turns to you from an observation seat on the bridge. "Let's go to <planet>." He says nothing else, and walks away.`
+#OMIGODWHY
 mission "OSCauction"
 	name "Final Bid"
 	description "Jump to Algol, Hamal, Sheratan, Alpheratz, or Ankaa - AND LAND THERE to covertly make your final bid of 200, 300, 400, 600, or 800M credits respectively."
@@ -1970,7 +1996,7 @@ mission "OSC4"
 
 	on complete
 		conversation
-			`As you dock, James says "Thanks for the lift.  We'll be in touch."`
+			`As you dock, James says,"Thanks for the lift.  We'll be in touch."`
 
 mission "OSC5b"#should the player decline OSC4
 	landing
@@ -2010,12 +2036,13 @@ mission "OSC4b"
 		event "UPCloakCodeCrack" 92
 		conversation
 			`	As you step out of the airlock of the <ship> docked at <planet>, you're rushed by an armed courier with a thumbprint scanner.  You authorize the transfer of their cargo to Ursa Polaris Ltd..`
-			`	After completing docking procedures, you set out to find James at The Gallileo.  He is not at his usual table, but one closer to the atrium windows, with Smaranda.`
+			`	After completing docking procedures, you set out to find James at The 'Galileo.'  He is not at his usual table, but one closer to the atrium windows, with Smaranda.`
 			`	As you approach, James looks up and says "Hello <first>, we were just catching up.  I trust the courier found and got you to authorize his cargo transfer?"`
 			`	You nod, and he continues, "This one is going to take some time.  For the moment, nothing we use can detect what we're actually looking at.  'Sam' here had the data device, but our systems can barely make heads or tails of the data now that they've jerry-rigged a connection with her help.  We'll keep working on it, and let you know when there's some progress."`
 				decline
 
-#
+#Should this be invisible?
+#Iseewhatyoudidthereyou,personwhocantevenEngrish
 mission "OSC6"
 	landing
 	invisible
@@ -2025,7 +2052,7 @@ mission "OSC6"
 		random < 40
 	on offer
 		event "UPStock Cloaking Device available"
-		dialog `Message from James: 'Big news!  Come to Ursa Polaris Station at your earliest convenience'`
+		dialog `Message from James: 'Really big news!  Come to Ursa Polaris Station at your earliest convenience!'`
 	on decline
 		clear "OSC6: offered"
 	on complete
