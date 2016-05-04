@@ -222,7 +222,7 @@ mission "OS4"
 		conversation
 			`	James is his seemingly usual happy self, sitting at the bar with a shiny bottle of Prag'ga wine and a fine piece of glassware.  You greet him; he stands up and offers you a drink which you graciously accept.  The bartender arrives with another glass eerily quickly after being signalled by James.  "Well, we have a crack group of engineers already working aboard Honest Abe.  I helped them take some stuff off of my own ship, mostly stuff that was mothballed because the business folk didn't want to invest in making them more viable, but there was some other stuff in there, too.  It's all aboard Honest Abe now, either being reverse engineered, improved, or loaded up for use.  The Marius was a sweet ship, though… To her!"  You meet his toast.  "Honest Abe is a good ship, and better serves our purposes," he continues, "which I imagine you're beginning to question, since we've talked about opening a top-tier outfitter, and only begun spening on recruiting weapons engineers.  That's only partly true; we've simultaneously recruited the talent required to assemble an asteroid outpost."`
 			choice
-				`"Go on…"`
+				`"Go on..."`
 				`"You *are* crazy!  If this were viable, it'd already have been done.  This project is going to cost BILLIONS!  I'm out."`
 					decline
 			`	James continues, "After you and Honest Abe get the specialized mining and construction equipment from <planet>, we'll head to Wei, where we'll set her up near the equator on Hope to serve as both our R&D and our project management center, at least for now. As you may have guessed, we are planning to agglomerate some asteroids in the empty systems around Wei, and then mine and build them into a space station with the equipment you're about to retrieve from our contact.  We'll eventually receive Republic subsidy to monitor Hope, which will help offset the tariffs we'll incur when the outfitter is up and running.  Honest Abe will continue to serve as the R&D laboratory, but after a more secure management building is set up on Hope, she'll do it up there," he says, pointing up at the endless-looking sky. "For an R&D lab, nothing says safety and secrecy like mobility."`
@@ -540,6 +540,7 @@ mission "AbeInOrb"
 		has "OS12: done"
 	on offer
 		event "Autumn on Hope"
+		fail
 	npc evade save
 		personality uninterested forebearing staying
 		government "Ursa Polaris"
@@ -568,7 +569,7 @@ mission "OS13"
 		has "OS12: done"
 	on offer
 		conversation
-			`	The <payment> withdrawal takes place after authorization, and you're directed to a landing pad next to a row of a half dozen waiting Argosys loaded with your purchase.`
+			`	The  20 million credit withdrawal takes place after authorization, and you're directed to a landing pad next to a row of a half dozen waiting Argosys loaded with your purchase.`
 			` The captains all signal their readiness for departure, when the Port Authority sends out a broadcast to departing vessels: Pirate marauders entering the system - be careful!`
 				accept
 	on complete
@@ -873,6 +874,7 @@ mission "OS18Hb"
 		has "event: syndicate tech available"
 	on offer
 		event "UPStock Ionic Afterburner available"
+		fail
 #"manifest of" huh
 mission "OS19H"
 	source "Ursa Polaris Station"
@@ -1064,6 +1066,7 @@ mission "OS18Vc"
 		has "event: deep sky tech available"
 	on offer
 		event "UPStock Deep Sky available"
+		fail
 
 mission "OS19V"
 	source "Ursa Polaris Station"
@@ -1187,6 +1190,7 @@ mission "OS18Wb"
 		has "event: plasma turret available"
 	on offer
 		event "UPStock Plasma Turret available"
+		fail
 
 mission "OS18Wc"
 	invisible
@@ -1197,6 +1201,7 @@ mission "OS18Wc"
 		has "event: flamethrower available"
 	on offer
 		event "UPStock Flamethrower available"
+		fail
 
 mission "OS18Wd"
 	invisible
@@ -1207,6 +1212,7 @@ mission "OS18Wd"
 		has "event: stack core for sale"
 	on offer
 		event "UPStock Stack Core available"
+		fail
 
 mission "OS19W"
 	source "Ursa Polaris Station"
@@ -1342,6 +1348,7 @@ mission "UPSalary"
 		fleet "Small Southern Pirates"
 		system Betelgeuse
 
+		fail
 #
 mission "OS20Nc"
 	invisible
@@ -1526,6 +1533,7 @@ mission "OS23b"
 		has "OS22: done"
 	on offer
 		event "rfp: available" 14
+		fail
 
 #
 mission "OS24"
