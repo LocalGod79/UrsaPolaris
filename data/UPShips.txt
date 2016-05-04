@@ -258,8 +258,6 @@ ship "Asteroidship"
 		"mass" 100
 		"drag" 17
 		"heat dissipation" .1
-		"required crew" 0
-		"bunks" 0
 		"thrust" 10
 		"turn" 100
 		"thrusting energy" 1
@@ -282,8 +280,6 @@ ship "Broken Mule"
 		"mass" 100
 		"drag" 17
 		"heat dissipation" .1
-		"required crew" 0
-		"bunks" 0
 		"thrust" 10
 		"turn" 100
 		"thrusting energy" 1
