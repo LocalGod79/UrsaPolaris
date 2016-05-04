@@ -265,6 +265,7 @@ ship "Asteroidship"
 		"energy generation" 3
 		"fuel capacity" 300
 		"outfit capacity" 20
+		"automaton" 1
 	outfits
 		Hyperdrive
 	explode "small explosion" 25
@@ -284,6 +285,7 @@ ship "Broken Mule"
 		"thrusting energy" 1
 		"turning energy" 1
 		"energy generation" 3
+		"automaton" 1
 	explode "small explosion" 25
 	explode "medium explosion" 35
 	explode "big explosion" 45
@@ -495,12 +497,6 @@ government "Ursa Polaris"
 	"bribe" .1
 	"fine" 0
 	"friendly hail" "friendly civilian"
-
-government " Ursa Polaris "
-	swizzle 3
-	"player reputation" -1000
-	"bribe" .1
-	"fine" 0
 
 government " Pirate "
 	swizzle 6

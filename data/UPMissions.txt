@@ -9,7 +9,6 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 
-
 mission "OS1"
 	name "Stranded Ship"
 	description "Get James onto the <npc>, which is stranded in the Danoa system, and escort it safely to <destination>."
@@ -58,7 +57,6 @@ mission "OS1"
 			`	James is grinning ear to ear when he steps off the <npc>. "You have set in motion great things today, my boy!" he says, as he hands you <payment>. "Meet me in the bar if you want to hear a tale or two."`
 	on visit
 		dialog "You have reached <planet>, but you left James in the <npc> behind! Better depart and wait for him to arrive in this star system."
-
 
 
 mission "OS2"
@@ -178,7 +176,6 @@ mission "OS3"
 		dialog `You must have <payment> in order to recruit more engineers, and James in the <npc> must be in the system to complete this mission.`
 
 
-
 mission "up without player"
 	invisible
 	landing
@@ -201,10 +198,7 @@ mission "up without player"
 		event "rfp: available" 675
 		event "hip: available" 735
 		event "ionbeam available" 795
-
-	to fail
-		has "event: ionbeam available"
-
+		fail
 
 
 mission "OS4"
@@ -220,7 +214,7 @@ mission "OS4"
 		ship "Mule (UP)" "Honest Abe"
 	on offer
 		conversation
-			`	James is his seemingly usual happy self, sitting at the bar with a shiny bottle of Prag'ga wine and a fine piece of glassware.  You greet him; he stands up and offers you a drink which you graciously accept.  The bartender arrives with another glass eerily quickly after being signalled by James.  "Well, we have a crack group of engineers already working aboard Honest Abe.  I helped them take some stuff off of my own ship, mostly stuff that was mothballed because the business folk didn't want to invest in making them more viable, but there was some other stuff in there, too.  It's all aboard Honest Abe now, either being reverse engineered, improved, or loaded up for use.  The Marius was a sweet ship, though… To her!"  You meet his toast.  "Honest Abe is a good ship, and better serves our purposes," he continues, "which I imagine you're beginning to question, since we've talked about opening a top-tier outfitter, and only begun spening on recruiting weapons engineers.  That's only partly true; we've simultaneously recruited the talent required to assemble an asteroid outpost."`
+			`	James is his seemingly usual happy self, sitting at the bar with a shiny bottle of Prag'ga wine and a fine piece of glassware.  You greet him; he stands up and offers you a drink which you graciously accept.  The bartender arrives with another glass eerily quickly after being signalled by James.  "Well, we have a crack group of engineers already working aboard Honest Abe.  I helped them take some stuff off of my own ship, mostly stuff that was mothballed because the business folk didn't want to invest in making them more viable, but there was some other stuff in there, too.  It's all aboard Honest Abe now, either being reverse engineered, improved, or loaded up for use.  The Marius was a sweet ship, though... To her!"  You meet his toast.  "Honest Abe is a good ship, and better serves our purposes," he continues, "which I imagine you're beginning to question, since we've talked about opening a top-tier outfitter, and only begun spening on recruiting weapons engineers.  That's only partly true; we've simultaneously recruited the talent required to assemble an asteroid outpost."`
 			choice
 				`"Go on..."`
 				`"You *are* crazy!  If this were viable, it'd already have been done.  This project is going to cost BILLIONS!  I'm out."`
@@ -546,7 +540,6 @@ mission "AbeInOrb"
 		government "Ursa Polaris"
 		ship "Mule (IP)" "Honest Abe"
 		system Wei
-
 	to fail
 		has "event: Ursa Polaris Complete"
 
@@ -569,7 +562,7 @@ mission "OS13"
 		has "OS12: done"
 	on offer
 		conversation
-			`	The  20 million credit withdrawal takes place after authorization, and you're directed to a landing pad next to a row of a half dozen waiting Argosys loaded with your purchase.`
+			`	The 20 million credit withdrawal takes place after authorization, and you're directed to a landing pad next to a row of a half dozen waiting Argosys loaded with your purchase.`
 			` The captains all signal their readiness for departure, when the Port Authority sends out a broadcast to departing vessels: Pirate marauders entering the system - be careful!`
 				accept
 	on complete
@@ -864,6 +857,7 @@ mission "OS18H"
 	on visit
 		dialog
 			`You have left some of the fleet behind!  You need to depart and wait for them to arrive in the system.`
+
 #
 mission "OS18Hb"
 	invisible
@@ -875,7 +869,8 @@ mission "OS18Hb"
 	on offer
 		event "UPStock Ionic Afterburner available"
 		fail
-#"manifest of" huh
+
+
 mission "OS19H"
 	source "Ursa Polaris Station"
 	destination Hippocrates
@@ -897,6 +892,7 @@ mission "OS19H"
 	on complete
 		dialog
 			`	Ms. Eisbar departs from the <ship> shortly after landing "I'll be back soon," she says.`
+
 #
 mission "OS20H"
 	landing
@@ -1056,6 +1052,7 @@ mission "OS18V"
 	on visit
 		dialog
 			`You have left some of the fleet behind!  You need to depart and wait for them to arrive in the system.`
+
 #
 mission "OS18Vc"
 	invisible
@@ -1342,12 +1339,6 @@ mission "UPSalary"
 		has "OS20: done"
 	on offer
 		"salary: Ursa Polaris Ltd." = 100
-	npc board
-		personality fleeing waiting
-		government " Pirate "
-		fleet "Small Southern Pirates"
-		system Betelgeuse
-
 		fail
 #
 mission "OS20Nc"
