@@ -8,15 +8,11 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-Release date: 3May2016
-
 special thanks go out to:
-Michael Zahniser and team; For creating the launchpad, and providing work to
-	derive from.
+Michael Zahniser and team; For creating the launchpad, and providing work to derive from.
 Nathan Flaum; for the first outfitter sprites, and helping me believe others
 	would pick up my shortfalls
-Michael Feather; Contributions to flavour text, balance/content consultation
-	and testing
+Michael Feather; Contributions to flavour text, balance/content consultation and testing
 Yuri Gobbi; Sound and content testing
 Jim Galbraith; content testing
 Maximilian Korber; images…lots, and lots of images…
@@ -47,7 +43,6 @@ Files:
  images/outfit/ionbeamoutfit*‡
  images/outfit/ionbeamturret*‡
  images/outfit/polarcore*
- images/outfit/inertialdamper*
 Copyright: Maximilian Korber
 License: CC-BY-SA-4.0
 

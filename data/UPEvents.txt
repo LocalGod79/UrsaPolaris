@@ -16,6 +16,8 @@ event "Hope Springs Eternal"
 		spaceport	`	"The spaceport here is little more than a few ships parked on a glacier, with one (near the middle) advertising bar services in a cargo hold, which they've dubbed "Fontes Aeternum."  Everyone inside is still wearing thermal gear, as the hold is not very well heated and non-alcoholic beverages have a habit of freezing if left unattended.  Otherwise, high top tables with stools and a few empty cups litter the hold, while the bar itself appears little more than a few vending machines with menu screens.  The venue seems to be generally serving more as a rendez-vous than a social club, with patrons generally leaving upon someone else's arrival (with them.)  Of course, if you're short on fuel, a few captains will pitch in and gets you topped up to get you where you're going.`
 		"required reputation" -1000
 
+
+
 event "Agglomerate1"
 	system Wei
 		object
@@ -57,6 +59,8 @@ event "Agglomerate1"
 		attributes uninhabited
 		description `"Ursa Polaris Station" is little more than a collection of asteroids at the moment, and you've just parked on it.  With a little luck, this will be an outfitter Mecca one day…`
 
+
+
 event "Agglomerate2"
 
 	system Wei
@@ -95,6 +99,8 @@ event "Agglomerate2"
 				sprite planet/rock14
 				distance 492
 				period 26.4015
+
+
 
 event "Agglomerate3"
 	system Wei
@@ -140,9 +146,11 @@ event "Agglomerate3"
 	planet Hope
 		spaceport clear
 
+
 event "Autumn on Hope"
 	planet Hope
 		spaceport clear
+
 
 event "Agglomerate4"
 	system Wei
@@ -187,6 +195,8 @@ event "Agglomerate4"
 		description `Ursa Polaris Station is a work in progress, agglomerating mineral rich or very large metallic asteroids and simultaneously mining and building them into a space station.  The dock is still unpressurized, and leads into a nearly completely hollowed and reinforced asteroid, currently serving as an equipment warehouse.  There are workers in EVA suits and robots busily constructing the structures that will hold the station together, and moving said equipment around.`
 		"required reputation" -1000
 
+
+
 event "Agglomerate5"
 	system Wei
 		object
@@ -230,6 +240,8 @@ event "Agglomerate5"
 		description `Ursa Polaris Station appears to be nearing completion from the outside and it was recently pressurized - a significant achievement and milestone, but it remains grossly incomplete.  You see that nearly all the workers are equipped with EVA suits, and propulsion units, even if most of them have their helmets open, leading you to believe that decompressions might occur periodically.`
 		spaceport `The spaceport is barely functional, with only one dock actually refuelling anybody.`
 		"required reputation" -1000
+
+
 
 event "Ursa Polaris Complete"
 	system Wei
@@ -304,6 +316,8 @@ event "Ursa Polaris Complete"
 		"Modified Blaster"
 		"Modified Blaster Turret"
 
+
+
 event "UPS Syndicate Outfits"
 	outfitter "UPSStock"
 		"RT-I Radiothermal"
@@ -331,7 +345,8 @@ event "UPS Syndicate Outfits"
 		"D67-TM Shield Generator"
 		"Security Station"
 		"Scram Drive"
-		"NDR-114 Android"
+
+
 
 event "UPS Lovelace Outfits"
 	outfitter "UPSStock"
@@ -349,23 +364,8 @@ event "UPS Lovelace Outfits"
 		"Scram Drive"
 		"A120 Atomic Thruster"
 		"A125 Atomic Steering"
-		"NDR-114 Android"
 
-event "NDR-114 Android unlock"
-	outfitter "UPStock"
-		"NDR-114 Android"
 
-mission "Android Unlock"
-	invisible
-	landing
-	destination "Ursa Polaris Station"
-	to offer
-		or
-			has "event: UPS Syndicate Outfits"
-			has "event: UPS Lovelace Outfits"
-	on offer
-		event "NDR-114 Android unlock"
-		fail
 
 event "UPS Deep Sky Outfits"
 	outfitter "UPSStock"
@@ -400,6 +400,8 @@ event "UPS Deep Sky Outfits"
 		"AR120 Reverse Thruster"
 		"Dwarf Core"
 		"Catalytic Ramscoop"
+
+
 
 event "UPS Kraz and Delta V Outfits"
 	outfitter "UPSStock"
@@ -643,21 +645,3 @@ event "WeMiExWa"
 		fleet "Large Northern Pirates" 2000
 		fleet "UPSRnD" 900
 	planet WeiMirzamExpressWay
-
-mission "0.9.0 outfits"
-	invisible
-	landing
-	destination "Ursa Polaris Station"
-	to offer
-		has "event: Ursa Polaris Complete"
-	on offer
-		event "basic 0.9.0 outfits"
-		fail
-
-event "basic 0.9.0 outfits"
-	outfitter "UPStock"
-		"X1050 Ion Engines"
-		"KP-6 Photovoltaic Panel"
-		"KP-6 Photovoltaic Array"
-		"Inertial Damper"
-		"Mass Expansion (Small)"

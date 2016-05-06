@@ -55,13 +55,12 @@ outfit "Hyper Ionized Plasma Cannon"
 		"firing force" 20
 		"shield damage" 900
 		"hull damage" 350
-		"firing heat" 1800
+		"firing heat" 2400
 		"hit force" 240
 		"firing fuel" 3
-		"heat damage" 900
-		"disruption damage" 10
+		"heat damage" 1800
 		"submunition" "Deplasmad Ion" 5
-	description "Hyper Ionized Plasma, or H.I.P., Cannons pack a wallop for captains at both ends of the barrel.  Designed to be capital ships' medium range heavy artillery, this devastating device hyper-ionizes, super heats, and accelerates globs of hyperdrive fuel with horrific effects.  Ships struck by the primary projectile suffer crippling heat load, massive damage, and interruption to their shielding and power systems.  Things do not get terribly better for the captain firing these doom cannons: set aside tonnage to generate lots of power, cooling, and fuel…this much firepower comes with ancillary costs."
+	description "Hyper Ionized Plasma, or H.I.P., Cannons pack a wallop for captains at both ends of the barrel.  Designed to be capital ships' medium range heavy artillery, this devastating device hyper-ionizes, super heats, and accelerates globs of hyperdrive fuel with horrific effects.  Ships struck by the primary projectile suffer crippling heat load and massive damage.  Things do not get terribly better for the captain firing these doom cannons: set aside tonnage to generate lots of power, cooling, and fuel…this much firepower comes with ancillary costs."
 
 outfit "Deplasmad Ion"
 	weapon
@@ -157,7 +156,7 @@ outfit "Mass Driver"
 		"velocity" 19
 		"lifetime" 5
 		"acceleration" -2
-		"reload" 90
+		"reload" 180
 		"firing energy" 490
 		"firing heat" 2000
 		"firing fuel" 10
@@ -166,7 +165,6 @@ outfit "Mass Driver"
 		"heat damage" 5000
 		"hit force" 5000
 		"submunition" "IBS2" 1
-		"stream"
 	description "The Mass Driver uses a shot of hyperdrive fuel and a substantial spark to begin IBS acceleration, which then continues through a series of superconducting helical electromagnets to muzzle velocity.  Ships caught at point-blank range are treated to overheated systems and a significant push from the hyper-accelerated combusting hyperdrive fuel muzzle flare…and then the fully intact IBS.  The weapon mostly shields the hull from damaging quantum flux, but as a side effect, acts like it's far more massive when installed on a ship.  Make no mistake: this is long range support artillery, and ships carrying many of this weapon will require escort support."
 
 outfit "IBS2"
@@ -183,9 +181,9 @@ outfit "IBS2"
 		"lifetime" 36
 		"hit force" 4000
 		"shield damage" 300
-		"piercing" 0.5
+		"piercing" 0.25
 		"hull damage" 100
-		"missile strength" 32
+		"missile strength" 26
 		"submunition" "IBS3" 2
 
 outfit "IBS3"
@@ -201,8 +199,8 @@ outfit "IBS3"
 		"hit force" 2000
 		"shield damage" 200
 		"piercing" 0.25
-		"hull damage" 100
-		"missile strength" 28
+		"hull damage" 50
+		"missile strength" 24
 		"submunition" "IBS4" 4
 
 outfit "IBS4"
@@ -216,7 +214,7 @@ outfit "IBS4"
 		"drag" .1
 		"lifetime" 10
 		"hit force" 650
-		"missile strength" 25
+		"missile strength" 22
 		"submunition" "IBS5" 2
 
 outfit "IBS5"
@@ -230,7 +228,7 @@ outfit "IBS5"
 		"drag" .1
 		"lifetime" 10
 		"hit force" 300
-		"missile strength" 22
+		"missile strength" 20
 		"submunition" "IBS6" 2
 
 outfit "IBS6"
@@ -258,7 +256,7 @@ outfit "IBS7"
 		"drag" .1
 		"lifetime" 10
 		"hit force" 50
-		"missile strength" 11
+		"missile strength" 16
 		"submunition" "IBS8" 2
 
 outfit "IBS8"
@@ -272,7 +270,7 @@ outfit "IBS8"
 		"drag" .1
 		"lifetime" 10
 		"hit force" 20
-		"missile strength" 8
+		"missile strength" 16
 		"submunition" "IBS9" 2
 
 outfit "IBS9"
@@ -286,7 +284,7 @@ outfit "IBS9"
 		"drag" .1
 		"lifetime" 10
 		"hit force" 8
-		"missile strength" 6
+		"missile strength" 10
 		"submunition" "IBS10" 2
 
 outfit "IBS10"
@@ -302,24 +300,19 @@ outfit "IBS10"
 		"lifetime" 10
 		"hit force" 3
 		"shield damage" 2
-		"piercing" 0.05
+		"piercing" 0.1
 		"hull damage" 3.25
-		"slowing damage" 1
-		"missile strength" 5
+		"missile strength" 10
 
 outfit "S.A.R.C."
 	category "Systems"
 	thumbnail "outfit/sarc"
 	cost 365000
 	"required crew" -1
-	"energy generation" -0.1
-	"shield energy" -0.1
-	"hull repair" 0.1
 	"capture defense" 3
 	"bunks" -2
-	"mass" 3
-	unplunderable 1
-	description "Systems Automation and Robotic Crew takes a different approach than the NDR-114, and utilizes smaller robots and systems integration to reduce your ship's reliance on humans, and perform minor hull repairs.  The robot maintenance stations occupy quarters that crew would have formerly used, rather than valuable tonnage.  The robots are equipped with boarding suppression equipment which functions as long as there's crew to rearm them, but they cannot leave the ship.  Finally, S.A.R.C. depends on the ship's shield regenerators as its communications routers, and will improve their efficiency when installed."
+	"mass" 1
+	description "Systems Automation and Robotic Crew substantially reduces your ship's reliance on mere humans by integrating systems, and utilizing robots.  The robot charging stations occupy quarters that crew would have formerly used, instead of taking up valuable tonnage.  The robots are equipped with boarding suppression equipment which functions as long as there's crew to rearm them, but they cannot leave the ship."
 
 outfit "Ion Beam"
 	category "Guns"
@@ -337,18 +330,15 @@ outfit "Ion Beam"
 		"inaccuracy" .15
 		"velocity" 600
 		"lifetime" 1
+		"reload" 1
 		"firing energy" 2.5
 		"firing heat" 2.6
 		"firing force" .1
 		"shield damage" .9
 		"hull damage" 1.5
 		"ion damage" 0.1
-		"disruption damage" 0.1
 		"hit force" 1.5
-		"burst count" 900
-		"burst reload" 1
-		"reload" 600
-	description "The Ion Beam is a recent development by Ursa Polaris, a beam weapon that causes less damage per second than any beam on the market.  It is extremely good however, at causing interruption of electrical and shielding systems.  Unfortunately, the cannon builds a static field which interrupts firing after 15 seconds of sustained use.  Fortunately, the field dissipates fairly quickly, and use can resume.  The impact plume of this weapon is especially spectacular, as ionized particles splash violently and ablate your target's shields and hull."
+	description "The Ion Beam is a recent development by Ursa Polaris, a beam weapon that causes less damage per second than any beam on the market.  It is extremely good however, at causing interruption of electrical systems.  Once the target's shields are down, there are few ships that can even manage any actual thrust under the blaze of a few streams of ionization from this weapon, let alone mount offensive action.  The impact plume of this weapon is especially spectacular, as ionized particles splash violently and ablate your target's shields and hull."
 
 outfit "Ion Beam Turret"
 	category "Turrets"
@@ -359,8 +349,7 @@ outfit "Ion Beam Turret"
 	"weapon capacity" -24
 	"turret mounts" -1
 	"bunks" -2
-	"energy generation" -.05
-	"shield energy" -0.1
+	"energy generation" -.1
 	"capture defense" 3
 	weapon
 		sprite "projectile/ionbeam"
@@ -370,26 +359,24 @@ outfit "Ion Beam Turret"
 		"inaccuracy" .15
 		"velocity" 600
 		"lifetime" 1
+		"reload" 1
 		"firing energy" 2.8
 		"firing heat" 2.7
 		"shield damage" 0.9
 		"hull damage" 0.5
 		"ion damage" 0.1
-		"disruption damage" 0.1
 		"hit force" 1.5
-		"burst count" 900
-		"burst reload" 1
-		"reload" 600
-	description "This turret places Ursa Polaris' recently developed Ion Beam weapon onto a rotating turret, providing unsurpassed accuracy for reducing the combat capability of nearby targets.  This turret has integrated S.A.R.C., so it does not require extra crew (but does take up extra bunks, consumes a little energy all the time, and requires an equipped shield regenerator.)"
+	description "This turret places Ursa Polaris' recently developed Ion Beam weapon onto a rotating turret, providing unsurpassed accuracy for reducing the combat capability of nearby targets.  This turret has integrated S.A.R.C., so it does not require extra crew (but does take up extra bunks, and consumes a little energy all the time.)"
 
 outfit "Inertial Damper"
 	category "Systems"
 	cost 150000
-	thumbnail "outfit/inertialdamper"
+	thumbnail "outfit/unknown"
+#	thumbnail "outfit/inertialdamper"
 	"mass" -2
 	"outfit space" -1
 	"energy generation" -.1
-	description "Inertial Dampers reduce the effective mass of your ship, increasing turning rate and acceleration, but reducing overall heat capacity in the process.  The individual inertial damping generator units are small enough to keep hull stresses nominal, so multiple units are generally distributed all over the ship."
+	description "Inertial Dampers reduce the effective mass of your ship, increasing turning rate and acceleration, but reducing overall heat capacity in the process.  The individual inertial damping generator units are small enough to keep hull stresses nominal, as long as they're not all clustered together so, multiple units are generally distributed all over the ship."
 
 outfit "Mass Expansion (Small)"
 	category "Systems"
