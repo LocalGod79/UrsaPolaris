@@ -8,7 +8,7 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-Release date: 3May2016
+Release date: 6May2016
 
 special thanks go out to:
 Michael Zahniser and team; For creating the launchpad, and providing work to

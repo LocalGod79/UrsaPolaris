@@ -302,9 +302,8 @@ outfit "IBS10"
 		"lifetime" 10
 		"hit force" 3
 		"shield damage" 2
-		"piercing" 0.05
+		"piercing" 0.1
 		"hull damage" 3.25
-		"slowing damage" 1
 		"missile strength" 5
 
 outfit "S.A.R.C."
