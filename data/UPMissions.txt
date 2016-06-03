@@ -40,17 +40,17 @@ mission "OS1"
 	on offer
 		"reputation:  Pirate " = -1000
 		conversation
-			`	When you walk into the bar,  you're approached by a man, who looks very glad to see you. "I remember you," he says. "You had just bought your first ship, and I gave you your first job.  I never forget a face, certainly not one that's been in the news as much as yours..." he continues.  "Listen, I'm not old enough to be this sedentary.  It was nice to slow down for a while, but I'm itchy to be out there" he looks upward.  "I've got a ship that was boobytrapped to be impenetrable by anyone but me abandoned in Danoa.  It's cloaking device recently failed, and the pirates have been trying to loot it.  Won't pay much to help me, but I've got a bigger plan that I think you might like."  Want to take an old timer out for an adventure with your fleet?`
+			`	When you walk into the bar, you see, as always, everyone look towards a hero of the galactic war, but this time you notice a very familiar old man stand up and approach you. James looks very glad to see you. "I remember you," he says. "You had just bought your first ship, and I gave you your first job. I never forget a face, certainly not one that's been in the news as much as yours..." he continues. "Listen, I'm not old enough to be this sedentary. It was nice to slow down for a while, but I'm itchy to be out there." He looks upward. "If you want anpother, much better job this time, then I can tell you I've got a ship that was boobytrapped to be impenetrable by anyone but me abandoned in Danoa. Its cloaking device recently failed, and the pirates have been trying to loot it. Won't pay much to help me, but I've got a bigger plan that I think you might like. Want to take an old timer out for an adventure with your fleet?"`
 			choice
 				`	"Sure!"`
 					goto os1a
 				`	"Sorry, I'm not really interested in indulging the elderly's delusions of grandeur, right now."`
 					goto os1b
 			label os1b
-			`	"Well.  That's a little disappointing. I'll be here if you change your mind..." he says as you see him visibly shrink along with his excitement.`
+			`	"Well. That's a little disappointing. I'll be here if you change your mind..." he says as you see him visibly shrink along with his excitement.`
 				defer
 			label os1a
-			`	"Glad to hear it," he says. "The <npc> was outfitted with the latest and greatest of the day, and some stuff that most people still don't know exists - I'm sure it's still pretty vicious by today's standards when it's up and running again.  I don't want to tell you what we'll lose if the pirates destroy it before we get there."`
+			`	"Glad to hear it," he says. "The <npc> was outfitted with the latest and greatest of the day, and some stuff that most people still don't know exists - I'm sure it'll be considered pretty vicious by today's standards when it's up and running again. I don't want to tell you what we'll lose if the pirates destroy it before we get there."`
 				accept
 	on complete
 		payment 10000
@@ -74,26 +74,26 @@ mission "OS2"
 		ship "Corvette (James)" "Marius"
 	on offer
 		conversation
-			`	James' smile is still a parsec wide when you spot him in the bar. When he spots you, he greets you "<first>!  Let's have a drink!" and he drags you to a booth in the corner, signalling the bartender on the way.  The bartender drops by with a dusty bottle and a couple of mostly clean cups.  The two of you get into what turns out to be a type of wine fermented from some alien fruit called "Prag'ga" which resemble grapes, but have a distinctly different flavour (and alcohol content).  It's an acquired taste that James apparently has, and while your initial reaction is nearly spitting it out (in fact, a dribble makes its way to your chin before you discreetly wipe it), by the end of the first glass, you could imagine yourself sipping the stuff in your own retirement.  He gets a few minutes into his second story (and cup of 'wine') when he stops suddenly and asks "Can you get a couple hundred million credits together in a couple of weeks?"`
+			`	James' smile is still a parsec wide when you spot him in the bar. When he spots you, he greets you: "<first>! Let's have a drink!" and he drags you to a booth in the corner, signalling the bartender on the way. The bartender drops by with a dusty bottle and a couple of (mostly) clean cups. The two of you get into what turns out to be a type of wine fermented from some planet-foreign fruit called 'Prag'ga' which resemble grapes, but have a distinctly different flavour (and alcohol content).  It's an acquired taste that James apparently has, and while your initial reaction is nearly spitting it out (in fact, a dribble makes its way to your chin before you discreetly wipe it), by the end of the first glass, you could imagine yourself sipping the stuff in your own retirement. He gets a few minutes into his second story (and cup of "wine") when he stops suddenly and asks "Can you get a couple hundred million credits together in a couple of weeks?"`
 			choice
-				`	"I might have to sell a few assets, but...yeah."`
+				`	"I might have to sell a few assets, but... yeah."`
 					goto os2a
 				`	"It might take me a bit longer than that, but it's doable."`
 				`	"What's it to you?  No more cloak and dagger - what's up your sleeve, old man?"`
 					goto os2b
-			`	"Not to worry, we'll work with what we've got, I'll pay you a handsome sum to escort me to meet some friends that owe me a favour, and I'll show you a couple spots you can turn a tidy profit to help build that capital up pretty quickly."`
+			`	"Not to worry, we'll work with what we've got. I'll pay you a handsome sum to escort me to meet some friends that owe me a favour, and I'll show you a couple spots you can turn a tidy profit to help build that capital up pretty quickly."`
 				goto os2a
 			label os2b
-			`	James' smile disappears.  "Cloak and dagger can end you, kid - no matter how big your fleet or ego gets.  When you've got a hundred and fifty mil' lying around and nothin' to do, look me up on <destination>."`
+			`	James' smile disappears. "Cloak and dagger can end you, kid - no matter how big your fleet or ego gets. When you've got a hundred and fifty mil' lying around and nothin' to do, look me up on <destination>."`
 				decline
 			label os2a
-			`	"It wouldn't surprise me if we had a pretty big group of pirates that want more out of the Marius waiting for us in orbit.  They did manage to take some of the mundane stuff that wasn't as securely installed as the really good stuff, which they no doubt noticed.  They'd be thrilled to get their hands on the ship with me in it.  I think I even saw some folks snapping holos of the Marius on its landing pad.  Hope it's nothing we can't handle together."`
+			`	"It wouldn't surprise me if we had a pretty big group of pirates that want more out of the Marius waiting for us in orbit.  They did manage to take some of the mundane stuff that wasn't as securely installed as the really good stuff, which they no doubt noticed. They'd be thrilled to get their hands on the ship with me in it. I think I even saw some folks snapping holos of the Marius on its landing pad. Hope it's nothing we can't handle together."`
 				accept
 	on complete
 		payment 1000000
 		conversation
 			`	"Thanks for watching my back out there - my reflexes aren't what they used to be."  James hands you <payment>.`
-			`	"You can make a tidy profit disabling Korath ships and plundering their reactors.  A properly outfitted capital ship should not have too much trouble with a Raider or a World Ship, if you can manage to single one out."`
+			`	"You can make a tidy profit disabling Korath ships and plundering their reactors. A properly outfitted capital ship should not have too much trouble with a Raider or even a World-ship, if you can manage to single one out."`
 			`	"Meet me in the bar here when you've got 150 million credits in your account."`
 	on visit
 		dialog "You have reached <planet>, but you left James in the Marius behind! Better depart and wait for him to arrive in this star system."
