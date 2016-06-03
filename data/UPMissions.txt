@@ -19,7 +19,6 @@ mission "OS1"
 	passengers 1
 	to offer
 		has "Intro [0]: done"
-#I'm not sure, but I think "or has 'Intro: Interceptor [#]: done'" or whatever would be better.
 		has "event: pug flee"
 	npc waiting
 		system Rigel
