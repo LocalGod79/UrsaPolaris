@@ -55,6 +55,7 @@ event "Agglomerate1"
 				period 26.4015
 	planet "Ursa Polaris Station"
 		attributes uninhabited
+		government "Ursa Polaris"
 		description `"Ursa Polaris Station" is little more than a collection of asteroids at the moment, and you've just parked on it.  With a little luck, this will be an outfitter Mecca one day…`
 
 event "Agglomerate2"
@@ -283,7 +284,7 @@ event "Ursa Polaris Complete"
 		fleet "Large Free Worlds" 3000
 		fleet "IPSRnD" 600
 	planet "Ursa Polaris Station"
-		attributes uninhabited
+		attributes
 		landscape land/upland
 		description `Ursa Polaris Station is the result of agglomerating numerous asteroids from nearby systems, and mining/building them into a space station.  It is also the headquarters of the outfit and weapon developer of the same name.  The corporation mostly got its start as a 'big box' one stop shop for outfits from across human space, and quickly evolved to producing a few of their own outfits.  Their 'R&D lab' is actually a small fleet nearly always found in the system.  Occasionally pirates attempt to steal their prototypes, but only end up becoming a test subject for their latest developments.`
 		spaceport `During construction, several shuttles were used to transport the asteroids to this system.  As construction progressed, most shuttle components were incorporated into the station.  The ownership of one of the shuttles was traced back and turned out to have been one of the station founders' first ship, so "Gallileo" remains apparently intact and flying garish electric green and orange colours in the atrium area of the station.`
@@ -331,7 +332,6 @@ event "UPS Syndicate Outfits"
 		"D67-TM Shield Generator"
 		"Security Station"
 		"Scram Drive"
-		"NDR-114 Android"
 
 event "UPS Lovelace Outfits"
 	outfitter "UPSStock"
@@ -349,23 +349,6 @@ event "UPS Lovelace Outfits"
 		"Scram Drive"
 		"A120 Atomic Thruster"
 		"A125 Atomic Steering"
-		"NDR-114 Android"
-
-event "NDR-114 Android unlock"
-	outfitter "UPStock"
-		"NDR-114 Android"
-
-mission "Android Unlock"
-	invisible
-	landing
-	destination "Ursa Polaris Station"
-	to offer
-		or
-			has "event: UPS Syndicate Outfits"
-			has "event: UPS Lovelace Outfits"
-	on offer
-		event "NDR-114 Android unlock"
-		fail
 
 event "UPS Deep Sky Outfits"
 	outfitter "UPSStock"
@@ -445,40 +428,18 @@ event "UPS Kraz and Delta V Outfits"
 		"Outfit Scanner"
 		"Laser Rifle"
 
-
-
 event "UPS Hai Outfits"
-	outfitter "UPSStock"
-		"S-270 Regenerator"
-		"S-970 Regenerator"
-		"Ion Cannon"
-		"Pulse Cannon"
-		"Pulse Turret"
-		"Hai Tracker"
-		"Hai Tracker Pod"
-
-
+	planet "Ursa Polaris Station"
+		outfitter "Hai Advanced"
+		outfitter "Delta V Advanced"
+		outfitter "Kraz Advanced"
+		outfitter "Lovelace Advanced"
+		outfitter "Syndicate Advanced"
+		outfitter "Deep Sky Advanced"
 
 event "UPS Wanderer Outfits"
-	outfitter "UPSStock"
-		"Sunbeam"
-		"Thunderhead Missile"
-		"Thunderhead Launcher"
-		"Thunderhead"
-		"Small Biochemical Cell"
-		"Large Biochemical Cell"
-		"Yellow Sun Reactor"
-		"White Sun Reactor"
-		"Type 1 Radiant Thruster"
-		"Type 2 Radiant Thruster"
-		"Type 3 Radiant Thruster"
-		"Type 4 Radiant Thruster"
-		"Type 1 Radiant Steering"
-		"Type 2 Radiant Steering"
-		"Type 3 Radiant Steering"
-		"Type 4 Radiant Steering"
-		"Bright Cloud Shielding"
-		"Dark Storm Shielding"
+	planet "Ursa Polaris Station"
+		outfitter "Wanderer Advanced"
 	system Wei
 		fleet "Large Southern Merchants" 600
 		fleet "Small Free Worlds" 800
@@ -486,13 +447,6 @@ event "UPS Wanderer Outfits"
 		fleet "Large Southern Pirates" 720
 		fleet "Large Republic" 1250
 		fleet "UPSRnD" 450
-	system Alnasl
-		fleet "Small Southern Merchants" 1300
-		fleet "Large Southern Merchants" 2500
-		fleet "Small Southern Pirates" 6000
-		fleet "Small Free Worlds" 2000
-		fleet "Large Free Worlds" 3000
-		fleet "UPSRnD" 600
 
 
 event "UPStock Plasma Turret available"
@@ -644,18 +598,18 @@ event "WeMiExWa"
 		fleet "UPSRnD" 900
 	planet WeiMirzamExpressWay
 
-mission "0.9.0 outfits"
+mission "0.9.1 outfits"
 	invisible
 	landing
 	destination "Ursa Polaris Station"
 	to offer
 		has "event: Ursa Polaris Complete"
 	on offer
-		event "basic 0.9.0 outfits"
+		event "basic 0.9.1 outfits"
 		fail
 
-event "basic 0.9.0 outfits"
-	outfitter "UPStock"
+event "basic 0.9.1 outfits"
+	outfitter "Ursa Polaris"
 		"X1050 Ion Engines"
 		"KP-6 Photovoltaic Panel"
 		"KP-6 Photovoltaic Array"

@@ -347,13 +347,13 @@ mission "OS7"
 			`	Upon returning to Hope's "spaceport", you find the Honest Abe parked somewhat separate from the other ships, apparently so that the shuttles can all be landed in proximity to complete their preparations.  You receive a transmission from James on approach: "Meet me on the Honest Abe when you feel like flying me to Rust."`
 	on visit
 		dialog "You have reached <planet>, but you left some of your fleet behind! Better depart and wait for them to arrive in this star system."
-	npc evade
+	npc
 		personality disables waiting
 		government " Pirate "
 		fleet "Large Southern Pirates"
 		fleet "Large Core Pirates"
 		fleet "Large Northern Pirates"
-	npc evade
+	npc
 		personality disables entering
 		government " Pirate "
 		fleet "Small Southern Pirates"
@@ -507,6 +507,7 @@ mission "OS10Eb"
 
 
 mission "OS12"
+	landing
 	name "Acquire Power Systems"
 	description "Visit <destination> to procure power systems components."
 	source Hope
@@ -519,7 +520,8 @@ mission "OS12"
 		conversation
 			`	On approach, you receive a message from James.`
 			`	"Great work!  The last two extra-star-system asteroids have been attached to the growing mass in orbit, and our first docking bay is completed.  One more asteroid, fortunately already in the system, to attach and we'll start getting some more expensive gear onto ol' Polar Bear."`
-			`	"Meet me aboard the Honest Abe."`
+			choice
+				`	"Meet me aboard the Honest Abe."`
 			`	You hope that you don't have to make these trips with thermal gear across this glacier too many more times as you trudge through the wind and crunching ice towards the Honest Abe.  Again, the airlock appears to have recently been opened in anticipation of your arrival.  You go through the routine of security check on boarding, and after stripping your thermal gear, you are directed to James' cabin where you find him using a portable terminal in a comfortable chair with a glass of Prag'ga wine on a table next to his.  The cabin is spare, but appears comfortable.  "There you are!" he says, rising.  He directs you to a wheeled chair near a desk and continues.`
 			`	"Station construction is going more or less as planned - equipment is being moved into position and it won't be long before we need some serious power to get the station up and running, and accelerate construction.  Fortunately, Delta V is close by and has recently developed a serious power plant - and I happen to know a couple of the people who were in the finance aspect of that project.  I contacted them, told them about our station, and they agreed to subsidize our purchase of components needed to build several of their new reactor cores.  As a bonus, they talked some of their contacts at Southbound into throwing in some ships to carry the components back here, and even painted them in Ursa Polaris colours!`
 			`	"Go to <destination> and pay the twenty mil', and escort our first supply convoy ships laden with power systems back to Ursa Polaris Station.  We're going to get Honest Abe into orbit - the next time we speak in person, it will be aboard the new station."`
@@ -1395,7 +1397,7 @@ mission "OS22N"
 #
 mission "OS21"
 	name "Buy Hai Outfits"
-	description "Travel to <destination> to buy 600 tons of alien outfits"
+	description "Travel to <destination> with <payment> to buy 600 tons of alien outfits"
 	destination "Hai-home"
 	source "Ursa Polaris Station"
 	clearance
@@ -1633,11 +1635,11 @@ mission "OS27"
 	to offer
 		has "OS26: done"
 	on offer
+		payment -100000000
 		conversation
 			`	James continues "I'm thinking the pirates are easier to avoid than those Unfettered Hai trackers, so we'll probably send our supply convoys that way.  All the same, we need Jump Drives to get some freighters to and from Wanderer space.  I think three ought to do it.  Bring them back in your cargo hold."`
 				accept
 	on complete
-		payment -100000000
 		outfit "Jump Drive" -3
 		event "UPS Wanderer Outfits" 14
 		set "upwanderer"
@@ -1776,7 +1778,7 @@ mission "OS30"
 		conversation
 			`	The lone surviving crew of the White Kodiak perishes before you even made it to the wormhole en-route to <planet>.`
 			`	James' smile shrinks as your airlock opens and he sees your slumped shoulders and only the salvage crew behind you.  The salvage crew brief him on their recovery efforts before proceeding to the lab with the data recorders for analysis.  James calls after them "I need a full report from each of you by midnight!" before turning to you.`
-			`	"I should have stopped Malcolm's tinkering with that micro-singularity earlier, but he'd made so much progress, and he -is- a partner..." he trails off.  "Let's go spill a drink for the crew of the White Kodiak."`
+			`	"I should have stopped Malcolm's tinkering with the Dark Matter Manipulators earlier, but he'd made so much progress, and he -is- a partner..." he trails off.  "Let's go spill a drink for the crew of the White Kodiak."`
 			`	The two of you head to The Gallileo and James tells you the names, and a little bit about each of the crew that were lost during the development of the Polar Core while the two of you consume, and spill, more than the required share.`
 
 
