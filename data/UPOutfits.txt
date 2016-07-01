@@ -140,8 +140,8 @@ outfit "Mass Driver"
 	cost 1500000
 	thumbnail "outfit/mass driver"
 	"mass" 120
-	"outfit space" -38
-	"weapon capacity" -38
+	"outfit space" -32
+	"weapon capacity" -32
 	"gun ports" -1
 	"drag" 3
 	"torpedo capacity" 50
@@ -180,7 +180,8 @@ outfit "IBS2"
 		"velocity" 15
 		"acceleration" 2.9
 		"drag" .1
-		"lifetime" 36
+		"lifetime" 35
+		"random lifetime" 2
 		"hit force" 4000
 		"shield damage" 300
 		"piercing" 0.5
@@ -197,7 +198,8 @@ outfit "IBS3"
 		"inaccuracy" 6
 		"acceleration" 2.8
 		"drag" .1
-		"lifetime" 18
+		"lifetime" 16
+		"random lifetime" 4
 		"hit force" 2000
 		"shield damage" 200
 		"piercing" 0.25
@@ -214,7 +216,8 @@ outfit "IBS4"
 		"inaccuracy" 16
 		"acceleration" 2.7
 		"drag" .1
-		"lifetime" 10
+		"lifetime" 7
+		"random lifetime" 6
 		"hit force" 650
 		"missile strength" 25
 		"submunition" "IBS5" 2
@@ -223,12 +226,13 @@ outfit "IBS5"
 	weapon
 		sprite "projectile/IBS5"
 			"random start frame"
-			"frame rate" 0
+			"delay" 20
 		"hit effect" "particle impact"
 		"inaccuracy" 16
 		"acceleration" 2.6
 		"drag" .1
-		"lifetime" 10
+		"lifetime" 6
+		"random lifetime" 8
 		"hit force" 300
 		"missile strength" 22
 		"submunition" "IBS6" 2
@@ -237,12 +241,13 @@ outfit "IBS6"
 	weapon
 		sprite "projectile/IBS5"
 			"random start frame"
-			"frame rate" 0
+			"delay" 20
 		"hit effect" "particle impact"
 		"inaccuracy" 24
 		"acceleration" 2.5
 		"drag" .1
-		"lifetime" 10
+		"lifetime" 5
+		"random lifetime" 10
 		"hit force" 120
 		"missile strength" 16
 		"submunition" "IBS7" 2
@@ -251,12 +256,13 @@ outfit "IBS7"
 	weapon
 		sprite "projectile/IBS5"
 			"random start frame"
-			"frame rate" 0
+			"delay" 20
 		"hit effect" "particle impact"
 		"inaccuracy" 16
 		"acceleration" 2.4
 		"drag" .1
-		"lifetime" 10
+		"lifetime" 4
+		"random lifetime" 12
 		"hit force" 50
 		"missile strength" 11
 		"submunition" "IBS8" 2
@@ -265,12 +271,13 @@ outfit "IBS8"
 	weapon
 		sprite "projectile/IBS8"
 			"random start frame"
-			"frame rate" 0
+			"delay" 20
 		"hit effect" "particle impact"
 		"inaccuracy" 16
 		"acceleration" 2.3
 		"drag" .1
-		"lifetime" 10
+		"lifetime" 3
+		"random lifetime" 14
 		"hit force" 20
 		"missile strength" 8
 		"submunition" "IBS9" 2
@@ -279,12 +286,13 @@ outfit "IBS9"
 	weapon
 		sprite "projectile/IBS8"
 			"random start frame"
-			"frame rate" 0
+			"delay" 20
 		"hit effect" "particle impact"
 		"inaccuracy" 8
 		"acceleration" 2.2
 		"drag" .1
-		"lifetime" 10
+		"lifetime" 2
+		"random lifetime" 16
 		"hit force" 8
 		"missile strength" 6
 		"submunition" "IBS10" 2
@@ -293,13 +301,14 @@ outfit "IBS10"
 	weapon
 		sprite "projectile/IBS8"
 			"random start frame"
-			"frame rate" 0
+			"delay" 20
 		"hit effect" "particle impact"
 		"die effect" "sidewinder fire"
 		"inaccuracy" 8
 		"acceleration" 2.1
 		"drag" .1
-		"lifetime" 10
+		"lifetime" 1
+		"random lifetime" 18
 		"hit force" 3
 		"shield damage" 2
 		"piercing" 0.1

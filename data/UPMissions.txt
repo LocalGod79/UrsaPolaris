@@ -141,7 +141,7 @@ mission "OS3"
 		fleet "Large Core Pirates"
 	on offer
 		conversation
-			`	James is smiling ear-to-ear still, this time chatting and laughing with a couple of academic-looking people at a table.  He motions you to join them when he spots you.  "Captain <last>, I'd like you to meet a couple of engineer friends of mine."  He introduces you to Malcolm and Ariel Eisbar - cousins as it turns out.  James turns to you and says "I bet you're wondering what those 'great things' I mentioned back on Farpoint are." You nod, he continues. "Back in my youth, I helped quite a few corporations test outfits while they were deciding whether and when to roll them out.  In the process, I met a great deal of the brightest minds in the industry, in spite of them being on opposite ends of the galaxy.  Anyhow, the biggest pain in my neck back in those days was traipsing across the galaxy two or three times just to get a new ship outfitted with the latest that those minds could come up with."  You sense that there's a revelation coming… "I always wanted to find someplace where I could get all the parts I needed, and I wasn't ready to settle down for any length of time to run and maintain a 'fitter of my own.  While I'm not ready to rot on a Luxury World, flying around and getting shot at is a younger person's game.  What wasn't an option in my youth sounds more my speed at the moment."`
+			`	James is smiling ear-to-ear still, this time chatting and laughing with a couple of academic-looking people at a table.  He motions you to join them when he spots you.  "Captain <last>, I'd like you to meet a couple of engineer friends of mine."  He introduces you to Malcolm and Ariel Eisbar - cousins as it turns out.  James turns to you and says "I bet you're wondering what those 'great things' I mentioned back on Farpoint are." You nod, he continues. "Back in my youth, I helped quite a few corporations test outfits while they were deciding whether and when to roll them out.  In the process, I met a great deal of the brightest minds in the industry, in spite of them being on opposite ends of the galaxy.  Anyhow, the biggest pain in my neck back in those days was traipsing across the galaxy two or three times just to get a new ship outfitted with the latest that those minds could come up with."  You sense that there's a revelation coming... "I always wanted to find someplace where I could get all the parts I needed, and I wasn't ready to settle down for any length of time to run and maintain a 'fitter of my own.  While I'm not ready to rot on a Luxury World, flying around and getting shot at is a younger person's game.  What wasn't an option in my youth sounds more my speed at the moment."`
 			choice
 				`	"Where do I come in?"`
 					goto os3a
@@ -218,7 +218,7 @@ mission "OS4"
 		ship "Mule (UP)" "Honest Abe"
 	on offer
 		conversation
-			`	James is his seemingly usual happy self, sitting at the bar with a shiny bottle of Prag'ga wine and a fine piece of glassware.  You greet him, he stands up and offers you a drink which you graciously accept.  The bartender arrives with another glass eerily quickly after being signalled by James.  "Well, we have a crack group of engineers already working aboard Honest Abe.  I helped them remove all the fancy stuff that I'd been collecting back in the day.  Mostly stuff that was mothballed because the business folk didn't want invest in making them more viable, but there was some other stuff in there, too.  It's all aboard Honest Abe now, either being reverse engineered, improved, or loaded up for use.  The Marius was a sweet ship, though...To her!"  You meet his toast.  "Honest Abe is a good ship, and better serves our purposes…" he continues "which I imagine you're beginning to question, since we've talked about opening a top-tier outfitters, and spent a fair bit apparently recruiting weapons engineers.  That's only partly true; we've simultaneously recruited the talent required to assemble an asteroid outpost."`
+			`	James is his seemingly usual happy self, sitting at the bar with a shiny bottle of Prag'ga wine and a fine piece of glassware.  You greet him, he stands up and offers you a drink which you graciously accept.  The bartender arrives with another glass eerily quickly after being signalled by James.  "Well, we have a crack group of engineers already working aboard Honest Abe.  I helped them remove all the fancy stuff that I'd been collecting back in the day.  Mostly stuff that was mothballed because the business folk didn't want invest in making them more viable, but there was some other stuff in there, too.  It's all aboard Honest Abe now, either being reverse engineered, improved, or loaded up for use.  The Marius was a sweet ship, though...To her!"  You meet his toast.  "Honest Abe is a good ship, and better serves our purposes..." he continues "which I imagine you're beginning to question, since we've talked about opening a top-tier outfitters, and spent a fair bit apparently recruiting weapons engineers.  That's only partly true; we've simultaneously recruited the talent required to assemble an asteroid outpost."`
 			choice
 				`"Go on..."`
 				`"You *are* crazy!  If this were viable, it'd already have been done.  This project is going to cost BILLIONS!  I'm out."`
@@ -385,7 +385,7 @@ mission "OS8"
 				accept
 	on complete
 		dialog
-			`	James is out' the airlock moments after your skids hit the pad…`
+			`	James is out' the airlock moments after your skids hit the pad...`
 
 
 
@@ -707,7 +707,7 @@ mission "OS16"
 		has "OS15W: done"
 	on offer
 		conversation
-			`	You dock along with the second convoy.  There is another dock available since the last time you participated in a supply run, but a couple of freighters still wait in orbit to dock.  There are more workers in the station, all still wearing open helmeted EVA suits.  There are also human-sized robots crawling on the walls and ceiling, apparently scanning and reinforcing the main structure.  James approaches your airlock as you're stepping off, and just as he's about to speak, alarms on your ship sound.  You tap the comm panel nearby, and discover that pirates have entered the system.  You yell to James "Pirates!" and he breaks into a surprisingly spry run.  Apparently you can't bring hundreds of millions of credits worth of equipment into an uninhabited system and not expect plunder attempts…`
+			`	You dock along with the second convoy.  There is another dock available since the last time you participated in a supply run, but a couple of freighters still wait in orbit to dock.  There are more workers in the station, all still wearing open helmeted EVA suits.  There are also human-sized robots crawling on the walls and ceiling, apparently scanning and reinforcing the main structure.  James approaches your airlock as you're stepping off, and just as he's about to speak, alarms on your ship sound.  You tap the comm panel nearby, and discover that pirates have entered the system.  You yell to James "Pirates!" and he breaks into a surprisingly spry run.  Apparently you can't bring hundreds of millions of credits worth of equipment into an uninhabited system and not expect plunder attempts...`
 				launch
 	npc save
 		personality escort timid
@@ -894,7 +894,7 @@ mission "OS19H"
 	on complete
 		dialog
 			`	Ms. Eisbar departs from the <ship> shortly after landing "I'll be back soon" she says.`
-#
+#...
 mission "OS20H"
 	landing
 	source Hippocrates
@@ -905,8 +905,9 @@ mission "OS20H"
 	to offer
 		has "OS19H: done"
 	on offer
-		dialog
-			`	Ariel returns half an hour later.  "Let's get back to Ursa Polaris Station and get an assembly line built!"`
+		conversation
+			`	Ariel returns half an hour later.  "Let's get back to Ursa Polaris Station - and don't spare the hyperspace fuel - I managed to grab some specs for some new shield regenerators they were working on. I'm pretty sure my download was detected, and we may have some company on the way..."`
+				accept
 	on complete
 		event "UPStock Ionic Afterburner available" 21
 		dialog
@@ -1406,7 +1407,7 @@ mission "OS21"
 	on offer
 		conversation
 			`	You find James at a table next to the "Gallileo".  As you approach, he says "The bar says they'll be getting a few of cases of '09 Bounty Prag'ga soon - I can hardly wait - vintage of a lifetime it's said."`
-			`	He continues "I know I said we needed to establish new contracts and more convoys with our suppliers, and I'm negotiating via hyperspace…" he trails off…`
+			`	He continues "I know I said we needed to establish new contracts and more convoys with our suppliers, and I'm negotiating via hyperspace..." he trails off...`
 			`	He snaps back, "I can't believe I forgot the Hai!  They've got wondrous technology that we can study, and even sell on a limited basis until we get a supply convoy or two running.  Go to <destination> and pick up some stock - shouldn't cost more than 500M credits.  You'll need 600 tons of cargo space to bring the initial stock back."`
 				accept
 	on complete
@@ -1492,7 +1493,7 @@ mission "OS23"
 				`Meh.  I won't be able to really assess it until I get my hands on it.`
 				`My ship's systems were pushed when the the barrage laid into me, but they couldn't keep it up, and I made short work of the <npc> after that.  All the same, I'd like some of those guns for my ships.`
 				`THAT is a SCARY weapon - when can I get my hands on a few?`
-			`	"We've been putting together the assembly line on Ursa Polaris.  Once Barmy gets his notes to us, we can acquire the last pieces of equipment, complete the line and set you up.  We're also almost finished the assembly line for the Systems Automation and Robotic Crew, and should begin outfitting ships with it in a few weeks or so - I'll have more work for you then…`
+			`	"We've been putting together the assembly line on Ursa Polaris.  Once Barmy gets his notes to us, we can acquire the last pieces of equipment, complete the line and set you up.  We're also almost finished the assembly line for the Systems Automation and Robotic Crew, and should begin outfitting ships with it in a few weeks or so - I'll have more work for you then...`
 
 #
 mission "OS23b"
