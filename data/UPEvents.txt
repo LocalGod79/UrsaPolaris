@@ -436,6 +436,7 @@ event "UPS Hai Outfits"
 		outfitter "Lovelace Advanced"
 		outfitter "Syndicate Advanced"
 		outfitter "Deep Sky Advanced"
+		outfitter "Pirate Outfits"
 
 event "UPS Wanderer Outfits"
 	planet "Ursa Polaris Station"
