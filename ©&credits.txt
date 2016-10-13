@@ -8,13 +8,13 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-Release date: 22July2016
+Release date: 11october2016
 
 special thanks go out to:
 Michael Zahniser and team; For creating the launchpad, and providing work to
 	derive from.
-Nathan Flaum; for the first outfitter sprites, and helping me believe others
-	would pick up my shortfalls
+Nathan Flaum; for the first outfitter sprites (and updating them later), and
+	helping me believe others would pick up my shortfalls
 Michael Feather; Contributions to flavour text, balance/content consultation
 	and testing
 Yuri Gobbi; Sound and content testing
