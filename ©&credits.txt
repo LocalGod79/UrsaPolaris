@@ -1,4 +1,4 @@
-# Copyright (c) 2016 Iaz Poolar
+# Copyright (c) 2017 Iaz Poolar
 # 
 # Endless Sky is free software: you can redistribute it and/or modify it under the
 # terms of the GNU General Public License as published by the Free Software
@@ -8,7 +8,7 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-Release date: 11october2016
+Release date: 2017march13
 
 special thanks go out to:
 Michael Zahniser and team; For creating the launchpad, and providing work to
