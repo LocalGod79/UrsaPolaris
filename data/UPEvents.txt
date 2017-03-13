@@ -56,7 +56,7 @@ event "Agglomerate1"
 	planet "Ursa Polaris Station"
 		attributes uninhabited
 		government "Ursa Polaris"
-		description `"Ursa Polaris Station" is little more than a collection of asteroids at the moment, and you've just parked on it.  With a little luck, this will be an outfitter Mecca one day…`
+		description `"Ursa Polaris Station" is little more than a collection of asteroids at the moment, and you've just parked on it.  With a little luck, this will be an outfitter Mecca one day.`
 
 event "Agglomerate2"
 

@@ -493,9 +493,9 @@ government "Ursa Polaris"
 	swizzle 3
 	"player reputation" 1000
 	"attitude toward"
-		"Republic" .1
-		"Merchant" .25
-		"Free Worlds" .1
+		"Republic" .01
+		"Merchant" .025
+		"Free Worlds" .01
 		"Pirate" -.3
 		" Pirate " -.3
 	"bribe" .1
@@ -508,12 +508,12 @@ government " Pirate "
 		"player reputation" -1000
 	"attitude toward"
 		"Pirate" .25
-		"Merchant" -.15
-		"Syndicate" -.1
-		"Author" -.1
-		"Free Worlds" -.1
-		"Republic" -.1
-		"Independent" —.1
+		"Merchant" -.015
+		"Syndicate" -.01
+		"Author" -.01
+		"Free Worlds" -.01
+		"Republic" -.01
+		"Independent" —.01
 		"Ursa Polaris" -.2
 	"bribe" .05
 	"fine" 0

@@ -420,6 +420,8 @@ outfit "Polar Core"
 	"shields" 800
 	"energy generation" 36.9
 	"heat generation" 2
+	"active cooling" 25
+	"cooling energy" 2.5
 	"energy capacity" 6000
 	"jump speed" 3
 	"hyperdrive" 1

@@ -74,7 +74,7 @@ mission "OS2"
 		ship "Corvette (James)" "Marius"
 	on offer
 		conversation
-			`	James' smile is still a parsec wide when you spot him in the bar. When he spots you, he greets you "<first>!  Let's have a drink!" and he drags you to a booth in the corner, signalling the bartender on the way.  The bartender drops by with a dusty bottle and a couple of mostly clean cups.  The two of you get into what turns out to be a type of wine fermented from some alien fruit called "Prag'ga" which resemble grapes, but have a distinctly different flavour (and alcohol content).  It's an acquired taste that James apparently has, and while your initial reaction is nearly spitting it out (in fact, a dribble makes its way to your chin before you discreetly wipe it), by the end of the first glass, you could imagine yourself sipping the stuff in your own retirement.  He gets a few minutes into his second story (and cup of 'wine') when he stops suddenly and asks "Can you get a couple hundred million credits together in a couple of weeks?"`
+			`	James' smile is still a parsec wide when you spot him in the bar. When he spots you, he greets you "<first>!  Let's have a drink!" and he drags you to a booth in the corner, signalling the bartender on the way.  The bartender drops by with a dusty bottle and a couple of mostly clean cups.  The two of you get into what turns out to be a type of wine fermented from some alien fruit called "Prag'ga" which resemble grapes, but have a distinctly different flavour (and alcohol content).  It's an acquired taste that James apparently has, and while your initial reaction is nearly spitting it out (in fact, a dribble makes its way to your chin before you discreetly wipe it), by the end of the first glass, you could imagine yourself sipping the stuff in your own retirement.  He gets a few minutes into his second story (and cup of 'wine') when he stops suddenly and asks "Can you get fifty million credits together in a couple of weeks?"`
 			choice
 				`	"I might have to sell a few assets, but...yeah."`
 					goto os2a
@@ -94,7 +94,7 @@ mission "OS2"
 		conversation
 			`	"Thanks for watching my back out there - my reflexes aren't what they used to be."  James hands you <payment>.`
 			`	"You can make a tidy profit disabling Korath ships and plundering their reactors.  A properly outfitted capital ship should not have too much trouble with a Raider or a World Ship, if you can manage to single one out."`
-			`	"Meet me in the bar here when you've got 150 million credits in your account."`
+			`	"Meet me in the bar here when you've got 50 million credits in your account."`
 	on visit
 		dialog "You have reached <planet>, but you left James in the Marius behind! Better depart and wait for him to arrive in this star system."
 	npc evade
@@ -145,7 +145,7 @@ mission "OS3"
 			choice
 				`	"Where do I come in?"`
 					goto os3a
-				`	"You want 150 mil' of my credits to open an outfitter and sell top-tier outfits?  What do I need you for?  I could take my credits and open one myself for that kind of lucre!"`
+				`	"You want 50 mil' of my credits to open an outfitter and sell top-tier outfits?  What do I need you for?  I could take my credits and open one myself for that kind of lucre!"`
 					goto os3b
 				`	"I can't spend that kind of cash right now - I'll be back soon, though!"`
 					defer
@@ -159,7 +159,7 @@ mission "OS3"
 				`	"Screw this.  Have fun playing shop, old-timer!"`
 					decline
 			label os3a
-			`	"Well, we're starting to assemble a team of mostly engineers, and my favour-owing engineer cousin friends here have managed to convince six fellow Syndicate employees to end their contracts as well, and are all joining our organization.  This may have put a bounty on our heads, but I'm sure it's nothing we can't candle easily.  Our next stop is to meet with some more recruits in Nifel and this time, you're footing the bill.  That's where your 150 million credit initial investment is made.  Are you in?"`
+			`	"Well, we're starting to assemble a team of mostly engineers, and my favour-owing engineer cousin friends here have managed to convince six fellow Syndicate employees to end their contracts as well, and are all joining our organization.  This may have put a bounty on our heads, but I'm sure it's nothing we can't candle easily.  Our next stop is to meet with some more recruits in Nifel and this time, you're footing the bill.  That's where your 50 million credit initial investment is made.  Are you in?"`
 			choice
 				`	"When do we leave?"`
 				`	"Sorry, this all sounds a little out of my league.  Best of luck to you guys; I really hope to visit your shop sometime."`
@@ -171,7 +171,7 @@ mission "OS3"
 			`	"I guess this is happening without you then, kid.  Won't be the same without you."`	
 		set "UPWithoutPlayer"
 	on complete
-		payment -150000000
+		payment -50000000
 		dialog
 			`While on approach, James sends a message "Meet me at the bar when you've got another 10 mil' to invest."`
 	on visit
@@ -609,12 +609,12 @@ mission "OS14W"
 		has "OS13: done"
 	on offer
 		conversation
-			`	You receive a message from James "I managed to get the ramscoops, cooling systems, and some defensive systems loaded at just two destinations.  Visit Wayfarer and Follower with 75M each, and escort the freighters back to Ursa Polaris Station"`
+			`	You receive a message from James "I managed to get the ramscoops, cooling systems, and some defensive systems loaded at just two destinations.  Visit Wayfarer and Follower with 25M each, and escort the freighters back to Ursa Polaris Station"`
 				accept
 	on complete
 		dialog
 			`You receive landing pad co-ordinates to your loaded freighter escorts.`
-		payment -75000000
+		payment -25000000
 	on visit
 		dialog `You require <payment> to pay for Ursa Polaris Station's operating systems.  Return when you have it.`
 
@@ -631,7 +631,7 @@ mission "OS14F"
 	on complete
 		dialog
 			`You receive landing pad co-ordinates next to your loaded freighter escorts.`
-		payment -75000000
+		payment -25000000
 	on visit
 		dialog `You require <payment> to pay for Ursa Polaris Station's operating systems.  Return when you have it.`
 
@@ -767,7 +767,7 @@ mission "OS16"
 mission "OS17H"
 	landing
 	name "Stock from <destination>"
-	description "Visit <destination> with 75M credits to acquire stock for Ursa Polaris Station"
+	description "Visit <destination> with 25M credits to acquire stock for Ursa Polaris Station"
 	destination Hephaestus
 	to offer
 		has "event: Ursa Polaris Complete"
@@ -779,7 +779,7 @@ mission "OS17H"
 			`	"Ursa Polaris Station is fully operational.  We require stock from the Syndicate, Lovelace Labs, Deep Sky, Delta V and Kraz Cybernetics.  Fortunately you only need to make four stops, spending 75M credits at each one (300M total) to set up our initial supply contracts.  There will be ships waiting for you at Hephaestus, Ada, Wayfarer and Valhalla that will help to escort you back.  You'll also need 500 cargo space to carry some startup stock at each stop, as the ships will mostly be additions to our defence and R&D&D (Research & Development, Defense) fleet.  We've already got the Mass Driver and Inertia Buffered Slugs manufacturing set up, and you can pick some up when you get here."`
 				accept
 	on complete
-		payment -75000000
+		payment -25000000
 	on visit
 		dialog `You require <payment> to pay for Ursa Polaris Station's operating stock.  Return when you have it.`
 
@@ -787,13 +787,13 @@ mission "OS17H"
 mission "OS17A"
 	landing
 	name "Buy stock at <destination>"
-	description "Visit <destination> with 75M credits to acquire stock for Ursa Polaris Station"
+	description "Visit <destination> with 25M credits to acquire stock for Ursa Polaris Station"
 	destination Ada
 	to offer
 		has "event: Ursa Polaris Complete"
 		has "OS13: done"
 	on complete
-		payment -75000000
+		payment -25000000
 	on visit
 		dialog `You require <payment> to pay for Ursa Polaris Station's operating stock.  Return when you have it.`
 
@@ -801,13 +801,13 @@ mission "OS17A"
 mission "OS17V"
 	landing
 	name "Buy stock at <destination>"
-	description "Visit <destination> with 75M credits to acquire stock for Ursa Polaris Station"
+	description "Visit <destination> with 25M credits to acquire stock for Ursa Polaris Station"
 	destination Valhalla
 	to offer
 		has "event: Ursa Polaris Complete"
 		has "OS13: done"
 	on complete
-		payment -75000000
+		payment -25000000
 	on visit
 		dialog `You require <payment> to pay for Ursa Polaris Station's operating stock.  Return when you have it.`
 
@@ -815,13 +815,13 @@ mission "OS17V"
 mission "OS17W"
 	landing
 	name "Buy stock at <destination>"
-	description "Visit <destination> with 75M credits to acquire stock for Ursa Polaris Station"
+	description "Visit <destination> with 25M credits to acquire stock for Ursa Polaris Station"
 	destination Wayfarer
 	to offer
 		has "event: Ursa Polaris Complete"
 		has "OS13: done"
 	on complete
-		payment -75000000
+		payment -25000000
 	on visit
 		dialog `You require <payment> to pay for Ursa Polaris Station's operating stock.  Return when you have it.`
 
@@ -1356,7 +1356,7 @@ mission "OS21N"
 				`	I don't think we should stock that weapon here.`
 					decline
 	on complete
-		payment -100000000
+		payment -50000000
 	on visit
 		dialog `You require <payment> to pay for fissionable material.  Return when you have it.`
 
@@ -1407,10 +1407,10 @@ mission "OS21"
 		conversation
 			`	You find James at a table next to the "Gallileo".  As you approach, he says "The bar says they'll be getting a few of cases of '09 Bounty Prag'ga soon - I can hardly wait - vintage of a lifetime it's said."`
 			`	He continues "I know I said we needed to establish new contracts and more convoys with our suppliers, and I'm negotiating via hyperspace..." he trails off...`
-			`	He snaps back, "I can't believe I forgot the Hai!  They've got wondrous technology that we can study, and even sell on a limited basis until we get a supply convoy or two running.  Go to <destination> and pick up some stock - shouldn't cost more than 500M credits.  You'll need 600 tons of cargo space to bring the initial stock back."`
+			`	He snaps back, "I can't believe I forgot the Hai!  They've got wondrous technology that we can study, and even sell on a limited basis until we get a supply convoy or two running.  Go to <destination> and pick up some stock - shouldn't cost more than 100M credits.  You'll need 600 tons of cargo space to bring the initial stock back."`
 				accept
 	on complete
-		payment -500000000
+		payment -100000000
 	on visit
 		dialog `You require <payment> to pay for Ursa Polaris Station's stock, and to establish an account with the Hai.  Return when you have it.`
 #
@@ -1595,14 +1595,14 @@ mission "OS25"
 				`	"Really.  I'm confident that they don't want their outfits in human hands."`
 					decline
 			label os25a
-			`	James ponders a moment before responding, "We should get our hands on some of their technology for study.  600 tons of outfits ought to do - maybe set up an account with them, 250M should be enough to start."`
+			`	James ponders a moment before responding, "We should get our hands on some of their technology for study.  600 tons of outfits ought to do - maybe set up an account with them, 150M should be enough to start."`
 				accept
 	on decline
 		set "upwanderer"
 		conversation
 			`	"Suit yourself - humans are going to find their way there, and bring outfits back.  It should be us, but you obviously think you know what you're doing."`
 	on complete
-		payment -250000000
+		payment -15000000
 	on visit
 		dialog `You require <payment> to pay for Ursa Polaris Station's operating stock.  Return when you have it.`
 #
@@ -1619,7 +1619,7 @@ mission "OS26"
 	on offer
 		conversation
 			`	Initially the Wanderers hesitate to sell large quantities of their outfits to you, fearing the destruction that would be wrought if they ended up in the wrong hands.  You assure them that like the Hai, your own species has a habit of becoming fractured, and that their outfits would be used only by the forces of peace, or should your species come under great threat from elsewhere.  You briefly explain the history of the Alphas, and that because the threat of them remains, humanity cannot risk the time it would take to retrieve Wanderer outfits in a time of need.`
-			`	Satisfied with your overture of peace and security, you negotiate with the Wanderers, and settle on a variety of outfits to fill your hold with fifty million credits worth of outfits, and open an account with a 200M balance.  You inform them that ships from Ursa Polaris will begin making trips to build a stockpile of outfits near the centre of human space.`
+			`	Satisfied with your overture of peace and security, you negotiate with the Wanderers, and settle on a variety of outfits to fill your hold with fifty million credits worth of outfits, and open an account with a 50M balance.  You inform them that ships from Ursa Polaris will begin making trips to build a stockpile of outfits near the centre of human space.`
 				accept
 	on complete
 		conversation
@@ -1629,13 +1629,13 @@ mission "OS26"
 #
 mission "OS27"
 	name "Acquire Jump Drives"
-	description "Return to Ursa Polaris Station with three Jump Drives in your cargo hold, and 100M in your bank account."
+	description "Return to Ursa Polaris Station with three Jump Drives in your cargo hold, and 50M in your bank account."
 	source "Ursa Polaris Station"
 	destination "Ursa Polaris Station"
 	to offer
 		has "OS26: done"
 	on offer
-		payment -100000000
+		payment -50000000
 		conversation
 			`	James continues "I'm thinking the pirates are easier to avoid than those Unfettered Hai trackers, so we'll probably send our supply convoys that way.  All the same, we need Jump Drives to get some freighters to and from Wanderer space.  I think three ought to do it.  Bring them back in your cargo hold."`
 				accept
@@ -1648,7 +1648,7 @@ mission "OS27"
 			`	"Well, now the people that need to know the way, we can have a few freighters jump from their escorts in Hatysa into Wanderer space, pick up stock, and return to their escorts before coming back to civilization where, certain people are paid to make sure we're not looked at too closely, and those goods can join our supply network through Ada."`
 			`	"I assure you that we'll need all of that cash to finish building the escort fleet up, and probably more to keep the feds from looking too closely.  At least for the moment, these outfits aren't going to be publicly available, but you'll be able to upgrade your ships in a couple of weeks, and Ursa Polaris ships will employ them more.  The White Sun Reactor was of particular interest to Malcolm, and he's leading a team on a renewed project."`
 	on visit
-		dialog `You require 3 Jump Drives and 100M credits to continue the Wanderer outfit stocking missions.  Return when you meet these conditions.`
+		dialog `You require 3 Jump Drives and 50M credits to continue the Wanderer outfit stocking missions.  Return when you meet these conditions.`
 #
 mission "OS28"
 	name "Ion Beam Testing"
