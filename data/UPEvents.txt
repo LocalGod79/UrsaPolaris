@@ -13,7 +13,7 @@
 event "Hope Springs Eternal"
 	planet Hope
 		attributes uninhabited
-		spaceport	`	"The spaceport here is little more than a few ships parked on a glacier, with one (near the middle) advertising bar services in a cargo hold, which they've dubbed "Fontes Aeternum."  Everyone inside is still wearing thermal gear, as the hold is not very well heated and non-alcoholic beverages have a habit of freezing if left unattended.  Otherwise, high top tables with stools and a few empty cups litter the hold, while the bar itself appears little more than a few vending machines with menu screens.  The venue seems to be generally serving more as a rendez-vous than a social club, with patrons generally leaving upon someone else's arrival (with them.)  Of course, if you're short on fuel, a few captains will pitch in and gets you topped up to get you where you're going.`
+		spaceport	`The spaceport here is little more than a few ships parked on a glacier, with one (near the middle) advertising bar services in a cargo hold, which they've dubbed "Fontes Aeternum."  Everyone inside is still wearing thermal gear, as the hold is not very well heated and non-alcoholic beverages have a habit of freezing if left unattended.  Otherwise, high top tables with stools and a few empty cups litter the hold, while the bar itself appears little more than a few vending machines with menu screens.  The venue seems to be generally serving more as a rendez-vous than a social club, with patrons generally leaving upon someone else's arrival (with them.)  Of course, if you're short on fuel, a few captains will pitch in and gets you topped up to get you where you're going.`
 		"required reputation" -1000
 
 event "Agglomerate1"
