@@ -776,7 +776,7 @@ mission "OS17H"
 		dialog
 			`	Upon landing, you receive a transmission from James:`
 		conversation
-			`	"Ursa Polaris Station is fully operational.  We require stock from the Syndicate, Lovelace Labs, Deep Sky, Delta V and Kraz Cybernetics.  Fortunately you only need to make four stops, spending 75M credits at each one (300M total) to set up our initial supply contracts.  There will be ships waiting for you at Hephaestus, Ada, Wayfarer and Valhalla that will help to escort you back.  You'll also need 500 cargo space to carry some startup stock at each stop, as the ships will mostly be additions to our defence and R&D&D (Research & Development, Defense) fleet.  We've already got the Mass Driver and Inertia Buffered Slugs manufacturing set up, and you can pick some up when you get here."`
+			`	"Ursa Polaris Station is fully operational.  We require stock from the Syndicate, Lovelace Labs, Deep Sky, Delta V and Kraz Cybernetics.  Fortunately you only need to make four stops, spending 25M credits at each one (100M total) to set up our initial supply contracts.  There will be ships waiting for you at Hephaestus, Ada, Wayfarer and Valhalla that will help to escort you back.  You'll also need 500 cargo space to carry some startup stock at each stop, as the ships will mostly be additions to our defence and R&D&D (Research & Development, Defense) fleet.  We've already got the Mass Driver and Inertia Buffered Slugs manufacturing set up, and you can pick some up when you get here."`
 				accept
 	on complete
 		payment -25000000
@@ -1792,7 +1792,7 @@ mission "OSC"
 	to offer
 		has "OS20: done"
 		random = 42
-		"net worth" > 1999999999
+		"net worth" > 999999999
 	on offer
 		payment -50000000
 		dialog
