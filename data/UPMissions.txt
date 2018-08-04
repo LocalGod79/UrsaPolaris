@@ -747,7 +747,7 @@ mission "OS16"
 	npc evade
 		personality disables entering
 		government " Pirate "
-		fleet "Large Sourthern Pirates"
+		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 		fleet "Small Southern Pirates"
 		fleet "Small Southern Pirates"
