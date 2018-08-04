@@ -376,7 +376,7 @@ fleet "IPSRnD"
 		"Kestrel (IP)"
 		"Corvette (HIP)"
 		"Corvette (RFP)"
-		"Quicksilver (IP)"
+		"Quicksilver (UP)"
 		"Osprey (IP)"
 		"Mule (IP)"
 	variant 10
@@ -390,7 +390,7 @@ fleet "IPSRnD"
 		"Kestrel (IP)"
 	variant 40
 		"Argosy" 2
-		"Quicksilver (IP)" 4
+		"Quicksilver (UP)" 4
 	variant 80
 		"Shuttle (UP)"
 
