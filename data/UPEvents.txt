@@ -516,6 +516,10 @@ event "UPStock Polar Core available"
 		"Polar Core"
 
 
+planet WeiMirzamExpressWay
+	description ""
+
+
 event "WeMiExWa"
 	system Wei
 		object
@@ -597,7 +601,6 @@ event "WeMiExWa"
 		fleet "Large Republic" 2000
 		fleet "Large Northern Pirates" 2000
 		fleet "UPSRnD" 900
-	planet WeiMirzamExpressWay
 
 mission "0.9.1 outfits"
 	invisible
