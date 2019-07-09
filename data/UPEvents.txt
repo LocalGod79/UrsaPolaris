@@ -284,7 +284,7 @@ event "Ursa Polaris Complete"
 		fleet "Large Free Worlds" 3000
 		fleet "IPSRnD" 600
 	planet "Ursa Polaris Station"
-		attributes
+		attributes south
 		landscape land/upland
 		description `Ursa Polaris Station is the result of agglomerating numerous asteroids from nearby systems, and mining/building them into a space station.  It is also the headquarters of the outfit and weapon developer of the same name.  The corporation mostly got its start as a 'big box' one stop shop for outfits from across human space, and quickly evolved to producing a few of their own outfits.  Their 'R&D lab' is actually a small fleet nearly always found in the system.  Occasionally pirates attempt to steal their prototypes, but only end up becoming a test subject for their latest developments.`
 		spaceport `During construction, several shuttles were used to transport the asteroids to this system.  As construction progressed, most shuttle components were incorporated into the station.  The ownership of one of the shuttles was traced back and turned out to have been one of the station founders' first ship, so "Gallileo" remains apparently intact and flying garish electric green and orange colours in the atrium area of the station.`
@@ -516,6 +516,10 @@ event "UPStock Polar Core available"
 		"Polar Core"
 
 
+planet WeiMirzamExpressWay
+	description ""
+
+
 event "WeMiExWa"
 	system Wei
 		object
@@ -597,7 +601,6 @@ event "WeMiExWa"
 		fleet "Large Republic" 2000
 		fleet "Large Northern Pirates" 2000
 		fleet "UPSRnD" 900
-	planet WeiMirzamExpressWay
 
 mission "0.9.1 outfits"
 	invisible
