@@ -1,4 +1,4 @@
-# Copyright (c) 2016 Iaz Poolar
+﻿# Copyright (c) 2016 Iaz Poolar
 # 
 # Endless Sky is free software: you can redistribute it and/or modify it under the
 # terms of the GNU General Public License as published by the Free Software
@@ -268,7 +268,6 @@ ship "Asteroidship"
 		"fuel capacity" 300
 		"outfit capacity" 20
 		"automaton" 1
-	outfits
 		Hyperdrive
 	explode "small explosion" 25
 	explode "medium explosion" 35

@@ -1,4 +1,4 @@
-# Copyright (c) 2016 Iaz Poolar
+﻿# Copyright (c) 2016 Iaz Poolar
 # 
 # Endless Sky is free software: you can redistribute it and/or modify it under the
 # terms of the GNU General Public License as published by the Free Software
@@ -541,7 +541,7 @@ mission "AbeInOrb"
 	on offer
 		event "Autumn on Hope"
 	npc evade save
-		personality uninterested forebearing staying
+		personality uninterested forbearing staying
 		government "Ursa Polaris"
 		ship "Mule (IP)" "Honest Abe"
 		system Wei
@@ -2000,7 +2000,7 @@ mission "OSC5b"#should the player decline OSC4
 		conversation
 			`As you dock, James says "Thanks for the lift.  We'll be in touch"`
  
-event "UPCloakCodeCrack"
+event UPCloakCodeCrack
 	clear "upcloakwin"
 	clear "active bidder"
 

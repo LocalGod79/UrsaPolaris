@@ -1,4 +1,4 @@
-# Copyright (c) 2016 Iaz Poolar;
+﻿# Copyright (c) 2016 Iaz Poolar;
 
 # Endless Sky is free software: you can redistribute it and/or modify it under the
 # terms of the GNU General Public License as published by the Free Software
@@ -76,7 +76,7 @@ outfit "Deplasmad Ion"
 		"acceleration" .03
 		"drag" .1
 		"lifetime" 30
-		"hit force" 2000
+		"hit force" 200
 		"submunition" "ion flak" 30
 
 outfit "ion flak"
@@ -89,7 +89,7 @@ outfit "ion flak"
 		"inaccuracy" 720
 		"velocity" 16
 		"lifetime" 9
-		"hit force" 300
+		"hit force" 30
 		"shield damage" 5
 		"hull damage" 2
 		"ion damage" 0.1
@@ -389,6 +389,7 @@ outfit "Ion Beam Turret"
 		"disruption damage" 0.15
 		"hit force" 1.5
 		"reload" 1
+		"turret turn" 3.3
 #		"burst count" 900
 #		"burst reload" 1
 #		"reload" 600
@@ -402,15 +403,6 @@ outfit "Inertial Damper"
 	"outfit space" -1
 	"energy generation" -.1
 	description "Inertial Dampers reduce the effective mass of your ship, increasing turning rate and acceleration, but reducing overall heat capacity in the process. The individual inertial damping generator units are small enough to keep hull stresses nominal, so multiple units are generally distributed all over the ship."
-
-outfit "Mass Expansion (Small)"
-	category "Systems"
-	cost 50000
-	thumbnail "outfit/blue screwdriver"
-	"mass" 3
-	"outfit space" 7
-	"cargo space" -10
-	description "The smaller mass expansion allows you to sacrifice that last corner of cargo space in order to perhaps make room for one more outfit, in those situations where you need just seven more tons to install that last system. It still does not increase your weapon or engine space, unfortunately."
 
 outfit "Polar Core"
 	category "Power"
