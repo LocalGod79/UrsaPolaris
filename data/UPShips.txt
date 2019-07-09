@@ -268,6 +268,8 @@ ship "Asteroidship"
 		"fuel capacity" 300
 		"outfit capacity" 20
 		"automaton" 1
+		"outfit space" 20
+	outfits
 		Hyperdrive
 	explode "small explosion" 25
 	explode "medium explosion" 35
