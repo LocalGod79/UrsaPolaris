@@ -503,8 +503,19 @@ mission "OS10Eb"
 
 
 
-#mission "OS11" eliminated - superfluous
-
+#mission "OS11" eliminated - superfluous.  re-added as city-ship license/remnant pointer at 0.9.9 release.
+mission "OS11"
+	landing
+	name "Get a city-ship license"
+	description "Help Deep security forces distribute mystery cubes from the job board, scientists in their endeavours from Deep spaceports, and track down especially evil pirates (near the Deep.  For people in the Spaceports.  In the Deep.  But not Phoenix Station, unless you want this reminder to go away.)"
+	destination "Phoenix Station"
+	to offer
+		has "OS5: offered"
+		not "license: City-Ship
+	on offer
+		dialog `James messages: "You're a Partner in a soon-to-be major player in the outfits market - get yourself a ship worthy of your stature."`
+	to fail
+		has "license: City-Ship"
 
 mission "OS12"
 	landing
