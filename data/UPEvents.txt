@@ -321,6 +321,14 @@ event "UPS Hai Outfits"
 	planet "Ursa Polaris Station"
 		outfitter "Hai Advanced"
 
+event "UPS Remnant Outfits"
+	planet "Ursa Polaris Station"
+		outfitter Remnant
+
+event "UPS Remnant Salvage"
+	planet "Ursa Polaris Station"
+		outfitter "Remnant Salvage"
+
 event "UPS Wanderer Outfits"
 	planet "Ursa Polaris Station"
 		outfitter "Wanderer Advanced"

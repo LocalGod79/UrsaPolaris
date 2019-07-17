@@ -1460,6 +1460,40 @@ mission "OS22"
 		fleet "Large Northern Pirates"
 		system Volax
 #
+mission "OSRemnant"
+	name "Negotiate UPS contract with Remnants"
+	description "Travel to <destination> with <payment> to negotiate a contract for alien outfits"
+	destination "Viminal"
+	source "Ursa Polaris Station"
+	clearance
+	to offer
+		has "OS22: done"
+		has "license: Remnant"
+	on offer
+		conversation
+			`	You find James at a table next to the "Gallileo".  As you approach, he says "The bar gotthat '09 Bounty Prag'ga - totally worth the wait - vintage of a lifetime.  Trying now to get them to find the '10 - supposedly just as good, but slightly different."`
+			`	"But on to business!  Now that we've got a supply convoy going to the Hai, we've got these Quantum Keystones that let our convoys visit the Remnants.  Head over to their space, tell them what we're doing, and maybe we can start an exchange."`
+			`	"Give them <payment> and let them know our freighters will be a few days behind your payment."`
+				accept
+	on complete
+		payment -100000000
+		event "UPS Remnant Outfits" 14
+		conversation
+			`	You spend hours negotiating with the Remnants, who seem very happy with the potential of a variety of outfits come their way from Ursa Polaris, are hesitant to send so much evidence of their existence back to Human space.  Eventually, you settle on branding Ursa Polaris Inc.'s "new line of outfits" as "Remnants of alien technology", and selling them only to vetted, licensed individuals (requiring a blood sample scan, among other precautions)."`
+	on visit
+		dialog `You require <payment> to negotiate and establish an Ursa Polaris contract with the Remnants.  Return when you have it.`
+#
+mission "OSRemnantSalvage"
+	invisible
+	landing
+	destination "Ursa Polaris Station"
+	to offer
+		has "event: UPS Remnant Outfits"
+		has "event: Remnant Salvage Available"
+	on offer
+		event "UPS Remnant Salvage"
+		fail
+#
 mission "OS23"
 	name "RFP Weapon Testing"
 	description "Disable the <npc> in Ildaria and report back to <planet>"
@@ -1568,7 +1602,7 @@ mission "OS25b"
 mission "OS25"
 	landing
 	name "Wanderer Outfits"
-	description "Go to <planet> and buy some Wanderer outfits"
+	description "Go to <planet> and buy some Wanderer outfits.  Bring 150M credits to set up an account, and 600 tons of cargo space to bring some research stock back."
 	source "Ursa Polaris Station"
 	destination "Var' Kayi"
 	to offer
@@ -1604,7 +1638,7 @@ mission "OS25"
 		conversation
 			`	"Suit yourself - humans are going to find their way there, and bring outfits back.  It should be us, but you obviously think you know what you're doing."`
 	on complete
-		payment -15000000
+		payment -150000000
 	on visit
 		dialog `You require <payment> to pay for Ursa Polaris Station's operating stock.  Return when you have it.`
 #
@@ -1627,7 +1661,7 @@ mission "OS26"
 		conversation
 			`	The station crew begin unloading the alien outfits the moment you dock.`
 			`	James approaches your dock as your alien cargo is being unloaded.  "That's great that you've got some stuff for our engineers to dismantle, but we're going to need jump drives, and LOTS of cash to get escorts for the trip through the hostile segments of space on the way, if we hope to equip our fleet."`
-			`	"Meet me at the Gallileo with 100 million more credits, so that we can set up a convoy through Pirate or Hai space."`
+			`	"Meet me at the Gallileo with 50 million more credits, so that we can set up a convoy through Pirate or Hai space."`
 #
 mission "OS27"
 	name "Acquire Jump Drives"
