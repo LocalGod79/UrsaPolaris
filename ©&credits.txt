@@ -1,4 +1,4 @@
-# Copyright (c) 2017 Iaz Poolar
+﻿# Copyright (c) 2017 Iaz Poolar
 # 
 # Endless Sky is free software: you can redistribute it and/or modify it under the
 # terms of the GNU General Public License as published by the Free Software
@@ -12,7 +12,7 @@ Release date: 2017march22
 
 special thanks go out to:
 Michael Zahniser and team; For creating the launchpad, and providing work to
-	derive from.
+	derive from (and the old world ship model).
 Nathan Flaum; for the first outfitter sprites (and updating them later), and
 	helping me believe others would pick up my shortfalls
 Michael Feather; Contributions to flavour text, balance/content consultation
@@ -20,8 +20,10 @@ Michael Feather; Contributions to flavour text, balance/content consultation
 Yuri Gobbi; Sound and content testing
 Jim Galbraith; content testing
 Maximilian Korber; images…lots, and lots of images…
+Becca Tommaso; updating many image sprites, years after inception, and
+	continuing to inspire faith in the community's growth.
 
-seriously, Ursa Polaris wouldn’t be without you
+seriously, Ursa Polaris wouldn’t be without you.
 
 ‡ denotes derivative works from Endless Sky’s (occasionally former) assets
 Copyright: Michael Zahniser
@@ -37,18 +39,27 @@ License: public-domain
 Files:
  images/outfit/mass driver slug*
  images/outfit/mass driver*
- images/outfit/rfp*‡
 Copyright: Nathan Flaum
+License: CC-BY-SA-4.0
+
+Files:
+ images/outfit/polarcore*
+ images/outfit/inertialdamper*
+Copyright: Maximilian Korber
 License: CC-BY-SA-4.0
 
 Files:
  images/outfit/sarc*
  images/outfit/hipc*‡
+ images/outfit/rfp*‡
  images/outfit/ionbeamoutfit*‡
  images/outfit/ionbeamturret*‡
- images/outfit/polarcore*
- images/outfit/inertialdamper*
-Copyright: Maximilian Korber
+Copyright: Becca Tommaso, based on works by Maximilian Korber under the same license
+License: CC-BY-SA-4.0
+
+Files:
+ images/planet/UPS*‡
+Copyright: Iaz Poolar
 License: CC-BY-SA-4.0
 
 All files have been manipulated in some fashion.
