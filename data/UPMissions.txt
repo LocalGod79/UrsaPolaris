@@ -55,7 +55,7 @@ mission "OS1"
 	on complete
 		payment 10000
 		dialog
-			`	James is grinning ear to ear when he steps off the <npc>. "You have set in motion great things today, my boy!" he says, as he hands you <payment>. "Meet me in the bar if you want to hear a tale or two."`
+			`	James is grinning ear to ear when he steps off the <npc>. "You have set in motion great things today, kiddo!" he says, as he hands you <payment>. "Meet me in the bar if you want to hear a tale or two."`
 	on visit
 		dialog "You have reached <planet>, but you left James in the <npc> behind! Better depart and wait for him to arrive in this star system."
 
