@@ -282,7 +282,7 @@ mission "OS5"
 				accept
 	on complete
 		conversation
-			`	You locate the Honest Abe on Hope which, while on approach you're surprised to discover on the edge of an impromptu spaceport - really little more than a glacial sheet with several ships parked in proximity to each other.  From the bridge, you see merchants exchanging goods, even one ship that's broadcasting an invitation to socialize in its cargo hold, which they're calling "Fontes Aeternam".`
+			`	You locate the Honest Abe on Hope which, while on approach, you're surprised to discover on the edge of an impromptu spaceport - really little more than a glacial sheet with several ships parked in proximity to each other.  From the bridge, you see merchants exchanging goods, even one ship that's broadcasting an invitation to socialize in its cargo hold, which they're calling "Fontes Aeternam".`
 			`	As you deftly park the <ship> near to the Honest Abe, James contacts her and begins transmitting your sensor data on an encrypted channel.  By the time you have shut the engines down, James turns to you and says "Malcolm is saying that from the preliminary data, we'll need to equip six asteroids in six systems to jump here.  Some of them are further away than we'd really like to jump an asteroid, but we're hopeful that further analysis will find closer ones.  I'm going to see if that bar has anything decent to drink - check it out when you've got 5 million to burn."`
 
 
@@ -385,7 +385,7 @@ mission "OS8"
 				accept
 	on complete
 		dialog
-			`	James is out' the airlock moments after your skids hit the pad...`
+			`	James is out of the airlock moments after your skids hit the pad...`
 
 
 
@@ -409,7 +409,7 @@ mission "OS9"
 	on complete
 		event "Agglomerate2"
 		conversation
-			`	"Apparently neither the Challenger or the Endeavour have returned with their asteriods - I'm going to the Honest Abe to see what else is going wrong."`
+			`	"Apparently neither the Challenger or the Endeavour have returned with their asteroids - I'm going to the Honest Abe to see what else is going wrong."`
 
 
 
@@ -435,7 +435,7 @@ mission "OS10C"
 		has "OS9: done"
 	on offer
 		conversation
-			`	As he leaves, James says "They went to the Vindemiatrix and Aldhibain systems.  Find them and get them back here.  They've got enough hyperdrive fuel to make your life miserable, so land here after escorting each one into this system to save yourself some aggravation.  Also, get 20 million credits together - we got a deal on stack core components, and the time for you to invest is nigh."`
+			`	As he leaves, James says "They went to the Vindemiatrix and Aldhibain systems.  Find them and get them back here.  They've got enough hyperdrive fuel to make your life miserable, so land here after escorting each one into this system to save yourself some aggravation.  Also, get 20 million credits together - we got a deal on Stack Core components, and the time for you to invest is nigh."`
 				accept
 	on visit
 		dialog "You have reached <planet>, but the Challenger is still out there! Better go back and make sure it gets here safely."
@@ -533,8 +533,8 @@ mission "OS12"
 			`	"Great work!  The last two extra-star-system asteroids have been attached to the growing mass in orbit, and our first docking bay is completed.  One more asteroid, fortunately already in the system, to attach and we'll start getting some more expensive gear onto ol' Polar Bear."`
 			choice
 				`	"Meet me aboard the Honest Abe."`
-			`	You hope that you don't have to make these trips with thermal gear across this glacier too many more times as you trudge through the wind and crunching ice towards the Honest Abe.  Again, the airlock appears to have recently been opened in anticipation of your arrival.  You go through the routine of security check on boarding, and after stripping your thermal gear, you are directed to James' cabin where you find him using a portable terminal in a comfortable chair with a glass of Prag'ga wine on a table next to his.  The cabin is spare, but appears comfortable.  "There you are!" he says, rising.  He directs you to a wheeled chair near a desk and continues.`
-			`	"Station construction is going more or less as planned - equipment is being moved into position and it won't be long before we need some serious power to get the station up and running, and accelerate construction.  Fortunately, Delta V is close by and has recently developed a serious power plant - and I happen to know a couple of the people who were in the finance aspect of that project.  I contacted them, told them about our station, and they agreed to subsidize our purchase of components needed to build several of their new reactor cores.  As a bonus, they talked some of their contacts at Southbound into throwing in some ships to carry the components back here, and even painted them in Ursa Polaris colours!`
+			`	You hope that you don't have to make these trips with thermal gear across this glacier too many more times as you trudge through the wind and crunching ice towards the Honest Abe.  Again, the airlock appears to have recently been opened in anticipation of your arrival.  You go through the routine of security check on boarding, and after stripping your thermal gear, you are directed to James' cabin where you find him using a portable terminal in a comfortable chair with a glass of Prag'ga wine on a table next to him.  The cabin is spare, but appears comfortable.  "There you are!" he says, rising.  He directs you to a wheeled chair near a desk and continues.`
+			`	"Station construction is going more or less as planned - equipment is being moved into position and it won't be long before we need some serious power to get the station up and running, and accelerate construction.  Fortunately, Delta V is close by and has recently developed a serious power plant - and I happen to know a couple of the people who were in the finance aspect of that project.  I contacted them, told them about our station, and they agreed to subsidise our purchase of components needed to build several of their new reactor cores.  As a bonus, they talked some of their contacts at Southbound into throwing in some ships to carry the components back here, and even painted them in Ursa Polaris colours!`
 			`	"Go to <destination> and pay the twenty mil', and escort our first supply convoy ships laden with power systems back to Ursa Polaris Station.  We're going to get Honest Abe into orbit - the next time we speak in person, it will be aboard the new station."`
 				accept
 	on complete
@@ -580,7 +580,7 @@ mission "OS13"
 		has "OS12: done"
 	on offer
 		conversation
-			`	The 20M credit withdrawl takes place after authorization, and you're directed to a landing pad next to a row of a half dozen waiting Argosys that are loaded with your purchase.`
+			`	The 20M credit withdrawal takes place after authorization, and you're directed to a landing pad next to a row of a half dozen waiting Argosys that are loaded with your purchase.`
 			` The captains all signal their readiness for departure, when the Port Authority sends out a broadcast to departing vessels: Pirate marauders entering the system - be careful!`
 				accept
 	on complete
@@ -787,7 +787,7 @@ mission "OS17H"
 		dialog
 			`	Upon landing, you receive a transmission from James:`
 		conversation
-			`	"Ursa Polaris Station is fully operational.  We require stock from the Syndicate, Lovelace Labs, Deep Sky, Delta V and Kraz Cybernetics.  Fortunately you only need to make four stops, spending 25M credits at each one (100M total) to set up our initial supply contracts.  There will be ships waiting for you at Hephaestus, Ada, Wayfarer and Valhalla that will help to escort you back.  You'll also need 500 cargo space to carry some startup stock at each stop, as the ships will mostly be additions to our defence and R&D&D (Research & Development, Defense) fleet.  We've already got the Mass Driver and Inertia Buffered Slugs manufacturing set up, and you can pick some up when you get here."`
+			`	"Ursa Polaris Station is fully operational.  We require stock from the Syndicate, Lovelace Labs, Deep Sky, Delta V and Kraz Cybernetics.  Fortunately you only need to make four stops, spending 25M credits at each one (100M total) to set up our initial supply contracts.  There will be ships waiting for you at Hephaestus, Ada, Wayfarer and Valhalla that will help to escort you back.  You'll also need 500 cargo space to carry some startup stock at each stop, as the ships will mostly be additions to our defence and R&D&D (Research, Development & Defense) fleet.  We've already got the Mass Driver and Inertia Buffered Slugs manufacturing set up, and you can pick some up when you get here."`
 				accept
 	on complete
 		payment -25000000
@@ -861,7 +861,7 @@ mission "OS18H"
 		conversation
 			`The Syndicate Spaceport is eerily quiet when you step out of your ship.  A contingent of men in sharp business attire march across the landing platform to the <ship> and greet you with a smile and a clipboard nearly bursting with documents for you to sign.`
 			`	"Follow me, please."`
-			`You follow the group of businessmen to what appears to be a coffee shop where you all are seated.  It feels like the process takes an eternity as they awkwardly watches you read and sign page after page of bureaucratic nonsense.  When you're finally done you're not sure it's still the same day as when you started.  One of the associates takes the documents from you and scans them over before looking back up to you with a smile.`
+			`You follow the group of businessmen to what appears to be a coffee shop where you all are seated.  It feels like the process takes an eternity as they awkwardly watch you read and sign page after page of bureaucratic nonsense.  When you're finally done you're not sure it's still the same day as when you started.  One of the associates takes the documents from you and scans them over before looking back up to you with a smile.`
 			`	"Thank you, <first> <last>.  We have taken the liberty of having your ship loaded while you were signing the documents.  We are very pleased to take part in your exciting new enterprise.  Good luck!"`
 			`	As they say this with a smirk, you suspect that you may have just supplied the bounty that they've put on your fleet.`
 				accept
@@ -896,7 +896,7 @@ mission "OS19H"
 		not "UPCheat"
 	on offer
 		conversation
-			`	Ariel Eisbar contacts you "I noticed the Ionic Afterburners were not manifest of Syndicate outfits to be shipped to Ursa Polaris Station.  If you take me to my apartment on Hippocrates, I can retrieve all the data from the work we did on that one - the lead engineer would have been lost without me!  When we get back, we can start building them ourselves."`
+			`	Ariel Eisbar contacts you "I noticed the Ionic Afterburners were not on the manifest of Syndicate outfits to be shipped to Ursa Polaris Station.  If you take me to my apartment on Hippocrates, I can retrieve all the data from the work we did on that one - the lead engineer would have been lost without me!  When we get back, we can start building them ourselves."`
 			choice
 				`	Let's go!`
 					accept
@@ -962,15 +962,15 @@ mission "OS18A"
 	on offer
 		conversation
 			`You're greeted to a truly remarkable sight as you step off of the <ship>.  The spaceport is bustling with people in military uniforms, all moving with purpose and efficiency from dock to dock unloading cargo and organizing stock.  You see an officer in a neat uniform march up the deck with a tablet in her hand and a warm smile on her face.  As she approaches you can see that her uniform, and the uniforms of the rest of the workers almost look like Republic Navy uniforms, except that they're a lighter shade and where you would normally see decorations or medals is just a simple, plastic name tag.  Her's reads "Lt. Espinosa".  She presents you with the tablet.`
-			`	"Welcome to Lovelace Labs, Captain <last>.  My name is Lieutenant Espinosa, and I'll be escorting you to the executive meeting room.  Please follow me to through our executive office wing.  You can fill out those docking forms on the way."`
-			`She leads you through a fairly minimalistic office structure to an elevator.  The light on the side turns green as you and the lieutenant approach, and it's just a short ride up the very smooth operating elevator to the executive offices.  You walk through a quiet, carpeted office towards a set of heavy, mahogany double doors.  Lieutenant Espinosa opens the door and waves you inside.`
+			`	"Welcome to Lovelace Labs, Captain <last>.  My name is Lieutenant Espinosa, and I'll be escorting you to the executive meeting room.  Please follow me to through to our executive office wing.  You can fill out those docking forms on the way."`
+			`She leads you through a fairly minimalistic office structure to an elevator.  The light on the side turns green as you and the lieutenant approach, and it's just a short ride up the very smoothly operating elevator to the executive offices.  You walk through a quiet, carpeted office towards a set of heavy, mahogany double doors.  Lieutenant Espinosa opens the door and waves you inside.`
 			`The executive meeting room is nice, but simple.  Just a large mahogany table surrounded by leather chairs, white walls, and a standard vid-presentation display built into the wall behind the middle-aged man sitting at the head of the table.  He's wearing a very stylish vest and tie combo with a tailored shirt, and has a polite smile on his face.  He waves you to a chair next to him.`
-			`	"So glad you could make it Captain <last>, please have a seat.  I'll get right to it.  When your partner contact us about this deal, we agreed to it somewhat reluctantly because while this is a lucrative deal, we're nervous about sending large shipments of fissionable materials and armaments into.. less secure regions of space."`
+			`	"So glad you could make it Captain <last>, please have a seat.  I'll get right to it.  When your partner contacted us about this deal, we agreed to it somewhat reluctantly because while this is a lucrative deal, we're nervous about sending large shipments of fissionable materials and armaments into.. less secure regions of space."`
 			`He attempts to adjust his tie as well as his grimace before he continues.`
 			`	"And being a new startup, you're somewhat of an unknown factor. We have no assurances that you won't sell our goods to pirates or simply 'lose' these commodities during transport.  And we're not going to send a fleet of ships across space to escort them.  So unless you have a fleet of your own to escort the shipment, I don't see how we could possibly make this work."`
 			choice
 				`	"They're landed at the spaceport as we speak."`
-			`He blinks at you and quickly looks down at the mobile device on his desk.  He taps a couple things and starts to scroll through some information when suddenly his eyes widen.`
+			`He blinks at you and quickly looks down at the mobile device on his desk.  He taps a couple of times and starts to scroll through some information when suddenly his eyes widen.`
 			`	"I see, well still there's the matter of..."`
 			choice
 				`Interrupt him`
@@ -1008,7 +1008,7 @@ mission "OS18V"
 		has "OS17V: done"
 	on offer
 		conversation
-			`As soon as you land, a small group of serious looking men in security uniforms greet you and lead you through the facility.  The corridors and ceilings seem almost claustrophobically close together and the minimalist, monochrome decor is a little unsettling.  Eventually you reach a large set of double doors leading into a spacious office.  You're very surprised to see the familiar face of a Pug sitting behind the desk.  He's wearing what looks like a burlap cloak and has some sort of silver markings across his face and a huge grin.`
+			`As soon as you land, a small group of serious-looking men in security uniforms greet you and lead you through the facility.  The corridors and ceilings seem almost claustrophobically close together and the minimalist, monochrome decor is a little unsettling.  Eventually you reach a large set of double doors leading into a spacious office.  You're very surprised to see the familiar face of a Pug sitting behind the desk.  He's wearing what looks like a burlap cloak and has some sort of silver markings across his face and a huge grin.`
 			choice
 				`	"Deep Sky is run by the Pug?"`
 			`He just blinks at you once before blurting out`
@@ -1018,14 +1018,14 @@ mission "OS18V"
 			`There's a pause during which his demeanor grows a bit more somber.  When he speaks again it's with a much more direct tone.`
 			`	"Now in all seriousness, Deep Sky is very protective of our proprietary technologies.  Particularly concerning our Atomic engines.  While we're very pleased to be making this deal with you and expanding our market, we've never allowed another distributer to sell our products.  We take a great deal of pride in our work here, and we take great efforts to provide a quality experience for our buyers from the moment they step through our doors.  With that in mind..."`
 			`He taps on his desk once, and you hear your PDA 'ding' in your pocket.`
-			`	"Here is a copy of our counter-offer to your proposal.  Your numbers are very agreeable.  The only amendments pertain to a mandatory training of your sales staff to be conducted at Ursa Polaris by Deep Sky technicions which will take place within two weeks of your Grand Opening.  Deep Sky will bill you the standard hourly fee for each technicion, plus transit expenses.  Additionally, Deep Sky will perform a bi-annual inspection of your storage and installation facilities, as well as your sales floor.  If you find these terms satisfactory, just submit your electronic signature at the bottom and we'll be all set."`
+			`	"Here is a copy of our counter-offer to your proposal.  Your numbers are very agreeable.  The only amendments pertain to a mandatory training of your sales staff to be conducted at Ursa Polaris by Deep Sky technicians which will take place within two weeks of your Grand Opening.  Deep Sky will bill you the standard hourly fee for each technicion, plus transit expenses.  Additionally, Deep Sky will perform a bi-annual inspection of your storage and installation facilities, as well as your sales floor.  If you find these terms satisfactory, just submit your electronic signature at the bottom and we'll be all set."`
 			choice
 				`	Accept`
 					goto yespointy
 				`	Refuse`
 					goto nopointy
 			label yespointy
-			`You press your thumb against the bio-scanner on your PDA and it chimes in confirmation, which is mimicked by the desk in front of you.  The oddly dressed man gets up from behind his desk and walks over to you, shaking your hand firmly.`
+			`You press your thumb against the bio-scanner on your PDA and it chimes in confirmation, which is mimicked by the desk in front of you.  The oddly-dressed man gets up from behind his desk and walks over to you, shaking your hand firmly.`
 			`	"It's a pleasure to be in business with you, Captain <last>."`
 			`You spend the rest of the day being wined and dined by the convention-going CEO while the ships are loaded up, and then it's off to Ursa Polaris again.`
 				accept
@@ -1143,13 +1143,13 @@ mission "OS18W"
 				`Don't shake his hand`
 					goto cleanhand
 			label oilyhand
-			`You shake take the outstretched hand and immediately regret the decision as your hand is covered with a thick black greasy substance.  You grimace a little internally, but then smile back at the mechanic.  Whatever it takes to make a deal, right?`
-			goto afterhand
+				`You shake take the outstretched hand and immediately regret the decision as your hand is covered with a thick black greasy substance.  You grimace a little internally, but then smile back at the mechanic.  Whatever it takes to make a deal, right?`
+					goto afterhand
 			label cleanhand
-			`You think about shaking his hand but just smile awkwardly and wave, instead.  The mechanic immediately responds with a chuckle, wiping his hand off on his already thoroughly stained overalls. "Sorry, I forget sometimes."`
-			label afterhand
+				`You think about shaking his hand but just smile awkwardly and wave, instead.  The mechanic immediately responds with a chuckle, wiping his hand off on his already thoroughly stained overalls. "Sorry, I forget sometimes."`
+					label afterhand
 			`He smiles, "Please, come with me."`
-			`You follow him through the now somewhat familiar hangars at Wayfarer to a small little office.  The mechanic takes a sturdy looking, oversized tablet out of the desk and sets it in front of you.`
+			`You follow him through the now somewhat familiar hangars at Wayfarer to a small little office.  The mechanic takes an oversized, sturdy-looking tablet out of the desk and sets it in front of you.`
 			`	"Okay, just sign at the bottom there and we'll get you all loaded up!"`
 			choice
 				`	"That's it?"`
