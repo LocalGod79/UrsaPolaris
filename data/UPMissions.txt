@@ -989,6 +989,7 @@ mission "OS18A"
 #
 mission "OS18V"
 	landing
+	source Valhalla
 	name "Escort to Ursa Polaris Station (Deep Sky)"
 	description "Transport stock and escort new ships from <origin> to <destination>"
 	destination "Ursa Polaris Station"
@@ -1113,6 +1114,7 @@ mission "OS20V"
 #
 mission "OS18W"
 	landing
+	source Wayfarer
 	name "Escort to Ursa Polaris Station (K&DV)"
 	description "Transport stock and escort new ships from <origin> to <destination>"
 	destination "Ursa Polaris Station"
@@ -1529,7 +1531,7 @@ mission "OS23"
 		personality staying heroic
 		government "Test Dummy"
 		system Ildaria
-		ship "Corvette (RFP)" "Jaakaru"
+		ship "Corvette (RFP)" " Jaakaru "
 
 	on complete
 		event "sarc: available" 21
