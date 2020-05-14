@@ -1502,7 +1502,9 @@ mission "OSRemnantSalvage"
 	destination "Ursa Polaris Station"
 	to offer
 		has "event: UPS Remnant Outfits"
-		has "event: Remnant Salvage Available"
+		or
+			has "event: Remnant Salvage Available"
+			has "event: remnant salvage available"
 	on offer
 		event "UPS Remnant Salvage"
 		fail
