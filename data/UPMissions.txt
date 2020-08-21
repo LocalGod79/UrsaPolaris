@@ -1,5 +1,5 @@
-﻿# Copyright (c) 2016 Iaz Poolar
-# 
+# Copyright (c) 2016 Iaz Poolar
+#
 # Endless Sky is free software: you can redistribute it and/or modify it under the
 # terms of the GNU General Public License as published by the Free Software
 # Foundation, either version 3 of the License, or (at your option) any later version.
@@ -23,14 +23,14 @@ mission "OS1"
 	npc waiting
 		system Rigel
 		government " Pirate "
-		fleet "Large Northern Pirates" 
-		fleet "Large Northern Pirates" 
+		fleet "Large Northern Pirates"
+		fleet "Large Northern Pirates"
 		personality disables staying
 	npc waiting
 		system Danoa
 		government " Pirate "
 		fleet "Large Northern Pirates"
-		fleet "Large Northern Merchants" 
+		fleet "Large Northern Merchants"
 		personality disables staying
 	npc accompany save
 		system Danoa
@@ -168,7 +168,7 @@ mission "OS3"
 					accept
 	on decline
 		conversation
-			`	"I guess this is happening without you then, kid.  Won't be the same without you."`	
+			`	"I guess this is happening without you then, kid.  Won't be the same without you."`
 		set "UPWithoutPlayer"
 	on complete
 		payment -50000000
@@ -511,7 +511,7 @@ mission "OS11"
 	destination "Phoenix Station"
 	to offer
 		has "OS5: offered"
-		not "license: City-Ship
+		not "license: City-Ship"
 	on offer
 		dialog `James messages: "You're a Partner in a soon-to-be major player in the outfits market - get yourself a ship worthy of your stature."`
 	to fail
@@ -1446,7 +1446,7 @@ mission "OS22"
 		clear "OS22: offered"
 	on accept
 		conversation
-			`	You open an account with the Outfitter on Hai-home, and arrange for 600 tons of outfits to be loaded for immediate departure.  You inform the Outfitter that more ships from Ursa Polaris will return for more outfits in exchange for the balance of the account.` 
+			`	You open an account with the Outfitter on Hai-home, and arrange for 600 tons of outfits to be loaded for immediate departure.  You inform the Outfitter that more ships from Ursa Polaris will return for more outfits in exchange for the balance of the account.`
 	on complete
 		dialog
 			`The station crew begin unloading the alien outfits the moment you dock.  The outfitter should begin selling them in a couple of days.`
@@ -1528,7 +1528,7 @@ mission "OS23"
 		conversation
 			`	Barmy just sent the message - the <npc> is equipped with a couple RFP weapons and is waiting to take you on in Ildaria.  I'd say leave most or all of your combat fleet behind so you can give some feedback on it's performance.  <npc>'s a Corvette, so you should have no problem disabling it if you're flying a Heavy Warship.  Please don't destroy it - it's one of ours, we just sent it to Rust to get the prototypes fitted."`
 				accept
-	
+
 	npc save disable
 		personality staying heroic
 		government "Test Dummy"
@@ -1574,7 +1574,7 @@ mission "OS24"
 			`	"On to more current matters.  We've got a nearly production ready prototype on the <npc> in Alnasl - head over there and see if you can disable her, then report back here."`
 			`	"I'd say take a fleet with you, but have them hold position away from your test battle until you need them."`
 				accept
-	
+
 	npc save disable
 		personality staying heroic
 		government "Test Dummy"
@@ -1636,7 +1636,7 @@ mission "OS25"
 			`	"I heard a rumour that you were up north - waaay north.  Something with the Hai embassy?"`
 			choice
 
-				`	"Yeah, I helped to establish some diplomatic relations with another species - the rough translation of their name is 'Wanderers'"` 
+				`	"Yeah, I helped to establish some diplomatic relations with another species - the rough translation of their name is 'Wanderers'"`
 					goto os25a
 				`	"I don't know what you're talking about."`
 			`	"Really <first>?  My information network is wider than Navy Intelligence.  I know you were up north, even escorting a Hai ambassador, I infer, to meet a new species, since you didn't go back to Earth.  You're sure you're not going to help prepare humanity to defend peace with the best that's available?"`
@@ -1965,7 +1965,7 @@ mission "OSCauction"
 	waypoint Ankaa
 	to offer
 		has "active bidder"
-	
+
 	on enter Algol
 		payment -200000000
 		set "upcloaklose"
@@ -2048,7 +2048,7 @@ mission "OSC5b"#should the player decline OSC4
 	on complete
 		conversation
 			`As you dock, James says "Thanks for the lift.  We'll be in touch"`
- 
+
 event UPCloakCodeCrack
 	clear "upcloakwin"
 	clear "active bidder"
