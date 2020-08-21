@@ -1145,11 +1145,11 @@ mission "OS18W"
 				`Don't shake his hand`
 					goto cleanhand
 			label oilyhand
-				`You shake take the outstretched hand and immediately regret the decision as your hand is covered with a thick black greasy substance.  You grimace a little internally, but then smile back at the mechanic.  Whatever it takes to make a deal, right?`
-					goto afterhand
+			`You shake take the outstretched hand and immediately regret the decision as your hand is covered with a thick black greasy substance.  You grimace a little internally, but then smile back at the mechanic.  Whatever it takes to make a deal, right?`
+				goto afterhand
 			label cleanhand
-				`You think about shaking his hand but just smile awkwardly and wave, instead.  The mechanic immediately responds with a chuckle, wiping his hand off on his already thoroughly stained overalls. "Sorry, I forget sometimes."`
-					label afterhand
+			`You think about shaking his hand but just smile awkwardly and wave, instead.  The mechanic immediately responds with a chuckle, wiping his hand off on his already thoroughly stained overalls. "Sorry, I forget sometimes."`
+			label afterhand
 			`He smiles, "Please, come with me."`
 			`You follow him through the now somewhat familiar hangars at Wayfarer to a small little office.  The mechanic takes an oversized, sturdy-looking tablet out of the desk and sets it in front of you.`
 			`	"Okay, just sign at the bottom there and we'll get you all loaded up!"`
@@ -1160,7 +1160,7 @@ mission "OS18W"
 			choice
 				`Sign`
 			label tarazeddeal
-				`	"What about all of the stock from Kraz and Delta V?"`
+			`	"What about all of the stock from Kraz and Delta V?"`
 			`	"Already here.  We just renewed our contracts with both Kraz and Delta V last quarter, so we're fully loaded."`
 			`You press your thumb against the bioscanner and it chimes in confirmation.  The mechanic smiles broadly and takes the pad back from you.`
 			`	"Great!  We'll get you loaded up right away."`
