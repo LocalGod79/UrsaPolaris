@@ -2086,3 +2086,11 @@ mission "OSC6"
 			`	"We've done it!" James exclaims when you find him at his usual table.`
 			`	"We've managed to crack the data format of the aliens on the Cloaking Device, and built a small assembly line.  For now, we're restricting purchase to Ursa Polaris Employees, but Navy Intelligence got wind of the auction, and we've seen their ships docked at the station and scanning our R&D fleet.  Of course, they wouldn't have found anything, because we still can't detect it, even after we figured out how to build one.  I imagine they'll want a piece of this action once they see one of our ships disappear."  His smile is the widest you've ever seen it.`
 			`	"It's at the outfitter, whenever you're ready to set your fleet up."`
+mission "Pirate Outfit Update"
+	landing
+	invisible
+	destination "Ursa Polaris Station"
+	to offer
+		has "event: Ursa Polaris Complete"
+	on offer
+		event "UPComplete Pirate Update"
