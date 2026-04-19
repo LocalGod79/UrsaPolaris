@@ -18,7 +18,11 @@ mission "OS1"
 	destination Farpoint
 	passengers 1
 	to offer
-		has "Intro [0]: done"
+		or
+			has "Intro [0]: done"
+			has "Midgard Intro [0]: done"
+			has "Mainsail Intro [0]: done"
+			has "Delve Intro [0]: done"
 		has "event: pug flee"
 	npc waiting
 		system Rigel
